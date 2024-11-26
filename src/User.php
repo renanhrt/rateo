@@ -1,0 +1,120 @@
+<?php
+
+class User implements ActiveRecord{
+
+    private int $id_user;
+    
+    public function __construct(private string $username,private string $email, private string $password, private string $role){
+    }
+
+    public function setId_user(int $id_user):void{
+        $this->id_user = $id_user;
+    }
+
+    public function getId_user():int{
+        return $this->id_user;
+    }
+
+    public function setUsername(string $username):void{
+        $this->username = $username;
+    }
+
+    public function getUsername():string{
+        return $this->username;
+    }
+
+    public function setEmail(string $email):void{
+        $this->email = $email;
+    }
+
+    public function getEmail():string{
+        return $this->email;
+    }
+
+    public function setPassword(string $password):void{
+        $this->password = $password;
+    }
+
+    public function getPassword():string{
+        return $this->password;
+    }
+
+    public function setRole(string $role):void{
+        $this->role = $role;
+    }
+
+    public function getRole():string{
+        return $this->role;
+    }
+
+    public function save(): bool {
+        $connection = new MySQL();
+        $hash_password = password_hash($this->password, PASSWORD_BCRYPT);
+        
+        if (!str_ends_with($this->email, '@aluno.feliz.ifrs.edu.br')) {
+            throw new Exception("Invalid email domain. Must be @aluno.feliz.ifrs.edu.br");
+        }
+
+        if (isset($this->id_user)) {
+            $sql = "UPDATE User SET 
+                username = '{$this->username}', 
+                email = '{$this->email}', 
+                password = '{$hash_password}', 
+                role = '{$this->role}' 
+                WHERE id_user = {$this->id_user}";
+        } else {
+            $sql = "INSERT INTO user (username, email, password, role) 
+                VALUES ('{$this->username}', '{$this->email}', '{$hash_password}', '{$this->role}')";
+        }
+        return $connection->execute($sql);
+    }
+
+    public function delete():bool{
+        $connection = new MySQL();
+        $sql = "DELETE FROM user WHERE id_user = {$this->id_user}";
+        return $connection->execute($sql);
+    }
+
+    public static function find($id_user):User{
+        $connection = new MySQL();
+        $sql = "SELECT * FROM user WHERE id_user = {$id_user}";
+        $resultado = $connection->query($sql);
+        $f = new User($resultado[0]['username'],$resultado[0]['email'],$resultado[0]['password'],$resultado[0]['role']);
+        $f->setid_user($resultado[0]['id_user']);
+        return $f;
+    }
+    public static function findall():array{
+        $connection = new MySQL();
+        $sql = "SELECT * FROM user";
+        $resultados = $connection->query($sql);
+        $festas = array();
+        foreach($resultados as $resultado){
+            $f = new User($resultado['username'],$resultado['email'],$resultado['password'],$resultado['role']);
+            $f->setid_user($resultado['id_user']);
+            $festas[] = $f;
+        }
+        return $festas;
+    }
+
+    public static function login(string $email, string $password): ?User {
+        $connection = new MySQL();
+        $sql = "SELECT * FROM User WHERE email = '{$email}'";
+        $result = $connection->query($sql);
+    
+        if (count($result) > 0) {
+            $user_data = $result[0];
+            if (password_verify($password, $user_data['password'])) {
+                $user = new User(
+                    $user_data['username'],
+                    $user_data['email'],
+                    $user_data['password'],
+                    $user_data['role']
+                );
+                $user->setId_user($user_data['id_user']);
+                return $user; // Retorna o objeto User autenticado
+            }
+        }
+        return null;
+    }
+    
+}

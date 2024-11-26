@@ -1,0 +1,15 @@
+{
+    "name": "renanhrt/rateo",
+    "authors": [
+        {
+            "name": "renanhrt",
+            "email": "renanmichelhardt12345@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "": "src/"
+        }
+    }
+}
