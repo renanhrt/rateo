@@ -8,7 +8,8 @@
         $user = User::login($email, $password);
         
         if ($user) {
-            $_SESSION["user"] = $user;
+            session_start();
+            $_SESSION["id"] = $user->getId_user();
             header("Location: index.php");
         } else {
             echo "Invalid email or password";

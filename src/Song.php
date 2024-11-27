@@ -2,16 +2,16 @@
 
 class Song implements ActiveRecord {
 
-    private int $id_song;
+    private String $id_song;
 
     public function __construct(private string $title, private int $year, private string $artist, private string $cover, private string $preview_url) {
     }
 
-    public function setId_song(int $id_song): void {
+    public function setId_song(String $id_song): void {
         $this->id_song = $id_song;
     }
 
-    public function getId_song(): int {
+    public function getId_song(): String {
         return $this->id_song;
     }
 
@@ -126,5 +126,78 @@ class Song implements ActiveRecord {
         return NULL;
     }
 
+    public static function searchSongSpotify($search_string): array {
+        // GET ACCESS TOKEN
+        $params = [
+            'grant_type' => 'client_credentials',
+            'client_id' => '2667aa6e88a249108b9a6228d266c4d3',
+            'client_secret' => '1141d42afb8c4dde8f37ad6b7527157e',
+        ];
+        
+        $authUrl = 'https://accounts.spotify.com/api/token';
+        
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_URL, $authUrl);
+        curl_setopt($ch, CURLOPT_POST, true);
+        curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($params));
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        
+        $response = curl_exec($ch);
+        curl_close($ch);
+        
+        $responseData = json_decode($response, true);
+        if (!isset($responseData['access_token'])) {
+            die("Error retrieving access token: " . $response);
+        }
+        $token = $responseData['access_token'];
+        
+
+
+        // SEARCH FOR SONGS OR ARTISTS
+        $searchUrl = 'https://api.spotify.com/v1/search?q='. str_replace(' ', '+', $search_string) .'&type=track,artist&market=BR&limit=10&include_external=audio';
+        
+        $headers = [
+            "Authorization: Bearer $token",
+        ];
+        
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_URL, $searchUrl);
+        curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        
+        $searchResponse = curl_exec($ch);
+        curl_close($ch);
+        
+        $searchData = json_decode($searchResponse, true);
+
+        $file = 'response.json';
+        if (file_put_contents($file, json_encode($searchData, JSON_PRETTY_PRINT))) {
+            echo "Response successfully saved to $file\n";
+        } else {
+            echo "Failed to save the response to $file\n";
+        }
+
+        if (isset($searchData['tracks']['items'])) {
+            $songs = array();
+            foreach ($searchData['tracks']['items'] as $track) {
+                if (!isset($track['preview_url'])) {
+                    $track['preview_url'] = '';
+                }
+
+                $song = new Song(
+                    $track['name'],
+                    date('Y', strtotime($track['album']['release_date'])),
+                    $track['artists'][0]['name'],
+                    $track['album']['images'][0]['url'],
+                    $track['preview_url']
+                );
+                $song->setId_song($track['id']);
+                $songs[] = $song;
+            }
+            return $songs;
+        }
+
+        
+    }
 }
 ?>

@@ -1,406 +1,88 @@
 {
     "tracks": {
-        "href": "https://api.spotify.com/v1/search?offset=0&limit=10&query=sultans%20of%20swing&type=track&market=BR&include_external=audio",
+        "href": "https:\/\/api.spotify.com\/v1\/search?offset=0&limit=10&query=ac%2Fdc&type=track&market=BR&include_external=audio",
         "limit": 10,
-        "next": "https://api.spotify.com/v1/search?offset=10&limit=10&query=sultans%20of%20swing&type=track&market=BR&include_external=audio",
+        "next": "https:\/\/api.spotify.com\/v1\/search?offset=10&limit=10&query=ac%2Fdc&type=track&market=BR&include_external=audio",
         "offset": 0,
         "previous": null,
-        "total": 899,
+        "total": 104,
         "items": [
             {
                 "album": {
-                    "album_type": "album",
-                    "artists": [
-                        {
-                            "external_urls": {
-                                "spotify": "https://open.spotify.com/artist/0WwSkZ7LtFUFjGjMZBMt6T"
-                            },
-                            "href": "https://api.spotify.com/v1/artists/0WwSkZ7LtFUFjGjMZBMt6T",
-                            "id": "0WwSkZ7LtFUFjGjMZBMt6T",
-                            "name": "Dire Straits",
-                            "type": "artist",
-                            "uri": "spotify:artist:0WwSkZ7LtFUFjGjMZBMt6T"
-                        }
-                    ],
-                    "external_urls": {
-                        "spotify": "https://open.spotify.com/album/2rCS6Xwx32V27pvgFzLzlT"
-                    },
-                    "href": "https://api.spotify.com/v1/albums/2rCS6Xwx32V27pvgFzLzlT",
-                    "id": "2rCS6Xwx32V27pvgFzLzlT",
-                    "images": [
-                        {
-                            "height": 640,
-                            "width": 640,
-                            "url": "https://i.scdn.co/image/ab67616d0000b273b49d49cc95564aede7998bb8"
-                        },
-                        {
-                            "height": 300,
-                            "width": 300,
-                            "url": "https://i.scdn.co/image/ab67616d00001e02b49d49cc95564aede7998bb8"
-                        },
-                        {
-                            "height": 64,
-                            "width": 64,
-                            "url": "https://i.scdn.co/image/ab67616d00004851b49d49cc95564aede7998bb8"
-                        }
-                    ],
-                    "is_playable": true,
-                    "name": "Dire Straits",
-                    "release_date": "1978-10-07",
-                    "release_date_precision": "day",
-                    "total_tracks": 9,
-                    "type": "album",
-                    "uri": "spotify:album:2rCS6Xwx32V27pvgFzLzlT"
-                },
-                "artists": [
-                    {
-                        "external_urls": {
-                            "spotify": "https://open.spotify.com/artist/0WwSkZ7LtFUFjGjMZBMt6T"
-                        },
-                        "href": "https://api.spotify.com/v1/artists/0WwSkZ7LtFUFjGjMZBMt6T",
-                        "id": "0WwSkZ7LtFUFjGjMZBMt6T",
-                        "name": "Dire Straits",
-                        "type": "artist",
-                        "uri": "spotify:artist:0WwSkZ7LtFUFjGjMZBMt6T"
-                    }
-                ],
-                "disc_number": 1,
-                "duration_ms": 348400,
-                "explicit": false,
-                "external_ids": {
-                    "isrc": "GBF089601041"
-                },
-                "external_urls": {
-                    "spotify": "https://open.spotify.com/track/37Tmv4NnfQeb0ZgUC4fOJj"
-                },
-                "href": "https://api.spotify.com/v1/tracks/37Tmv4NnfQeb0ZgUC4fOJj",
-                "id": "37Tmv4NnfQeb0ZgUC4fOJj",
-                "is_local": false,
-                "is_playable": true,
-                "name": "Sultans Of Swing",
-                "popularity": 80,
-                "preview_url": null,
-                "track_number": 6,
-                "type": "track",
-                "uri": "spotify:track:37Tmv4NnfQeb0ZgUC4fOJj"
-            },
-            {
-                "album": {
-                    "album_type": "album",
-                    "artists": [
-                        {
-                            "external_urls": {
-                                "spotify": "https://open.spotify.com/artist/0WwSkZ7LtFUFjGjMZBMt6T"
-                            },
-                            "href": "https://api.spotify.com/v1/artists/0WwSkZ7LtFUFjGjMZBMt6T",
-                            "id": "0WwSkZ7LtFUFjGjMZBMt6T",
-                            "name": "Dire Straits",
-                            "type": "artist",
-                            "uri": "spotify:artist:0WwSkZ7LtFUFjGjMZBMt6T"
-                        }
-                    ],
-                    "external_urls": {
-                        "spotify": "https://open.spotify.com/album/2GU13jRAYoBgYExvDvFnUU"
-                    },
-                    "href": "https://api.spotify.com/v1/albums/2GU13jRAYoBgYExvDvFnUU",
-                    "id": "2GU13jRAYoBgYExvDvFnUU",
-                    "images": [
-                        {
-                            "height": 640,
-                            "width": 640,
-                            "url": "https://i.scdn.co/image/ab67616d0000b2732b92686a4bdeda02d25460c4"
-                        },
-                        {
-                            "height": 300,
-                            "width": 300,
-                            "url": "https://i.scdn.co/image/ab67616d00001e022b92686a4bdeda02d25460c4"
-                        },
-                        {
-                            "height": 64,
-                            "width": 64,
-                            "url": "https://i.scdn.co/image/ab67616d000048512b92686a4bdeda02d25460c4"
-                        }
-                    ],
-                    "is_playable": true,
-                    "name": "Money For Nothing (Remastered 2022)",
-                    "release_date": "2022-06-17",
-                    "release_date_precision": "day",
-                    "total_tracks": 12,
-                    "type": "album",
-                    "uri": "spotify:album:2GU13jRAYoBgYExvDvFnUU"
-                },
-                "artists": [
-                    {
-                        "external_urls": {
-                            "spotify": "https://open.spotify.com/artist/0WwSkZ7LtFUFjGjMZBMt6T"
-                        },
-                        "href": "https://api.spotify.com/v1/artists/0WwSkZ7LtFUFjGjMZBMt6T",
-                        "id": "0WwSkZ7LtFUFjGjMZBMt6T",
-                        "name": "Dire Straits",
-                        "type": "artist",
-                        "uri": "spotify:artist:0WwSkZ7LtFUFjGjMZBMt6T"
-                    }
-                ],
-                "disc_number": 1,
-                "duration_ms": 348680,
-                "explicit": false,
-                "external_ids": {
-                    "isrc": "GBUM72201768"
-                },
-                "external_urls": {
-                    "spotify": "https://open.spotify.com/track/47QBkTm1YIJ063xgQghK6B"
-                },
-                "href": "https://api.spotify.com/v1/tracks/47QBkTm1YIJ063xgQghK6B",
-                "id": "47QBkTm1YIJ063xgQghK6B",
-                "is_local": false,
-                "is_playable": true,
-                "name": "Sultans Of Swing - Remastered 2022",
-                "popularity": 43,
-                "preview_url": null,
-                "track_number": 1,
-                "type": "track",
-                "uri": "spotify:track:47QBkTm1YIJ063xgQghK6B"
-            },
-            {
-                "album": {
-                    "album_type": "album",
-                    "artists": [
-                        {
-                            "external_urls": {
-                                "spotify": "https://open.spotify.com/artist/0WwSkZ7LtFUFjGjMZBMt6T"
-                            },
-                            "href": "https://api.spotify.com/v1/artists/0WwSkZ7LtFUFjGjMZBMt6T",
-                            "id": "0WwSkZ7LtFUFjGjMZBMt6T",
-                            "name": "Dire Straits",
-                            "type": "artist",
-                            "uri": "spotify:artist:0WwSkZ7LtFUFjGjMZBMt6T"
-                        }
-                    ],
-                    "external_urls": {
-                        "spotify": "https://open.spotify.com/album/7JLiApdEm6DhYEdK3cop0v"
-                    },
-                    "href": "https://api.spotify.com/v1/albums/7JLiApdEm6DhYEdK3cop0v",
-                    "id": "7JLiApdEm6DhYEdK3cop0v",
-                    "images": [
-                        {
-                            "height": 640,
-                            "width": 640,
-                            "url": "https://i.scdn.co/image/ab67616d0000b273ca18456592c26c08f908550e"
-                        },
-                        {
-                            "height": 300,
-                            "width": 300,
-                            "url": "https://i.scdn.co/image/ab67616d00001e02ca18456592c26c08f908550e"
-                        },
-                        {
-                            "height": 64,
-                            "width": 64,
-                            "url": "https://i.scdn.co/image/ab67616d00004851ca18456592c26c08f908550e"
-                        }
-                    ],
-                    "is_playable": true,
-                    "name": "Alchemy: Dire Straits Live",
-                    "release_date": "1984-03-14",
-                    "release_date_precision": "day",
-                    "total_tracks": 11,
-                    "type": "album",
-                    "uri": "spotify:album:7JLiApdEm6DhYEdK3cop0v"
-                },
-                "artists": [
-                    {
-                        "external_urls": {
-                            "spotify": "https://open.spotify.com/artist/0WwSkZ7LtFUFjGjMZBMt6T"
-                        },
-                        "href": "https://api.spotify.com/v1/artists/0WwSkZ7LtFUFjGjMZBMt6T",
-                        "id": "0WwSkZ7LtFUFjGjMZBMt6T",
-                        "name": "Dire Straits",
-                        "type": "artist",
-                        "uri": "spotify:artist:0WwSkZ7LtFUFjGjMZBMt6T"
-                    }
-                ],
-                "disc_number": 1,
-                "duration_ms": 654306,
-                "explicit": false,
-                "external_ids": {
-                    "isrc": "GBF088400787"
-                },
-                "external_urls": {
-                    "spotify": "https://open.spotify.com/track/3s9QsxxTlcWcga9agSARTV"
-                },
-                "href": "https://api.spotify.com/v1/tracks/3s9QsxxTlcWcga9agSARTV",
-                "id": "3s9QsxxTlcWcga9agSARTV",
-                "is_local": false,
-                "is_playable": true,
-                "name": "Sultans Of Swing - Live At Hammersmith Odeon, London/1983",
-                "popularity": 50,
-                "preview_url": null,
-                "track_number": 6,
-                "type": "track",
-                "uri": "spotify:track:3s9QsxxTlcWcga9agSARTV"
-            },
-            {
-                "album": {
                     "album_type": "compilation",
                     "artists": [
                         {
                             "external_urls": {
-                                "spotify": "https://open.spotify.com/artist/0WwSkZ7LtFUFjGjMZBMt6T"
+                                "spotify": "https:\/\/open.spotify.com\/artist\/711MCceyCBcFnzjGY4Q7Un"
                             },
-                            "href": "https://api.spotify.com/v1/artists/0WwSkZ7LtFUFjGjMZBMt6T",
-                            "id": "0WwSkZ7LtFUFjGjMZBMt6T",
-                            "name": "Dire Straits",
+                            "href": "https:\/\/api.spotify.com\/v1\/artists\/711MCceyCBcFnzjGY4Q7Un",
+                            "id": "711MCceyCBcFnzjGY4Q7Un",
+                            "name": "AC\/DC",
                             "type": "artist",
-                            "uri": "spotify:artist:0WwSkZ7LtFUFjGjMZBMt6T"
-                        },
-                        {
-                            "external_urls": {
-                                "spotify": "https://open.spotify.com/artist/0FI0kxP0BWurTz8cB8BBug"
-                            },
-                            "href": "https://api.spotify.com/v1/artists/0FI0kxP0BWurTz8cB8BBug",
-                            "id": "0FI0kxP0BWurTz8cB8BBug",
-                            "name": "Mark Knopfler",
-                            "type": "artist",
-                            "uri": "spotify:artist:0FI0kxP0BWurTz8cB8BBug"
+                            "uri": "spotify:artist:711MCceyCBcFnzjGY4Q7Un"
                         }
                     ],
                     "external_urls": {
-                        "spotify": "https://open.spotify.com/album/7k7JmLusUFkgGLq9E6LnTd"
+                        "spotify": "https:\/\/open.spotify.com\/album\/4ydl8Ci7OsndhI2ALnrpIv"
                     },
-                    "href": "https://api.spotify.com/v1/albums/7k7JmLusUFkgGLq9E6LnTd",
-                    "id": "7k7JmLusUFkgGLq9E6LnTd",
+                    "href": "https:\/\/api.spotify.com\/v1\/albums\/4ydl8Ci7OsndhI2ALnrpIv",
+                    "id": "4ydl8Ci7OsndhI2ALnrpIv",
                     "images": [
                         {
                             "height": 640,
                             "width": 640,
-                            "url": "https://i.scdn.co/image/ab67616d0000b27333cbcc2fff864ab53ea02292"
+                            "url": "https:\/\/i.scdn.co\/image\/ab67616d0000b273b56115c0e231fbf69d3205c6"
                         },
                         {
                             "height": 300,
                             "width": 300,
-                            "url": "https://i.scdn.co/image/ab67616d00001e0233cbcc2fff864ab53ea02292"
+                            "url": "https:\/\/i.scdn.co\/image\/ab67616d00001e02b56115c0e231fbf69d3205c6"
                         },
                         {
                             "height": 64,
                             "width": 64,
-                            "url": "https://i.scdn.co/image/ab67616d0000485133cbcc2fff864ab53ea02292"
+                            "url": "https:\/\/i.scdn.co\/image\/ab67616d00004851b56115c0e231fbf69d3205c6"
                         }
                     ],
                     "is_playable": true,
-                    "name": "Sultans Of Swing - The Very Best Of Dire Straits",
-                    "release_date": "1998-01-01",
+                    "name": "Iron Man 2",
+                    "release_date": "2010-04-29",
                     "release_date_precision": "day",
-                    "total_tracks": 23,
+                    "total_tracks": 15,
                     "type": "album",
-                    "uri": "spotify:album:7k7JmLusUFkgGLq9E6LnTd"
+                    "uri": "spotify:album:4ydl8Ci7OsndhI2ALnrpIv"
                 },
                 "artists": [
                     {
                         "external_urls": {
-                            "spotify": "https://open.spotify.com/artist/0WwSkZ7LtFUFjGjMZBMt6T"
+                            "spotify": "https:\/\/open.spotify.com\/artist\/711MCceyCBcFnzjGY4Q7Un"
                         },
-                        "href": "https://api.spotify.com/v1/artists/0WwSkZ7LtFUFjGjMZBMt6T",
-                        "id": "0WwSkZ7LtFUFjGjMZBMt6T",
-                        "name": "Dire Straits",
+                        "href": "https:\/\/api.spotify.com\/v1\/artists\/711MCceyCBcFnzjGY4Q7Un",
+                        "id": "711MCceyCBcFnzjGY4Q7Un",
+                        "name": "AC\/DC",
                         "type": "artist",
-                        "uri": "spotify:artist:0WwSkZ7LtFUFjGjMZBMt6T"
+                        "uri": "spotify:artist:711MCceyCBcFnzjGY4Q7Un"
                     }
                 ],
                 "disc_number": 1,
-                "duration_ms": 240000,
+                "duration_ms": 255640,
                 "explicit": false,
                 "external_ids": {
-                    "isrc": "GBF088590114"
+                    "isrc": "AUAP08000046"
                 },
                 "external_urls": {
-                    "spotify": "https://open.spotify.com/track/5tDUVSIv2wEdOkHCOKHKeI"
+                    "spotify": "https:\/\/open.spotify.com\/track\/2iEGj7kAwH7HAa5epwYwLB"
                 },
-                "href": "https://api.spotify.com/v1/tracks/5tDUVSIv2wEdOkHCOKHKeI",
-                "id": "5tDUVSIv2wEdOkHCOKHKeI",
+                "href": "https:\/\/api.spotify.com\/v1\/tracks\/2iEGj7kAwH7HAa5epwYwLB",
+                "id": "2iEGj7kAwH7HAa5epwYwLB",
                 "is_local": false,
                 "is_playable": true,
-                "name": "So Far Away",
-                "popularity": 54,
-                "preview_url": null,
-                "track_number": 8,
-                "type": "track",
-                "uri": "spotify:track:5tDUVSIv2wEdOkHCOKHKeI"
-            },
-            {
-                "album": {
-                    "album_type": "album",
-                    "artists": [
-                        {
-                            "external_urls": {
-                                "spotify": "https://open.spotify.com/artist/0WwSkZ7LtFUFjGjMZBMt6T"
-                            },
-                            "href": "https://api.spotify.com/v1/artists/0WwSkZ7LtFUFjGjMZBMt6T",
-                            "id": "0WwSkZ7LtFUFjGjMZBMt6T",
-                            "name": "Dire Straits",
-                            "type": "artist",
-                            "uri": "spotify:artist:0WwSkZ7LtFUFjGjMZBMt6T"
-                        }
-                    ],
-                    "external_urls": {
-                        "spotify": "https://open.spotify.com/album/3uRt8lwpMAqYT8l9iwXehh"
-                    },
-                    "href": "https://api.spotify.com/v1/albums/3uRt8lwpMAqYT8l9iwXehh",
-                    "id": "3uRt8lwpMAqYT8l9iwXehh",
-                    "images": [
-                        {
-                            "height": 640,
-                            "width": 640,
-                            "url": "https://i.scdn.co/image/ab67616d0000b27354ec8f82ac5a3fd0a448e5b3"
-                        },
-                        {
-                            "height": 300,
-                            "width": 300,
-                            "url": "https://i.scdn.co/image/ab67616d00001e0254ec8f82ac5a3fd0a448e5b3"
-                        },
-                        {
-                            "height": 64,
-                            "width": 64,
-                            "url": "https://i.scdn.co/image/ab67616d0000485154ec8f82ac5a3fd0a448e5b3"
-                        }
-                    ],
-                    "is_playable": true,
-                    "name": "Live At The BBC",
-                    "release_date": "1995-06-26",
-                    "release_date_precision": "day",
-                    "total_tracks": 8,
-                    "type": "album",
-                    "uri": "spotify:album:3uRt8lwpMAqYT8l9iwXehh"
-                },
-                "artists": [
-                    {
-                        "external_urls": {
-                            "spotify": "https://open.spotify.com/artist/0WwSkZ7LtFUFjGjMZBMt6T"
-                        },
-                        "href": "https://api.spotify.com/v1/artists/0WwSkZ7LtFUFjGjMZBMt6T",
-                        "id": "0WwSkZ7LtFUFjGjMZBMt6T",
-                        "name": "Dire Straits",
-                        "type": "artist",
-                        "uri": "spotify:artist:0WwSkZ7LtFUFjGjMZBMt6T"
-                    }
-                ],
-                "disc_number": 1,
-                "duration_ms": 398893,
-                "explicit": false,
-                "external_ids": {
-                    "isrc": "GBAMU7800005"
-                },
-                "external_urls": {
-                    "spotify": "https://open.spotify.com/track/4yP4oR6G7l9MeHyDmQRRP1"
-                },
-                "href": "https://api.spotify.com/v1/tracks/4yP4oR6G7l9MeHyDmQRRP1",
-                "id": "4yP4oR6G7l9MeHyDmQRRP1",
-                "is_local": false,
-                "is_playable": true,
-                "name": "Sultans Of Swing - Live At The BBC",
-                "popularity": 39,
+                "name": "Back In Black",
+                "popularity": 55,
                 "preview_url": null,
                 "track_number": 5,
                 "type": "track",
-                "uri": "spotify:track:4yP4oR6G7l9MeHyDmQRRP1"
+                "uri": "spotify:track:2iEGj7kAwH7HAa5epwYwLB"
             },
             {
                 "album": {
@@ -408,404 +90,1042 @@
                     "artists": [
                         {
                             "external_urls": {
-                                "spotify": "https://open.spotify.com/artist/0WwSkZ7LtFUFjGjMZBMt6T"
+                                "spotify": "https:\/\/open.spotify.com\/artist\/711MCceyCBcFnzjGY4Q7Un"
                             },
-                            "href": "https://api.spotify.com/v1/artists/0WwSkZ7LtFUFjGjMZBMt6T",
-                            "id": "0WwSkZ7LtFUFjGjMZBMt6T",
-                            "name": "Dire Straits",
+                            "href": "https:\/\/api.spotify.com\/v1\/artists\/711MCceyCBcFnzjGY4Q7Un",
+                            "id": "711MCceyCBcFnzjGY4Q7Un",
+                            "name": "AC\/DC",
                             "type": "artist",
-                            "uri": "spotify:artist:0WwSkZ7LtFUFjGjMZBMt6T"
+                            "uri": "spotify:artist:711MCceyCBcFnzjGY4Q7Un"
                         }
                     ],
                     "external_urls": {
-                        "spotify": "https://open.spotify.com/album/6Pz06FAaeym0JSqVqIkN56"
+                        "spotify": "https:\/\/open.spotify.com\/album\/10v912xgTZbjAtYfyKWJCS"
                     },
-                    "href": "https://api.spotify.com/v1/albums/6Pz06FAaeym0JSqVqIkN56",
-                    "id": "6Pz06FAaeym0JSqVqIkN56",
+                    "href": "https:\/\/api.spotify.com\/v1\/albums\/10v912xgTZbjAtYfyKWJCS",
+                    "id": "10v912xgTZbjAtYfyKWJCS",
                     "images": [
                         {
                             "height": 640,
                             "width": 640,
-                            "url": "https://i.scdn.co/image/ab67616d0000b27358c4e9c84ece7d31f51636f3"
+                            "url": "https:\/\/i.scdn.co\/image\/ab67616d0000b27351c02a77d09dfcd53c8676d0"
                         },
                         {
                             "height": 300,
                             "width": 300,
-                            "url": "https://i.scdn.co/image/ab67616d00001e0258c4e9c84ece7d31f51636f3"
+                            "url": "https:\/\/i.scdn.co\/image\/ab67616d00001e0251c02a77d09dfcd53c8676d0"
                         },
                         {
                             "height": 64,
                             "width": 64,
-                            "url": "https://i.scdn.co/image/ab67616d0000485158c4e9c84ece7d31f51636f3"
+                            "url": "https:\/\/i.scdn.co\/image\/ab67616d0000485151c02a77d09dfcd53c8676d0"
                         }
                     ],
                     "is_playable": true,
-                    "name": "Brothers In Arms (Remastered 1996)",
-                    "release_date": "1985-05-13",
+                    "name": "Highway to Hell",
+                    "release_date": "1979-07-27",
+                    "release_date_precision": "day",
+                    "total_tracks": 10,
+                    "type": "album",
+                    "uri": "spotify:album:10v912xgTZbjAtYfyKWJCS"
+                },
+                "artists": [
+                    {
+                        "external_urls": {
+                            "spotify": "https:\/\/open.spotify.com\/artist\/711MCceyCBcFnzjGY4Q7Un"
+                        },
+                        "href": "https:\/\/api.spotify.com\/v1\/artists\/711MCceyCBcFnzjGY4Q7Un",
+                        "id": "711MCceyCBcFnzjGY4Q7Un",
+                        "name": "AC\/DC",
+                        "type": "artist",
+                        "uri": "spotify:artist:711MCceyCBcFnzjGY4Q7Un"
+                    }
+                ],
+                "disc_number": 1,
+                "duration_ms": 208400,
+                "explicit": false,
+                "external_ids": {
+                    "isrc": "AUAP07900028"
+                },
+                "external_urls": {
+                    "spotify": "https:\/\/open.spotify.com\/track\/2zYzyRzz6pRmhPzyfMEC8s"
+                },
+                "href": "https:\/\/api.spotify.com\/v1\/tracks\/2zYzyRzz6pRmhPzyfMEC8s",
+                "id": "2zYzyRzz6pRmhPzyfMEC8s",
+                "is_local": false,
+                "is_playable": true,
+                "name": "Highway to Hell",
+                "popularity": 84,
+                "preview_url": null,
+                "track_number": 1,
+                "type": "track",
+                "uri": "spotify:track:2zYzyRzz6pRmhPzyfMEC8s"
+            },
+            {
+                "album": {
+                    "album_type": "album",
+                    "artists": [
+                        {
+                            "external_urls": {
+                                "spotify": "https:\/\/open.spotify.com\/artist\/711MCceyCBcFnzjGY4Q7Un"
+                            },
+                            "href": "https:\/\/api.spotify.com\/v1\/artists\/711MCceyCBcFnzjGY4Q7Un",
+                            "id": "711MCceyCBcFnzjGY4Q7Un",
+                            "name": "AC\/DC",
+                            "type": "artist",
+                            "uri": "spotify:artist:711MCceyCBcFnzjGY4Q7Un"
+                        }
+                    ],
+                    "external_urls": {
+                        "spotify": "https:\/\/open.spotify.com\/album\/6mUdeDZCsExyJLMdAfDuwh"
+                    },
+                    "href": "https:\/\/api.spotify.com\/v1\/albums\/6mUdeDZCsExyJLMdAfDuwh",
+                    "id": "6mUdeDZCsExyJLMdAfDuwh",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https:\/\/i.scdn.co\/image\/ab67616d0000b2730b51f8d91f3a21e8426361ae"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https:\/\/i.scdn.co\/image\/ab67616d00001e020b51f8d91f3a21e8426361ae"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https:\/\/i.scdn.co\/image\/ab67616d000048510b51f8d91f3a21e8426361ae"
+                        }
+                    ],
+                    "is_playable": true,
+                    "name": "Back In Black",
+                    "release_date": "1980-07-25",
+                    "release_date_precision": "day",
+                    "total_tracks": 10,
+                    "type": "album",
+                    "uri": "spotify:album:6mUdeDZCsExyJLMdAfDuwh"
+                },
+                "artists": [
+                    {
+                        "external_urls": {
+                            "spotify": "https:\/\/open.spotify.com\/artist\/711MCceyCBcFnzjGY4Q7Un"
+                        },
+                        "href": "https:\/\/api.spotify.com\/v1\/artists\/711MCceyCBcFnzjGY4Q7Un",
+                        "id": "711MCceyCBcFnzjGY4Q7Un",
+                        "name": "AC\/DC",
+                        "type": "artist",
+                        "uri": "spotify:artist:711MCceyCBcFnzjGY4Q7Un"
+                    }
+                ],
+                "disc_number": 1,
+                "duration_ms": 255493,
+                "explicit": false,
+                "external_ids": {
+                    "isrc": "AUAP08000046"
+                },
+                "external_urls": {
+                    "spotify": "https:\/\/open.spotify.com\/track\/08mG3Y1vljYA6bvDt4Wqkj"
+                },
+                "href": "https:\/\/api.spotify.com\/v1\/tracks\/08mG3Y1vljYA6bvDt4Wqkj",
+                "id": "08mG3Y1vljYA6bvDt4Wqkj",
+                "is_local": false,
+                "is_playable": true,
+                "name": "Back In Black",
+                "popularity": 83,
+                "preview_url": null,
+                "track_number": 6,
+                "type": "track",
+                "uri": "spotify:track:08mG3Y1vljYA6bvDt4Wqkj"
+            },
+            {
+                "album": {
+                    "album_type": "album",
+                    "artists": [
+                        {
+                            "external_urls": {
+                                "spotify": "https:\/\/open.spotify.com\/artist\/711MCceyCBcFnzjGY4Q7Un"
+                            },
+                            "href": "https:\/\/api.spotify.com\/v1\/artists\/711MCceyCBcFnzjGY4Q7Un",
+                            "id": "711MCceyCBcFnzjGY4Q7Un",
+                            "name": "AC\/DC",
+                            "type": "artist",
+                            "uri": "spotify:artist:711MCceyCBcFnzjGY4Q7Un"
+                        }
+                    ],
+                    "external_urls": {
+                        "spotify": "https:\/\/open.spotify.com\/album\/4vu7F6h90Br1ZtYYaqfITy"
+                    },
+                    "href": "https:\/\/api.spotify.com\/v1\/albums\/4vu7F6h90Br1ZtYYaqfITy",
+                    "id": "4vu7F6h90Br1ZtYYaqfITy",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https:\/\/i.scdn.co\/image\/ab67616d0000b2738399047ff71200928f5b6508"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https:\/\/i.scdn.co\/image\/ab67616d00001e028399047ff71200928f5b6508"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https:\/\/i.scdn.co\/image\/ab67616d000048518399047ff71200928f5b6508"
+                        }
+                    ],
+                    "is_playable": true,
+                    "name": "The Razors Edge",
+                    "release_date": "1990-09-24",
+                    "release_date_precision": "day",
+                    "total_tracks": 12,
+                    "type": "album",
+                    "uri": "spotify:album:4vu7F6h90Br1ZtYYaqfITy"
+                },
+                "artists": [
+                    {
+                        "external_urls": {
+                            "spotify": "https:\/\/open.spotify.com\/artist\/711MCceyCBcFnzjGY4Q7Un"
+                        },
+                        "href": "https:\/\/api.spotify.com\/v1\/artists\/711MCceyCBcFnzjGY4Q7Un",
+                        "id": "711MCceyCBcFnzjGY4Q7Un",
+                        "name": "AC\/DC",
+                        "type": "artist",
+                        "uri": "spotify:artist:711MCceyCBcFnzjGY4Q7Un"
+                    }
+                ],
+                "disc_number": 1,
+                "duration_ms": 292880,
+                "explicit": false,
+                "external_ids": {
+                    "isrc": "AUAP09000014"
+                },
+                "external_urls": {
+                    "spotify": "https:\/\/open.spotify.com\/track\/57bgtoPSgt236HzfBOd8kj"
+                },
+                "href": "https:\/\/api.spotify.com\/v1\/tracks\/57bgtoPSgt236HzfBOd8kj",
+                "id": "57bgtoPSgt236HzfBOd8kj",
+                "is_local": false,
+                "is_playable": true,
+                "name": "Thunderstruck",
+                "popularity": 83,
+                "preview_url": null,
+                "track_number": 1,
+                "type": "track",
+                "uri": "spotify:track:57bgtoPSgt236HzfBOd8kj"
+            },
+            {
+                "album": {
+                    "album_type": "album",
+                    "artists": [
+                        {
+                            "external_urls": {
+                                "spotify": "https:\/\/open.spotify.com\/artist\/711MCceyCBcFnzjGY4Q7Un"
+                            },
+                            "href": "https:\/\/api.spotify.com\/v1\/artists\/711MCceyCBcFnzjGY4Q7Un",
+                            "id": "711MCceyCBcFnzjGY4Q7Un",
+                            "name": "AC\/DC",
+                            "type": "artist",
+                            "uri": "spotify:artist:711MCceyCBcFnzjGY4Q7Un"
+                        }
+                    ],
+                    "external_urls": {
+                        "spotify": "https:\/\/open.spotify.com\/album\/6mUdeDZCsExyJLMdAfDuwh"
+                    },
+                    "href": "https:\/\/api.spotify.com\/v1\/albums\/6mUdeDZCsExyJLMdAfDuwh",
+                    "id": "6mUdeDZCsExyJLMdAfDuwh",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https:\/\/i.scdn.co\/image\/ab67616d0000b2730b51f8d91f3a21e8426361ae"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https:\/\/i.scdn.co\/image\/ab67616d00001e020b51f8d91f3a21e8426361ae"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https:\/\/i.scdn.co\/image\/ab67616d000048510b51f8d91f3a21e8426361ae"
+                        }
+                    ],
+                    "is_playable": true,
+                    "name": "Back In Black",
+                    "release_date": "1980-07-25",
+                    "release_date_precision": "day",
+                    "total_tracks": 10,
+                    "type": "album",
+                    "uri": "spotify:album:6mUdeDZCsExyJLMdAfDuwh"
+                },
+                "artists": [
+                    {
+                        "external_urls": {
+                            "spotify": "https:\/\/open.spotify.com\/artist\/711MCceyCBcFnzjGY4Q7Un"
+                        },
+                        "href": "https:\/\/api.spotify.com\/v1\/artists\/711MCceyCBcFnzjGY4Q7Un",
+                        "id": "711MCceyCBcFnzjGY4Q7Un",
+                        "name": "AC\/DC",
+                        "type": "artist",
+                        "uri": "spotify:artist:711MCceyCBcFnzjGY4Q7Un"
+                    }
+                ],
+                "disc_number": 1,
+                "duration_ms": 210173,
+                "explicit": false,
+                "external_ids": {
+                    "isrc": "AUAP08000047"
+                },
+                "external_urls": {
+                    "spotify": "https:\/\/open.spotify.com\/track\/2SiXAy7TuUkycRVbbWDEpo"
+                },
+                "href": "https:\/\/api.spotify.com\/v1\/tracks\/2SiXAy7TuUkycRVbbWDEpo",
+                "id": "2SiXAy7TuUkycRVbbWDEpo",
+                "is_local": false,
+                "is_playable": true,
+                "name": "You Shook Me All Night Long",
+                "popularity": 81,
+                "preview_url": null,
+                "track_number": 7,
+                "type": "track",
+                "uri": "spotify:track:2SiXAy7TuUkycRVbbWDEpo"
+            },
+            {
+                "album": {
+                    "album_type": "album",
+                    "artists": [
+                        {
+                            "external_urls": {
+                                "spotify": "https:\/\/open.spotify.com\/artist\/711MCceyCBcFnzjGY4Q7Un"
+                            },
+                            "href": "https:\/\/api.spotify.com\/v1\/artists\/711MCceyCBcFnzjGY4Q7Un",
+                            "id": "711MCceyCBcFnzjGY4Q7Un",
+                            "name": "AC\/DC",
+                            "type": "artist",
+                            "uri": "spotify:artist:711MCceyCBcFnzjGY4Q7Un"
+                        }
+                    ],
+                    "external_urls": {
+                        "spotify": "https:\/\/open.spotify.com\/album\/19AUoKWRAaQYrggVvdQnqq"
+                    },
+                    "href": "https:\/\/api.spotify.com\/v1\/albums\/19AUoKWRAaQYrggVvdQnqq",
+                    "id": "19AUoKWRAaQYrggVvdQnqq",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https:\/\/i.scdn.co\/image\/ab67616d0000b273286a0837ff3424065a735e0a"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https:\/\/i.scdn.co\/image\/ab67616d00001e02286a0837ff3424065a735e0a"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https:\/\/i.scdn.co\/image\/ab67616d00004851286a0837ff3424065a735e0a"
+                        }
+                    ],
+                    "is_playable": true,
+                    "name": "High Voltage",
+                    "release_date": "1976-05-14",
                     "release_date_precision": "day",
                     "total_tracks": 9,
                     "type": "album",
-                    "uri": "spotify:album:6Pz06FAaeym0JSqVqIkN56"
+                    "uri": "spotify:album:19AUoKWRAaQYrggVvdQnqq"
                 },
                 "artists": [
                     {
                         "external_urls": {
-                            "spotify": "https://open.spotify.com/artist/0WwSkZ7LtFUFjGjMZBMt6T"
+                            "spotify": "https:\/\/open.spotify.com\/artist\/711MCceyCBcFnzjGY4Q7Un"
                         },
-                        "href": "https://api.spotify.com/v1/artists/0WwSkZ7LtFUFjGjMZBMt6T",
-                        "id": "0WwSkZ7LtFUFjGjMZBMt6T",
-                        "name": "Dire Straits",
+                        "href": "https:\/\/api.spotify.com\/v1\/artists\/711MCceyCBcFnzjGY4Q7Un",
+                        "id": "711MCceyCBcFnzjGY4Q7Un",
+                        "name": "AC\/DC",
                         "type": "artist",
-                        "uri": "spotify:artist:0WwSkZ7LtFUFjGjMZBMt6T"
+                        "uri": "spotify:artist:711MCceyCBcFnzjGY4Q7Un"
                     }
                 ],
                 "disc_number": 1,
-                "duration_ms": 248893,
+                "duration_ms": 214666,
                 "explicit": false,
                 "external_ids": {
-                    "isrc": "GBUM72102500"
+                    "isrc": "AUAP07600012"
                 },
                 "external_urls": {
-                    "spotify": "https://open.spotify.com/track/5Hk4Mpex0s2ndUpDQ5v2rU"
+                    "spotify": "https:\/\/open.spotify.com\/track\/7LRMbd3LEoV5wZJvXT1Lwb"
                 },
-                "href": "https://api.spotify.com/v1/tracks/5Hk4Mpex0s2ndUpDQ5v2rU",
-                "id": "5Hk4Mpex0s2ndUpDQ5v2rU",
+                "href": "https:\/\/api.spotify.com\/v1\/tracks\/7LRMbd3LEoV5wZJvXT1Lwb",
+                "id": "7LRMbd3LEoV5wZJvXT1Lwb",
                 "is_local": false,
                 "is_playable": true,
-                "name": "Walk Of Life - Remastered 1996",
-                "popularity": 71,
+                "name": "T.N.T.",
+                "popularity": 78,
                 "preview_url": null,
-                "track_number": 3,
+                "track_number": 5,
                 "type": "track",
-                "uri": "spotify:track:5Hk4Mpex0s2ndUpDQ5v2rU"
+                "uri": "spotify:track:7LRMbd3LEoV5wZJvXT1Lwb"
             },
             {
                 "album": {
-                    "album_type": "compilation",
+                    "album_type": "album",
                     "artists": [
                         {
                             "external_urls": {
-                                "spotify": "https://open.spotify.com/artist/0FI0kxP0BWurTz8cB8BBug"
+                                "spotify": "https:\/\/open.spotify.com\/artist\/711MCceyCBcFnzjGY4Q7Un"
                             },
-                            "href": "https://api.spotify.com/v1/artists/0FI0kxP0BWurTz8cB8BBug",
-                            "id": "0FI0kxP0BWurTz8cB8BBug",
-                            "name": "Mark Knopfler",
+                            "href": "https:\/\/api.spotify.com\/v1\/artists\/711MCceyCBcFnzjGY4Q7Un",
+                            "id": "711MCceyCBcFnzjGY4Q7Un",
+                            "name": "AC\/DC",
                             "type": "artist",
-                            "uri": "spotify:artist:0FI0kxP0BWurTz8cB8BBug"
-                        },
-                        {
-                            "external_urls": {
-                                "spotify": "https://open.spotify.com/artist/0WwSkZ7LtFUFjGjMZBMt6T"
-                            },
-                            "href": "https://api.spotify.com/v1/artists/0WwSkZ7LtFUFjGjMZBMt6T",
-                            "id": "0WwSkZ7LtFUFjGjMZBMt6T",
-                            "name": "Dire Straits",
-                            "type": "artist",
-                            "uri": "spotify:artist:0WwSkZ7LtFUFjGjMZBMt6T"
+                            "uri": "spotify:artist:711MCceyCBcFnzjGY4Q7Un"
                         }
                     ],
                     "external_urls": {
-                        "spotify": "https://open.spotify.com/album/5RUE91DSu0BdsiEn4vOrNY"
+                        "spotify": "https:\/\/open.spotify.com\/album\/7qVfz4UGONwEd5nQjj0ESN"
                     },
-                    "href": "https://api.spotify.com/v1/albums/5RUE91DSu0BdsiEn4vOrNY",
-                    "id": "5RUE91DSu0BdsiEn4vOrNY",
+                    "href": "https:\/\/api.spotify.com\/v1\/albums\/7qVfz4UGONwEd5nQjj0ESN",
+                    "id": "7qVfz4UGONwEd5nQjj0ESN",
                     "images": [
                         {
                             "height": 640,
                             "width": 640,
-                            "url": "https://i.scdn.co/image/ab67616d0000b273178419da701ab7c7f693c9ac"
+                            "url": "https:\/\/i.scdn.co\/image\/ab67616d0000b273107d182a8d39586f8f3f23a0"
                         },
                         {
                             "height": 300,
                             "width": 300,
-                            "url": "https://i.scdn.co/image/ab67616d00001e02178419da701ab7c7f693c9ac"
+                            "url": "https:\/\/i.scdn.co\/image\/ab67616d00001e02107d182a8d39586f8f3f23a0"
                         },
                         {
                             "height": 64,
                             "width": 64,
-                            "url": "https://i.scdn.co/image/ab67616d00004851178419da701ab7c7f693c9ac"
+                            "url": "https:\/\/i.scdn.co\/image\/ab67616d00004851107d182a8d39586f8f3f23a0"
                         }
                     ],
                     "is_playable": true,
-                    "name": "The Best Of Dire Straits & Mark Knopfler - Private Investigations",
-                    "release_date": "2005-01-01",
+                    "name": "Black Ice",
+                    "release_date": "2008-10-20",
                     "release_date_precision": "day",
-                    "total_tracks": 22,
+                    "total_tracks": 15,
                     "type": "album",
-                    "uri": "spotify:album:5RUE91DSu0BdsiEn4vOrNY"
+                    "uri": "spotify:album:7qVfz4UGONwEd5nQjj0ESN"
                 },
                 "artists": [
                     {
                         "external_urls": {
-                            "spotify": "https://open.spotify.com/artist/0WwSkZ7LtFUFjGjMZBMt6T"
+                            "spotify": "https:\/\/open.spotify.com\/artist\/711MCceyCBcFnzjGY4Q7Un"
                         },
-                        "href": "https://api.spotify.com/v1/artists/0WwSkZ7LtFUFjGjMZBMt6T",
-                        "id": "0WwSkZ7LtFUFjGjMZBMt6T",
-                        "name": "Dire Straits",
+                        "href": "https:\/\/api.spotify.com\/v1\/artists\/711MCceyCBcFnzjGY4Q7Un",
+                        "id": "711MCceyCBcFnzjGY4Q7Un",
+                        "name": "AC\/DC",
                         "type": "artist",
-                        "uri": "spotify:artist:0WwSkZ7LtFUFjGjMZBMt6T"
+                        "uri": "spotify:artist:711MCceyCBcFnzjGY4Q7Un"
                     }
                 ],
                 "disc_number": 1,
-                "duration_ms": 348520,
+                "duration_ms": 261506,
                 "explicit": false,
                 "external_ids": {
-                    "isrc": "GBF089601041"
+                    "isrc": "USSM10802975"
                 },
                 "external_urls": {
-                    "spotify": "https://open.spotify.com/track/3HfLtH8wgH7jtl5nEmqaZf"
+                    "spotify": "https:\/\/open.spotify.com\/track\/4feXJ5IC3avXsVW9WNFSag"
                 },
-                "href": "https://api.spotify.com/v1/tracks/3HfLtH8wgH7jtl5nEmqaZf",
-                "id": "3HfLtH8wgH7jtl5nEmqaZf",
+                "href": "https:\/\/api.spotify.com\/v1\/tracks\/4feXJ5IC3avXsVW9WNFSag",
+                "id": "4feXJ5IC3avXsVW9WNFSag",
                 "is_local": false,
                 "is_playable": true,
-                "name": "Sultans Of Swing",
-                "popularity": 41,
+                "name": "Rock N Roll Train",
+                "popularity": 67,
+                "preview_url": null,
+                "track_number": 1,
+                "type": "track",
+                "uri": "spotify:track:4feXJ5IC3avXsVW9WNFSag"
+            },
+            {
+                "album": {
+                    "album_type": "album",
+                    "artists": [
+                        {
+                            "external_urls": {
+                                "spotify": "https:\/\/open.spotify.com\/artist\/711MCceyCBcFnzjGY4Q7Un"
+                            },
+                            "href": "https:\/\/api.spotify.com\/v1\/artists\/711MCceyCBcFnzjGY4Q7Un",
+                            "id": "711MCceyCBcFnzjGY4Q7Un",
+                            "name": "AC\/DC",
+                            "type": "artist",
+                            "uri": "spotify:artist:711MCceyCBcFnzjGY4Q7Un"
+                        }
+                    ],
+                    "external_urls": {
+                        "spotify": "https:\/\/open.spotify.com\/album\/6mUdeDZCsExyJLMdAfDuwh"
+                    },
+                    "href": "https:\/\/api.spotify.com\/v1\/albums\/6mUdeDZCsExyJLMdAfDuwh",
+                    "id": "6mUdeDZCsExyJLMdAfDuwh",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https:\/\/i.scdn.co\/image\/ab67616d0000b2730b51f8d91f3a21e8426361ae"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https:\/\/i.scdn.co\/image\/ab67616d00001e020b51f8d91f3a21e8426361ae"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https:\/\/i.scdn.co\/image\/ab67616d000048510b51f8d91f3a21e8426361ae"
+                        }
+                    ],
+                    "is_playable": true,
+                    "name": "Back In Black",
+                    "release_date": "1980-07-25",
+                    "release_date_precision": "day",
+                    "total_tracks": 10,
+                    "type": "album",
+                    "uri": "spotify:album:6mUdeDZCsExyJLMdAfDuwh"
+                },
+                "artists": [
+                    {
+                        "external_urls": {
+                            "spotify": "https:\/\/open.spotify.com\/artist\/711MCceyCBcFnzjGY4Q7Un"
+                        },
+                        "href": "https:\/\/api.spotify.com\/v1\/artists\/711MCceyCBcFnzjGY4Q7Un",
+                        "id": "711MCceyCBcFnzjGY4Q7Un",
+                        "name": "AC\/DC",
+                        "type": "artist",
+                        "uri": "spotify:artist:711MCceyCBcFnzjGY4Q7Un"
+                    }
+                ],
+                "disc_number": 1,
+                "duration_ms": 312293,
+                "explicit": false,
+                "external_ids": {
+                    "isrc": "AUAP08000041"
+                },
+                "external_urls": {
+                    "spotify": "https:\/\/open.spotify.com\/track\/69QHm3pustz01CJRwdo20z"
+                },
+                "href": "https:\/\/api.spotify.com\/v1\/tracks\/69QHm3pustz01CJRwdo20z",
+                "id": "69QHm3pustz01CJRwdo20z",
+                "is_local": false,
+                "is_playable": true,
+                "name": "Hells Bells",
+                "popularity": 73,
+                "preview_url": null,
+                "track_number": 1,
+                "type": "track",
+                "uri": "spotify:track:69QHm3pustz01CJRwdo20z"
+            },
+            {
+                "album": {
+                    "album_type": "album",
+                    "artists": [
+                        {
+                            "external_urls": {
+                                "spotify": "https:\/\/open.spotify.com\/artist\/3qm84nBOXUEQ2vnTfUTTFC"
+                            },
+                            "href": "https:\/\/api.spotify.com\/v1\/artists\/3qm84nBOXUEQ2vnTfUTTFC",
+                            "id": "3qm84nBOXUEQ2vnTfUTTFC",
+                            "name": "Guns N' Roses",
+                            "type": "artist",
+                            "uri": "spotify:artist:3qm84nBOXUEQ2vnTfUTTFC"
+                        }
+                    ],
+                    "external_urls": {
+                        "spotify": "https:\/\/open.spotify.com\/album\/28yHV3Gdg30AiB8h8em1eW"
+                    },
+                    "href": "https:\/\/api.spotify.com\/v1\/albums\/28yHV3Gdg30AiB8h8em1eW",
+                    "id": "28yHV3Gdg30AiB8h8em1eW",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https:\/\/i.scdn.co\/image\/ab67616d0000b27321ebf49b3292c3f0f575f0f5"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https:\/\/i.scdn.co\/image\/ab67616d00001e0221ebf49b3292c3f0f575f0f5"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https:\/\/i.scdn.co\/image\/ab67616d0000485121ebf49b3292c3f0f575f0f5"
+                        }
+                    ],
+                    "is_playable": true,
+                    "name": "Appetite For Destruction",
+                    "release_date": "1987-07-21",
+                    "release_date_precision": "day",
+                    "total_tracks": 12,
+                    "type": "album",
+                    "uri": "spotify:album:28yHV3Gdg30AiB8h8em1eW"
+                },
+                "artists": [
+                    {
+                        "external_urls": {
+                            "spotify": "https:\/\/open.spotify.com\/artist\/3qm84nBOXUEQ2vnTfUTTFC"
+                        },
+                        "href": "https:\/\/api.spotify.com\/v1\/artists\/3qm84nBOXUEQ2vnTfUTTFC",
+                        "id": "3qm84nBOXUEQ2vnTfUTTFC",
+                        "name": "Guns N' Roses",
+                        "type": "artist",
+                        "uri": "spotify:artist:3qm84nBOXUEQ2vnTfUTTFC"
+                    }
+                ],
+                "disc_number": 1,
+                "duration_ms": 356066,
+                "explicit": false,
+                "external_ids": {
+                    "isrc": "USGF18714809"
+                },
+                "external_urls": {
+                    "spotify": "https:\/\/open.spotify.com\/track\/7snQQk1zcKl8gZ92AnueZW"
+                },
+                "href": "https:\/\/api.spotify.com\/v1\/tracks\/7snQQk1zcKl8gZ92AnueZW",
+                "id": "7snQQk1zcKl8gZ92AnueZW",
+                "is_local": false,
+                "is_playable": true,
+                "name": "Sweet Child O' Mine",
+                "popularity": 84,
+                "preview_url": null,
+                "track_number": 9,
+                "type": "track",
+                "uri": "spotify:track:7snQQk1zcKl8gZ92AnueZW"
+            },
+            {
+                "album": {
+                    "album_type": "album",
+                    "artists": [
+                        {
+                            "external_urls": {
+                                "spotify": "https:\/\/open.spotify.com\/artist\/711MCceyCBcFnzjGY4Q7Un"
+                            },
+                            "href": "https:\/\/api.spotify.com\/v1\/artists\/711MCceyCBcFnzjGY4Q7Un",
+                            "id": "711MCceyCBcFnzjGY4Q7Un",
+                            "name": "AC\/DC",
+                            "type": "artist",
+                            "uri": "spotify:artist:711MCceyCBcFnzjGY4Q7Un"
+                        }
+                    ],
+                    "external_urls": {
+                        "spotify": "https:\/\/open.spotify.com\/album\/6mUdeDZCsExyJLMdAfDuwh"
+                    },
+                    "href": "https:\/\/api.spotify.com\/v1\/albums\/6mUdeDZCsExyJLMdAfDuwh",
+                    "id": "6mUdeDZCsExyJLMdAfDuwh",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https:\/\/i.scdn.co\/image\/ab67616d0000b2730b51f8d91f3a21e8426361ae"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https:\/\/i.scdn.co\/image\/ab67616d00001e020b51f8d91f3a21e8426361ae"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https:\/\/i.scdn.co\/image\/ab67616d000048510b51f8d91f3a21e8426361ae"
+                        }
+                    ],
+                    "is_playable": true,
+                    "name": "Back In Black",
+                    "release_date": "1980-07-25",
+                    "release_date_precision": "day",
+                    "total_tracks": 10,
+                    "type": "album",
+                    "uri": "spotify:album:6mUdeDZCsExyJLMdAfDuwh"
+                },
+                "artists": [
+                    {
+                        "external_urls": {
+                            "spotify": "https:\/\/open.spotify.com\/artist\/711MCceyCBcFnzjGY4Q7Un"
+                        },
+                        "href": "https:\/\/api.spotify.com\/v1\/artists\/711MCceyCBcFnzjGY4Q7Un",
+                        "id": "711MCceyCBcFnzjGY4Q7Un",
+                        "name": "AC\/DC",
+                        "type": "artist",
+                        "uri": "spotify:artist:711MCceyCBcFnzjGY4Q7Un"
+                    }
+                ],
+                "disc_number": 1,
+                "duration_ms": 317426,
+                "explicit": false,
+                "external_ids": {
+                    "isrc": "AUAP08000042"
+                },
+                "external_urls": {
+                    "spotify": "https:\/\/open.spotify.com\/track\/0C80GCp0mMuBzLf3EAXqxv"
+                },
+                "href": "https:\/\/api.spotify.com\/v1\/tracks\/0C80GCp0mMuBzLf3EAXqxv",
+                "id": "0C80GCp0mMuBzLf3EAXqxv",
+                "is_local": false,
+                "is_playable": true,
+                "name": "Shoot to Thrill",
+                "popularity": 71,
                 "preview_url": null,
                 "track_number": 2,
                 "type": "track",
-                "uri": "spotify:track:3HfLtH8wgH7jtl5nEmqaZf"
-            },
+                "uri": "spotify:track:0C80GCp0mMuBzLf3EAXqxv"
+            }
+        ]
+    },
+    "artists": {
+        "href": "https:\/\/api.spotify.com\/v1\/search?offset=0&limit=10&query=ac%2Fdc&type=artist&market=BR&include_external=audio",
+        "limit": 10,
+        "next": "https:\/\/api.spotify.com\/v1\/search?offset=10&limit=10&query=ac%2Fdc&type=artist&market=BR&include_external=audio",
+        "offset": 0,
+        "previous": null,
+        "total": 32,
+        "items": [
             {
-                "album": {
-                    "album_type": "album",
-                    "artists": [
-                        {
-                            "external_urls": {
-                                "spotify": "https://open.spotify.com/artist/1gLrPC6hch4e2WyC6DDAU5"
-                            },
-                            "href": "https://api.spotify.com/v1/artists/1gLrPC6hch4e2WyC6DDAU5",
-                            "id": "1gLrPC6hch4e2WyC6DDAU5",
-                            "name": "Asunci\u00f3n Blues",
-                            "type": "artist",
-                            "uri": "spotify:artist:1gLrPC6hch4e2WyC6DDAU5"
-                        }
-                    ],
-                    "external_urls": {
-                        "spotify": "https://open.spotify.com/album/7f7mSCBoXOKZXdsREzH2Ry"
-                    },
-                    "href": "https://api.spotify.com/v1/albums/7f7mSCBoXOKZXdsREzH2Ry",
-                    "id": "7f7mSCBoXOKZXdsREzH2Ry",
-                    "images": [
-                        {
-                            "height": 640,
-                            "width": 640,
-                            "url": "https://i.scdn.co/image/ab67616d0000b2730c77ce8c95f46e42e6c3cc03"
-                        },
-                        {
-                            "height": 300,
-                            "width": 300,
-                            "url": "https://i.scdn.co/image/ab67616d00001e020c77ce8c95f46e42e6c3cc03"
-                        },
-                        {
-                            "height": 64,
-                            "width": 64,
-                            "url": "https://i.scdn.co/image/ab67616d000048510c77ce8c95f46e42e6c3cc03"
-                        }
-                    ],
-                    "is_playable": true,
-                    "name": "Recordando Las Mejores M\u00fasicas Retro CD 2",
-                    "release_date": "2020-01-09",
-                    "release_date_precision": "day",
-                    "total_tracks": 13,
-                    "type": "album",
-                    "uri": "spotify:album:7f7mSCBoXOKZXdsREzH2Ry"
+                "external_urls": {
+                    "spotify": "https:\/\/open.spotify.com\/artist\/711MCceyCBcFnzjGY4Q7Un"
                 },
-                "artists": [
+                "followers": {
+                    "href": null,
+                    "total": 29896563
+                },
+                "genres": [
+                    "australian rock",
+                    "hard rock",
+                    "rock"
+                ],
+                "href": "https:\/\/api.spotify.com\/v1\/artists\/711MCceyCBcFnzjGY4Q7Un",
+                "id": "711MCceyCBcFnzjGY4Q7Un",
+                "images": [
                     {
-                        "external_urls": {
-                            "spotify": "https://open.spotify.com/artist/1gLrPC6hch4e2WyC6DDAU5"
-                        },
-                        "href": "https://api.spotify.com/v1/artists/1gLrPC6hch4e2WyC6DDAU5",
-                        "id": "1gLrPC6hch4e2WyC6DDAU5",
-                        "name": "Asunci\u00f3n Blues",
-                        "type": "artist",
-                        "uri": "spotify:artist:1gLrPC6hch4e2WyC6DDAU5"
+                        "url": "https:\/\/i.scdn.co\/image\/ab6761610000e5ebc4c77549095c86acb4e77b37",
+                        "height": 640,
+                        "width": 640
+                    },
+                    {
+                        "url": "https:\/\/i.scdn.co\/image\/ab67616100005174c4c77549095c86acb4e77b37",
+                        "height": 320,
+                        "width": 320
+                    },
+                    {
+                        "url": "https:\/\/i.scdn.co\/image\/ab6761610000f178c4c77549095c86acb4e77b37",
+                        "height": 160,
+                        "width": 160
                     }
                 ],
-                "disc_number": 1,
-                "duration_ms": 354617,
-                "explicit": false,
-                "external_ids": {
-                    "isrc": "ES18B2002650"
-                },
-                "external_urls": {
-                    "spotify": "https://open.spotify.com/track/4r8ms9f6VUSJ8BRfAiHB6l"
-                },
-                "href": "https://api.spotify.com/v1/tracks/4r8ms9f6VUSJ8BRfAiHB6l",
-                "id": "4r8ms9f6VUSJ8BRfAiHB6l",
-                "is_local": false,
-                "is_playable": true,
-                "name": "Sultan Of Swing (Dire Straits)",
-                "popularity": 27,
-                "preview_url": "https://p.scdn.co/mp3-preview/56b5beb8014f0bb7679214e46624a89d31f5b478?cid=2667aa6e88a249108b9a6228d266c4d3",
-                "track_number": 10,
-                "type": "track",
-                "uri": "spotify:track:4r8ms9f6VUSJ8BRfAiHB6l"
+                "name": "AC\/DC",
+                "popularity": 83,
+                "type": "artist",
+                "uri": "spotify:artist:711MCceyCBcFnzjGY4Q7Un"
             },
             {
-                "album": {
-                    "album_type": "album",
-                    "artists": [
-                        {
-                            "external_urls": {
-                                "spotify": "https://open.spotify.com/artist/3qR0dzD7hU005nuz4Msoba"
-                            },
-                            "href": "https://api.spotify.com/v1/artists/3qR0dzD7hU005nuz4Msoba",
-                            "id": "3qR0dzD7hU005nuz4Msoba",
-                            "name": "Wanderley Andrade",
-                            "type": "artist",
-                            "uri": "spotify:artist:3qR0dzD7hU005nuz4Msoba"
-                        }
-                    ],
-                    "external_urls": {
-                        "spotify": "https://open.spotify.com/album/3smimQoCB15osPvVybqT90"
-                    },
-                    "href": "https://api.spotify.com/v1/albums/3smimQoCB15osPvVybqT90",
-                    "id": "3smimQoCB15osPvVybqT90",
-                    "images": [
-                        {
-                            "height": 640,
-                            "width": 640,
-                            "url": "https://i.scdn.co/image/ab67616d0000b273730fe97aa129951b79f51752"
-                        },
-                        {
-                            "height": 300,
-                            "width": 300,
-                            "url": "https://i.scdn.co/image/ab67616d00001e02730fe97aa129951b79f51752"
-                        },
-                        {
-                            "height": 64,
-                            "width": 64,
-                            "url": "https://i.scdn.co/image/ab67616d00004851730fe97aa129951b79f51752"
-                        }
-                    ],
-                    "is_playable": true,
-                    "name": "Minha Cara / Internacional (Ao Vivo)",
-                    "release_date": "2003-03-01",
-                    "release_date_precision": "day",
-                    "total_tracks": 11,
-                    "type": "album",
-                    "uri": "spotify:album:3smimQoCB15osPvVybqT90"
+                "external_urls": {
+                    "spotify": "https:\/\/open.spotify.com\/artist\/3qm84nBOXUEQ2vnTfUTTFC"
                 },
-                "artists": [
+                "followers": {
+                    "href": null,
+                    "total": 32350073
+                },
+                "genres": [
+                    "glam metal",
+                    "hard rock",
+                    "rock"
+                ],
+                "href": "https:\/\/api.spotify.com\/v1\/artists\/3qm84nBOXUEQ2vnTfUTTFC",
+                "id": "3qm84nBOXUEQ2vnTfUTTFC",
+                "images": [
                     {
-                        "external_urls": {
-                            "spotify": "https://open.spotify.com/artist/3qR0dzD7hU005nuz4Msoba"
-                        },
-                        "href": "https://api.spotify.com/v1/artists/3qR0dzD7hU005nuz4Msoba",
-                        "id": "3qR0dzD7hU005nuz4Msoba",
-                        "name": "Wanderley Andrade",
-                        "type": "artist",
-                        "uri": "spotify:artist:3qR0dzD7hU005nuz4Msoba"
+                        "url": "https:\/\/i.scdn.co\/image\/ab6761610000e5eb50defaf9fc059a1efc541f4c",
+                        "height": 640,
+                        "width": 640
+                    },
+                    {
+                        "url": "https:\/\/i.scdn.co\/image\/ab6761610000517450defaf9fc059a1efc541f4c",
+                        "height": 320,
+                        "width": 320
+                    },
+                    {
+                        "url": "https:\/\/i.scdn.co\/image\/ab6761610000f17850defaf9fc059a1efc541f4c",
+                        "height": 160,
+                        "width": 160
                     }
                 ],
-                "disc_number": 1,
-                "duration_ms": 355000,
-                "explicit": false,
-                "external_ids": {
-                    "isrc": "BRAPI0300019"
-                },
-                "external_urls": {
-                    "spotify": "https://open.spotify.com/track/1H02xnJaEA8keGQlmgGXF7"
-                },
-                "href": "https://api.spotify.com/v1/tracks/1H02xnJaEA8keGQlmgGXF7",
-                "id": "1H02xnJaEA8keGQlmgGXF7",
-                "is_local": false,
-                "is_playable": true,
-                "name": "Sultans Of Swing - Ao Vivo",
-                "popularity": 28,
-                "preview_url": "https://p.scdn.co/mp3-preview/6a145d547171f1c7bf723df690348fdabcbc9e07?cid=2667aa6e88a249108b9a6228d266c4d3",
-                "track_number": 1,
-                "type": "track",
-                "uri": "spotify:track:1H02xnJaEA8keGQlmgGXF7"
+                "name": "Guns N' Roses",
+                "popularity": 81,
+                "type": "artist",
+                "uri": "spotify:artist:3qm84nBOXUEQ2vnTfUTTFC"
             },
             {
-                "album": {
-                    "album_type": "compilation",
-                    "artists": [
-                        {
-                            "external_urls": {
-                                "spotify": "https://open.spotify.com/artist/0WwSkZ7LtFUFjGjMZBMt6T"
-                            },
-                            "href": "https://api.spotify.com/v1/artists/0WwSkZ7LtFUFjGjMZBMt6T",
-                            "id": "0WwSkZ7LtFUFjGjMZBMt6T",
-                            "name": "Dire Straits",
-                            "type": "artist",
-                            "uri": "spotify:artist:0WwSkZ7LtFUFjGjMZBMt6T"
-                        },
-                        {
-                            "external_urls": {
-                                "spotify": "https://open.spotify.com/artist/0FI0kxP0BWurTz8cB8BBug"
-                            },
-                            "href": "https://api.spotify.com/v1/artists/0FI0kxP0BWurTz8cB8BBug",
-                            "id": "0FI0kxP0BWurTz8cB8BBug",
-                            "name": "Mark Knopfler",
-                            "type": "artist",
-                            "uri": "spotify:artist:0FI0kxP0BWurTz8cB8BBug"
-                        }
-                    ],
-                    "external_urls": {
-                        "spotify": "https://open.spotify.com/album/7k7JmLusUFkgGLq9E6LnTd"
-                    },
-                    "href": "https://api.spotify.com/v1/albums/7k7JmLusUFkgGLq9E6LnTd",
-                    "id": "7k7JmLusUFkgGLq9E6LnTd",
-                    "images": [
-                        {
-                            "height": 640,
-                            "width": 640,
-                            "url": "https://i.scdn.co/image/ab67616d0000b27333cbcc2fff864ab53ea02292"
-                        },
-                        {
-                            "height": 300,
-                            "width": 300,
-                            "url": "https://i.scdn.co/image/ab67616d00001e0233cbcc2fff864ab53ea02292"
-                        },
-                        {
-                            "height": 64,
-                            "width": 64,
-                            "url": "https://i.scdn.co/image/ab67616d0000485133cbcc2fff864ab53ea02292"
-                        }
-                    ],
-                    "is_playable": true,
-                    "name": "Sultans Of Swing - The Very Best Of Dire Straits",
-                    "release_date": "1998-01-01",
-                    "release_date_precision": "day",
-                    "total_tracks": 23,
-                    "type": "album",
-                    "uri": "spotify:album:7k7JmLusUFkgGLq9E6LnTd"
+                "external_urls": {
+                    "spotify": "https:\/\/open.spotify.com\/artist\/2ijmJLGSSMcUdHI7sfsJIB"
                 },
-                "artists": [
+                "followers": {
+                    "href": null,
+                    "total": 7989
+                },
+                "genres": [
+                    "tribute"
+                ],
+                "href": "https:\/\/api.spotify.com\/v1\/artists\/2ijmJLGSSMcUdHI7sfsJIB",
+                "id": "2ijmJLGSSMcUdHI7sfsJIB",
+                "images": [
                     {
-                        "external_urls": {
-                            "spotify": "https://open.spotify.com/artist/0WwSkZ7LtFUFjGjMZBMt6T"
-                        },
-                        "href": "https://api.spotify.com/v1/artists/0WwSkZ7LtFUFjGjMZBMt6T",
-                        "id": "0WwSkZ7LtFUFjGjMZBMt6T",
-                        "name": "Dire Straits",
-                        "type": "artist",
-                        "uri": "spotify:artist:0WwSkZ7LtFUFjGjMZBMt6T"
+                        "url": "https:\/\/i.scdn.co\/image\/ab67616d0000b273e05cb038a0b26f4936de2647",
+                        "height": 640,
+                        "width": 640
+                    },
+                    {
+                        "url": "https:\/\/i.scdn.co\/image\/ab67616d00001e02e05cb038a0b26f4936de2647",
+                        "height": 300,
+                        "width": 300
+                    },
+                    {
+                        "url": "https:\/\/i.scdn.co\/image\/ab67616d00004851e05cb038a0b26f4936de2647",
+                        "height": 64,
+                        "width": 64
                     }
                 ],
-                "disc_number": 1,
-                "duration_ms": 346600,
-                "explicit": false,
-                "external_ids": {
-                    "isrc": "GBF089601041"
-                },
+                "name": "AC\/DC Tribute Band",
+                "popularity": 20,
+                "type": "artist",
+                "uri": "spotify:artist:2ijmJLGSSMcUdHI7sfsJIB"
+            },
+            {
                 "external_urls": {
-                    "spotify": "https://open.spotify.com/track/7E6jbnH4zCTxJ6ok8gcxuj"
+                    "spotify": "https:\/\/open.spotify.com\/artist\/2ye2Wgw4gimLv2eAKyk1NB"
                 },
-                "href": "https://api.spotify.com/v1/tracks/7E6jbnH4zCTxJ6ok8gcxuj",
-                "id": "7E6jbnH4zCTxJ6ok8gcxuj",
-                "is_local": false,
-                "is_playable": true,
-                "name": "Sultans Of Swing",
-                "popularity": 35,
-                "preview_url": null,
-                "track_number": 1,
-                "type": "track",
-                "uri": "spotify:track:7E6jbnH4zCTxJ6ok8gcxuj"
+                "followers": {
+                    "href": null,
+                    "total": 29065832
+                },
+                "genres": [
+                    "hard rock",
+                    "metal",
+                    "old school thrash",
+                    "rock",
+                    "thrash metal"
+                ],
+                "href": "https:\/\/api.spotify.com\/v1\/artists\/2ye2Wgw4gimLv2eAKyk1NB",
+                "id": "2ye2Wgw4gimLv2eAKyk1NB",
+                "images": [
+                    {
+                        "url": "https:\/\/i.scdn.co\/image\/ab6761610000e5eb69ca98dd3083f1082d740e44",
+                        "height": 640,
+                        "width": 640
+                    },
+                    {
+                        "url": "https:\/\/i.scdn.co\/image\/ab6761610000517469ca98dd3083f1082d740e44",
+                        "height": 320,
+                        "width": 320
+                    },
+                    {
+                        "url": "https:\/\/i.scdn.co\/image\/ab6761610000f17869ca98dd3083f1082d740e44",
+                        "height": 160,
+                        "width": 160
+                    }
+                ],
+                "name": "Metallica",
+                "popularity": 84,
+                "type": "artist",
+                "uri": "spotify:artist:2ye2Wgw4gimLv2eAKyk1NB"
+            },
+            {
+                "external_urls": {
+                    "spotify": "https:\/\/open.spotify.com\/artist\/4h8GHgrbeVbA5qKp0FMFZ5"
+                },
+                "followers": {
+                    "href": null,
+                    "total": 468
+                },
+                "genres": [],
+                "href": "https:\/\/api.spotify.com\/v1\/artists\/4h8GHgrbeVbA5qKp0FMFZ5",
+                "id": "4h8GHgrbeVbA5qKp0FMFZ5",
+                "images": [
+                    {
+                        "url": "https:\/\/i.scdn.co\/image\/ab67616d0000b2730b2ac3aa5382c02f1d910888",
+                        "height": 640,
+                        "width": 640
+                    },
+                    {
+                        "url": "https:\/\/i.scdn.co\/image\/ab67616d00001e020b2ac3aa5382c02f1d910888",
+                        "height": 300,
+                        "width": 300
+                    },
+                    {
+                        "url": "https:\/\/i.scdn.co\/image\/ab67616d000048510b2ac3aa5382c02f1d910888",
+                        "height": 64,
+                        "width": 64
+                    }
+                ],
+                "name": "AC\/DC Recovered",
+                "popularity": 6,
+                "type": "artist",
+                "uri": "spotify:artist:4h8GHgrbeVbA5qKp0FMFZ5"
+            },
+            {
+                "external_urls": {
+                    "spotify": "https:\/\/open.spotify.com\/artist\/07XSN3sPlIlB2L2XNcTwJw"
+                },
+                "followers": {
+                    "href": null,
+                    "total": 9941123
+                },
+                "genres": [
+                    "glam rock",
+                    "hard rock",
+                    "rock"
+                ],
+                "href": "https:\/\/api.spotify.com\/v1\/artists\/07XSN3sPlIlB2L2XNcTwJw",
+                "id": "07XSN3sPlIlB2L2XNcTwJw",
+                "images": [
+                    {
+                        "url": "https:\/\/i.scdn.co\/image\/ab6761610000e5ebd8205a492a79bfe4b34c567a",
+                        "height": 640,
+                        "width": 640
+                    },
+                    {
+                        "url": "https:\/\/i.scdn.co\/image\/ab67616100005174d8205a492a79bfe4b34c567a",
+                        "height": 320,
+                        "width": 320
+                    },
+                    {
+                        "url": "https:\/\/i.scdn.co\/image\/ab6761610000f178d8205a492a79bfe4b34c567a",
+                        "height": 160,
+                        "width": 160
+                    }
+                ],
+                "name": "KISS",
+                "popularity": 74,
+                "type": "artist",
+                "uri": "spotify:artist:07XSN3sPlIlB2L2XNcTwJw"
+            },
+            {
+                "external_urls": {
+                    "spotify": "https:\/\/open.spotify.com\/artist\/2A6Bfylqjj8NKLdBncJFAX"
+                },
+                "followers": {
+                    "href": null,
+                    "total": 125
+                },
+                "genres": [],
+                "href": "https:\/\/api.spotify.com\/v1\/artists\/2A6Bfylqjj8NKLdBncJFAX",
+                "id": "2A6Bfylqjj8NKLdBncJFAX",
+                "images": [
+                    {
+                        "url": "https:\/\/i.scdn.co\/image\/ab67616d0000b273fa6faa5e5b6b42dea124c884",
+                        "height": 640,
+                        "width": 640
+                    },
+                    {
+                        "url": "https:\/\/i.scdn.co\/image\/ab67616d00001e02fa6faa5e5b6b42dea124c884",
+                        "height": 300,
+                        "width": 300
+                    },
+                    {
+                        "url": "https:\/\/i.scdn.co\/image\/ab67616d00004851fa6faa5e5b6b42dea124c884",
+                        "height": 64,
+                        "width": 64
+                    }
+                ],
+                "name": "Acey Dcey",
+                "popularity": 4,
+                "type": "artist",
+                "uri": "spotify:artist:2A6Bfylqjj8NKLdBncJFAX"
+            },
+            {
+                "external_urls": {
+                    "spotify": "https:\/\/open.spotify.com\/artist\/6mdiAmATAx73kdxrNrnlao"
+                },
+                "followers": {
+                    "href": null,
+                    "total": 9476900
+                },
+                "genres": [
+                    "alternative metal",
+                    "hard rock",
+                    "metal",
+                    "nwobhm",
+                    "rock"
+                ],
+                "href": "https:\/\/api.spotify.com\/v1\/artists\/6mdiAmATAx73kdxrNrnlao",
+                "id": "6mdiAmATAx73kdxrNrnlao",
+                "images": [
+                    {
+                        "url": "https:\/\/i.scdn.co\/image\/ab6761610000e5ebf9978ad4808f6f2723124d19",
+                        "height": 640,
+                        "width": 640
+                    },
+                    {
+                        "url": "https:\/\/i.scdn.co\/image\/ab67616100005174f9978ad4808f6f2723124d19",
+                        "height": 320,
+                        "width": 320
+                    },
+                    {
+                        "url": "https:\/\/i.scdn.co\/image\/ab6761610000f178f9978ad4808f6f2723124d19",
+                        "height": 160,
+                        "width": 160
+                    }
+                ],
+                "name": "Iron Maiden",
+                "popularity": 75,
+                "type": "artist",
+                "uri": "spotify:artist:6mdiAmATAx73kdxrNrnlao"
+            },
+            {
+                "external_urls": {
+                    "spotify": "https:\/\/open.spotify.com\/artist\/7yPFm21ZPIpKhlZlIovYFW"
+                },
+                "followers": {
+                    "href": null,
+                    "total": 11182
+                },
+                "genres": [],
+                "href": "https:\/\/api.spotify.com\/v1\/artists\/7yPFm21ZPIpKhlZlIovYFW",
+                "id": "7yPFm21ZPIpKhlZlIovYFW",
+                "images": [
+                    {
+                        "url": "https:\/\/i.scdn.co\/image\/ab67616d0000b2738be55290ac51b368d1f6a477",
+                        "height": 640,
+                        "width": 640
+                    },
+                    {
+                        "url": "https:\/\/i.scdn.co\/image\/ab67616d00001e028be55290ac51b368d1f6a477",
+                        "height": 300,
+                        "width": 300
+                    },
+                    {
+                        "url": "https:\/\/i.scdn.co\/image\/ab67616d000048518be55290ac51b368d1f6a477",
+                        "height": 64,
+                        "width": 64
+                    }
+                ],
+                "name": "AC\/DC JAM",
+                "popularity": 7,
+                "type": "artist",
+                "uri": "spotify:artist:7yPFm21ZPIpKhlZlIovYFW"
+            },
+            {
+                "external_urls": {
+                    "spotify": "https:\/\/open.spotify.com\/artist\/5rH3B0KwEue0WZGWYVX5hW"
+                },
+                "followers": {
+                    "href": null,
+                    "total": 0
+                },
+                "genres": [],
+                "href": "https:\/\/api.spotify.com\/v1\/artists\/5rH3B0KwEue0WZGWYVX5hW",
+                "id": "5rH3B0KwEue0WZGWYVX5hW",
+                "images": [],
+                "name": "AC\/DC",
+                "popularity": 0,
+                "type": "artist",
+                "uri": "spotify:artist:5rH3B0KwEue0WZGWYVX5hW"
             }
         ]
     }
