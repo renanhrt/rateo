@@ -60,9 +60,15 @@ class User implements ActiveRecord{
                 username = '{$this->username}', 
                 email = '{$this->email}', 
                 password = '{$hash_password}', 
-                role = '{$this->role}' 
+                role = '{$this->role}'
                 WHERE id_user = {$this->id_user}";
         } else {
+            $sql = "SELECT * FROM user WHERE email = '{$this->email}'";
+            $result = $connection->query($sql);
+            if (count($result) > 0) {
+                throw new Exception("Email already exists");
+            }
+
             $sql = "INSERT INTO user (username, email, password, role) 
                 VALUES ('{$this->username}', '{$this->email}', '{$hash_password}', '{$this->role}')";
         }
@@ -79,28 +85,29 @@ class User implements ActiveRecord{
         $connection = new MySQL();
         $sql = "SELECT * FROM user WHERE id_user = {$id_user}";
         $resultado = $connection->query($sql);
-        $f = new User($resultado[0]['username'],$resultado[0]['email'],$resultado[0]['password'],$resultado[0]['role']);
-        $f->setid_user($resultado[0]['id_user']);
-        return $f;
+        $user = new User($resultado[0]['username'],$resultado[0]['email'],$resultado[0]['password'],$resultado[0]['role']);
+        $user->setid_user($resultado[0]['id_user']);
+        return $user;
     }
+
     public static function findall():array{
         $connection = new MySQL();
         $sql = "SELECT * FROM user";
         $resultados = $connection->query($sql);
-        $festas = array();
+        $users = array();
         foreach($resultados as $resultado){
-            $f = new User($resultado['username'],$resultado['email'],$resultado['password'],$resultado['role']);
-            $f->setid_user($resultado['id_user']);
-            $festas[] = $f;
+            $user = new User($resultado['username'],$resultado['email'],$resultado['password'],$resultado['role']);
+            $user->setid_user($resultado['id_user']);
+            $users[] = $user;
         }
-        return $festas;
+        return $users;
     }
 
     public static function login(string $email, string $password): ?User {
         $connection = new MySQL();
-        $sql = "SELECT * FROM User WHERE email = '{$email}'";
+        $sql = "SELECT * FROM user WHERE email = '{$email}'";
         $result = $connection->query($sql);
-    
+
         if (count($result) > 0) {
             $user_data = $result[0];
             if (password_verify($password, $user_data['password'])) {
@@ -111,7 +118,7 @@ class User implements ActiveRecord{
                     $user_data['role']
                 );
                 $user->setId_user($user_data['id_user']);
-                return $user; // Retorna o objeto User autenticado
+                return $user;
             }
         }
         return null;

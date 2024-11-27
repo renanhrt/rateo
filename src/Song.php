@@ -58,9 +58,9 @@ class Song implements ActiveRecord {
     public function save(): bool {
         $connection = new MySQL();
         if (isset($this->id_song)) {
-            $sql = "UPDATE Song SET title = '{$this->title}', year = {$this->year}, artist = '{$this->artist}', cover = '{$this->cover}', preview_url = '{$this->preview_url}' WHERE id_song = {$this->id_song}";
+            $sql = "UPDATE song SET title = '{$this->title}', year = {$this->year}, artist = '{$this->artist}', cover = '{$this->cover}', preview_url = '{$this->preview_url}' WHERE id_song = {$this->id_song}";
         } else {
-            $sql = "INSERT INTO Song (title, year, artist, cover, preview_url) 
+            $sql = "INSERT INTO song (title, year, artist, cover, preview_url) 
                 VALUES ('{$this->title}', {$this->year}, '{$this->artist}', '{$this->cover}', '{$this->preview_url}')";
         }
         return $connection->execute($sql);
@@ -68,13 +68,13 @@ class Song implements ActiveRecord {
 
     public function delete(): bool {
         $connection = new MySQL();
-        $sql = "DELETE FROM Song WHERE id_song = {$this->id_song}";
+        $sql = "DELETE FROM song WHERE id_song = {$this->id_song}";
         return $connection->execute($sql);
     }
 
     public static function find($id_song): Song {
         $connection = new MySQL();
-        $sql = "SELECT * FROM Song WHERE id_song = {$id_song}";
+        $sql = "SELECT * FROM song WHERE id_song = {$id_song}";
         $result = $connection->query($sql);
         $s = new Song(
             $result[0]['title'],
@@ -89,7 +89,7 @@ class Song implements ActiveRecord {
 
     public static function findAll(): array {
         $connection = new MySQL();
-        $sql = "SELECT * FROM Song";
+        $sql = "SELECT * FROM song";
         $results = $connection->query($sql);
         $songs = array();
         foreach ($results as $result) {

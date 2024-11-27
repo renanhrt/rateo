@@ -10,6 +10,8 @@
         $user = new User($username, $email, $password, $role);
 
         $user->save();
+
+        header("Location: login.php");
     }
 ?>
 
@@ -38,9 +40,9 @@
             <input type="password" id="password" name="password" required>
         </div>
         <div class="form-group">
-            <a href="login.php">Already have an account? Login Here.</a>
+        Already have an account? <a href="login.php">Login Here.</a>
         </div>
-        <button type="submit" name="button">Login</button>
+        <button type="submit" name="button">Register</button>
     </form>
   </div>
 </body>
