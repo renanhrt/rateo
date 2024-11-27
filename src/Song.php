@@ -105,5 +105,26 @@ class Song implements ActiveRecord {
         }
         return $songs;
     }
+
+    public static function random_song($id_user): Song{
+        $connection = new MySQL();
+        $sql = "SELECT * FROM song WHERE id_song NOT IN (SELECT * FROM vote WHERE id_user = {$id_user}";
+        $result = $connection->query($sql);
+        if(count($result) > 0){
+            $totalcount = count($result);
+            $song_data = $result[rand(0,$totalcount - 1)];
+            $song = new Song(
+                $song_data['title'],
+                $song_data['year'],
+                $song_data['artist'],
+                $song_data['cover'],
+                $song_data['preview_url']
+            );
+            $song->setId_song($song_data['id_song']);
+            return $song;   
+        }        
+        return NULL;
+    }
+
 }
 ?>
