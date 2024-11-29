@@ -154,7 +154,7 @@ class Song implements ActiveRecord {
 
 
         // SEARCH FOR SONGS OR ARTISTS
-        $searchUrl = 'https://api.spotify.com/v1/search?q='. str_replace(' ', '+', $search_string) .'&type=track,artist&market=BR&limit=10&include_external=audio';
+        $searchUrl = 'https://api.spotify.com/v1/search?q='. str_replace(' ', '+', $search_string) .'&type=track,artist&limit=10&include_external=audio';
         
         $headers = [
             "Authorization: Bearer $token",
@@ -171,9 +171,7 @@ class Song implements ActiveRecord {
         $searchData = json_decode($searchResponse, true);
 
         $file = 'response.json';
-        if (file_put_contents($file, json_encode($searchData, JSON_PRETTY_PRINT))) {
-            echo "Response successfully saved to $file\n";
-        } else {
+        if (!file_put_contents($file, json_encode($searchData, JSON_PRETTY_PRINT))) {
             echo "Failed to save the response to $file\n";
         }
 

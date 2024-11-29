@@ -17,10 +17,6 @@
 
     if (isset($_POST["search_text"])) {
         $songs = Song::searchSongSpotify($_POST["search_text"]);
-
-        foreach ($songs as $song) {
-            echo "<p>{$song->getTitle()} - {$song->getArtist()} <a href='add_song.php?id={$song->getId_song()}'>Add</a></p>";
-        }
     }
 
 ?>
@@ -33,9 +29,24 @@
     <title>Add songs</title>
 </head>
 <body>
+    <header>
+        
+    </header>
+
+
     <form action="" method="POST">
         <input type="text" name="search_text" placeholder="Search song or artist...">
         <input type="submit" placeholder="search">
     </form>
+
+    <?php
+        if (isset($songs)) {
+            foreach ($songs as $song) {
+                echo "<p>" . $song->getName() . " - " . $song->getArtist() . "</p>";
+                echo "<a href='add_song.php?song_id=" . $song->getId() . "'>Add</a>";
+            }
+        }
+    ?>
+
 </body>
 </html>
