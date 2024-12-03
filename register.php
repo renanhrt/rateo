@@ -23,7 +23,7 @@
     <title>Register Rateo</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="login-body">
     <div class="login-container">
     <h2>Register</h2>
     <form method="POST" action="">

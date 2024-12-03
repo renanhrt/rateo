@@ -26,27 +26,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Add songs</title>
 </head>
 <body>
-    <header>
-        
+    <header class="header">
+        <div class="logo">Rateo</div>
+        <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+        </nav>
+        <div class="user">
+            <span><?php echo $user->getUsername(); ?></span>
+            <a href="logout.php">Logout</a>
+        </div>
     </header>
 
-
-    <form action="" method="POST">
+    <form action="" method="POST" class="search-form">
         <input type="text" name="search_text" placeholder="Search song or artist...">
-        <input type="submit" placeholder="search">
+        <input type="submit" value="Search">
     </form>
 
-    <?php
-        if (isset($songs)) {
-            foreach ($songs as $song) {
-                echo "<p>" . $song->getName() . " - " . $song->getArtist() . "</p>";
-                echo "<a href='add_song.php?song_id=" . $song->getId() . "'>Add</a>";
+    <div class="songs">
+        <?php
+            if (isset($songs)) {
+                foreach ($songs as $song) {
+                    echo "<div class='song'>";
+                    echo '<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/' . $song->getId_song() . '?utm_source=generator" width="60%" height="256" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>';
+                    echo "<a href='add_song.php?song_id=" . $song->getId_song() . "'>Add song to rateo</a>";
+                    echo "<br>";
+                    echo "</div>";
+                }
             }
-        }
-    ?>
+        ?>
+    </div>
 
 </body>
 </html>
