@@ -108,7 +108,7 @@ class Song implements ActiveRecord {
 
     public static function random_song($id_user): Song{
         $connection = new MySQL();
-        $sql = "SELECT * FROM song WHERE id_song NOT IN (SELECT * FROM vote WHERE id_user = {$id_user}";
+        $sql = "SELECT * FROM song WHERE id_song NOT IN (SELECT id_song FROM vote WHERE id_user = {$id_user}";
         $result = $connection->query($sql);
         if(count($result) > 0){
             $totalcount = count($result);

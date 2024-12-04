@@ -5,6 +5,8 @@
     
     $user_id = $_SESSION["id"];
     $user = User::find($user_id);
+
+    $song = Song::random_song($user_id);
 ?>
 
 <!DOCTYPE html>
@@ -29,6 +31,24 @@
             <a href="logout.php">Logout</a>
         </div>
     </header>
+    
+    <div class="song">
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/' . $song->getId_song() . '?utm_source=generator" width="60%" height="256" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>';
+        <form action="vote.php" method="post">
+            <input type="hidden" name="id_song" value="<?php echo $song->getId_song(); ?>">
+            <input type="hidden" name="id_user" value="<?php echo $user_id; ?>">
+            <label for="vote">Rate this song:</label>
+            <select name="vote" id="vote">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
 
     <a href="add_songs.php">Add songs</a>
 </body>
