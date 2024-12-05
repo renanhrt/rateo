@@ -8,7 +8,6 @@
     }
 
     $user_id = $_SESSION["id"];
-
     $user = User::find($user_id);
 
     //if ($user->getRole() != "admin") {
@@ -17,6 +16,18 @@
 
     if (isset($_POST["search_text"])) {
         $songs = Song::searchSongSpotify($_POST["search_text"]);
+    }
+
+    if (isset($_POST["song_id"])) {
+        $song = new Song(
+            $_POST["title"],
+            $_POST["year"],
+            $_POST["artist"],
+            $_POST["cover"],
+            $_POST["preview_url"]
+        );
+        $song->setId_song($_POST["song_id"]);
+        $song->save();
     }
 
 ?>
@@ -33,10 +44,11 @@
     <header class="header">
         <div class="logo">Rateo</div>
         <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
+        <a href="index.php">Home</a>
+        <a href="ranking.php">Ranking</a>
+        <?php if ($user->getRole() === 'admin'): ?>
+        <a href="add_songs.php">Add songs</a>
+        <?php endif; ?>
         </nav>
         <div class="user">
             <span><?php echo $user->getUsername(); ?></span>
@@ -55,7 +67,15 @@
                 foreach ($songs as $song) {
                     echo "<div class='song'>";
                     echo '<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/' . $song->getId_song() . '?utm_source=generator" width="60%" height="256" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>';
-                    echo "<a href='add_song.php?song_id=" . $song->getId_song() . "'>Add song to rateo</a>";
+                    echo "<form action='add_songs.php' method='POST'>";
+                    echo "<input type='hidden' name='song_id' value='" . $song->getId_song() . "'>";
+                    echo "<input type='hidden' name='title' value='" . htmlspecialchars($song->getTitle(), ENT_QUOTES, 'UTF-8') . "'>";
+                    echo "<input type='hidden' name='year' value='" . $song->getYear() . "'>";
+                    echo "<input type='hidden' name='artist' value='" . htmlspecialchars($song->getArtist(), ENT_QUOTES, 'UTF-8') . "'>";
+                    echo "<input type='hidden' name='cover' value='" . htmlspecialchars($song->getCover(), ENT_QUOTES, 'UTF-8') . "'>";
+                    echo "<input type='hidden' name='preview_url' value='" . htmlspecialchars($song->getPreview_url(), ENT_QUOTES, 'UTF-8') . "'>";
+                    echo "<input type='submit' value='Add song to rateo'>";
+                    echo "</form>";
                     echo "<br>";
                     echo "</div>";
                 }

@@ -57,12 +57,7 @@ class Song implements ActiveRecord {
 
     public function save(): bool {
         $connection = new MySQL();
-        if (isset($this->id_song)) {
-            $sql = "UPDATE song SET title = '{$this->title}', year = {$this->year}, artist = '{$this->artist}', cover = '{$this->cover}', preview_url = '{$this->preview_url}' WHERE id_song = {$this->id_song}";
-        } else {
-            $sql = "INSERT INTO song (title, year, artist, cover, preview_url) 
-                VALUES ('{$this->title}', {$this->year}, '{$this->artist}', '{$this->cover}', '{$this->preview_url}')";
-        }
+        $sql = "INSERT INTO song (id_song, title, year, artist, cover, preview_url) VALUES ('{$this->id_song}', '{$this->title}', {$this->year}, '{$this->artist}', '{$this->cover}', '{$this->preview_url}')";
         return $connection->execute($sql);
     }
 
@@ -106,9 +101,9 @@ class Song implements ActiveRecord {
         return $songs;
     }
 
-    public static function random_song($id_user): Song{
+    public static function random_song($id_user){
         $connection = new MySQL();
-        $sql = "SELECT * FROM song WHERE id_song NOT IN (SELECT id_song FROM vote WHERE id_user = {$id_user}";
+        $sql = "SELECT * FROM song WHERE id_song NOT IN (SELECT id_song FROM vote WHERE id_user = {$id_user})";
         $result = $connection->query($sql);
         if(count($result) > 0){
             $totalcount = count($result);
@@ -181,10 +176,9 @@ class Song implements ActiveRecord {
                 if (!isset($track['preview_url'])) {
                     $track['preview_url'] = '';
                 }
-
                 $song = new Song(
                     $track['name'],
-                    date('Y', strtotime($track['album']['release_date'])),
+                    (int)substr($track['album']['release_date'], 0, 4),
                     $track['artists'][0]['name'],
                     $track['album']['images'][0]['url'],
                     $track['preview_url']

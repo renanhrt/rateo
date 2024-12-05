@@ -70,7 +70,8 @@ a{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #b86e00;
+  font-weight: bold;
+  background-color: #ce6300;
   padding: 10px 20px;
   color: #fff;
 }

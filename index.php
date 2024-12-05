@@ -6,7 +6,7 @@
     $user_id = $_SESSION["id"];
     $user = User::find($user_id);
 
-    $song = Song::random_song($user_id);
+    $song = Song::random_song($user->getId_user());
 ?>
 
 <!DOCTYPE html>
@@ -21,10 +21,11 @@
     <header class="header">
         <div class="logo">Rateo</div>
         <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
+        <a href="index.php">Home</a>
+        <a href="ranking.php">Ranking</a>
+        <?php if ($user->getRole() === 'admin'): ?>
+        <a href="add_songs.php">Add songs</a>
+        <?php endif; ?>
         </nav>
         <div class="user">
             <span><?php echo $user->getUsername(); ?></span>
@@ -33,7 +34,7 @@
     </header>
     
     <div class="song">
-        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/' . $song->getId_song() . '?utm_source=generator" width="60%" height="256" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>';
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/<?php echo $song->getId_song(); ?>?utm_source=generator" width="60%" height="512px" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
         <form action="vote.php" method="post">
             <input type="hidden" name="id_song" value="<?php echo $song->getId_song(); ?>">
             <input type="hidden" name="id_user" value="<?php echo $user_id; ?>">
@@ -50,6 +51,5 @@
         </form>
     </div>
 
-    <a href="add_songs.php">Add songs</a>
 </body>
 </html>

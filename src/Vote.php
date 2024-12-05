@@ -4,7 +4,7 @@ class Vote implements ActiveRecord {
 
     private int $id_vote;
     
-    public function __construct(private int $id_user, private int $id_song){
+    public function __construct(private int $id_user, private string $id_song){
     }
 
     public function setId_vote(int $id_vote): void {
@@ -23,11 +23,11 @@ class Vote implements ActiveRecord {
         return $this->id_user;
     }
 
-    public function setId_song(int $id_song): void {
+    public function setId_song(string $id_song): void {
         $this->id_song = $id_song;
     }
 
-    public function getId_song(): int {
+    public function getId_song(): string {
         return $this->id_song;
     }
 
@@ -80,7 +80,7 @@ class Vote implements ActiveRecord {
         return $votes;
     }
 
-    public static function findByUserAndSong(int $id_user, int $id_song): ?Vote {
+    public static function findByUserAndSong(int $id_user, string $id_song): ?Vote {
         $connection = new MySQL();
         $sql = "SELECT * FROM vote WHERE id_user = '{$id_user}' AND id_song = '{$id_song}'";
         $result = $connection->query($sql);
