@@ -63,14 +63,17 @@ class Song implements ActiveRecord {
 
     public function delete(): bool {
         $connection = new MySQL();
-        $sql = "DELETE FROM song WHERE id_song = {$this->id_song}";
+        $sql = "DELETE FROM song WHERE id_song = '{$this->id_song}'";
         return $connection->execute($sql);
     }
 
-    public static function find($id_song): Song {
+    public static function find($id_song) {
         $connection = new MySQL();
-        $sql = "SELECT * FROM song WHERE id_song = {$id_song}";
+        $sql = "SELECT * FROM song WHERE id_song = '{$id_song}'";
         $result = $connection->query($sql);
+        if (count($result) === 0) {
+            return NULL;
+        }
         $s = new Song(
             $result[0]['title'],
             $result[0]['year'],

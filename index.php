@@ -38,9 +38,8 @@
         <form action="vote.php" method="post">
             <input type="hidden" name="id_song" value="<?php echo $song->getId_song(); ?>">
             <input type="hidden" name="id_user" value="<?php echo $user_id; ?>">
-            <label for="vote">Rate this song:</label>
-            <select name="vote" id="vote">
-                <option value="0">0</option>
+            <label for="vote_number">Rate this song:</label>
+            <select name="vote_number" id="vote">
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>

@@ -14,11 +14,13 @@
     //    header("Location: index.php");
     //}
 
-    if (isset($_POST["search_text"])) {
-        $songs = Song::searchSongSpotify($_POST["search_text"]);
+    if (isset($_GET["search_text"])) {
+        $songs = Song::searchSongSpotify($_GET["search_text"]);
     }
 
     if (isset($_POST["song_id"])) {
+        $songs = Song::searchSongSpotify($_POST["search_text"]);
+        $_GET["search_text"] = $_POST["search_text"];
         $song = new Song(
             $_POST["title"],
             $_POST["year"],
@@ -56,7 +58,7 @@
         </div>
     </header>
 
-    <form action="" method="POST" class="search-form">
+    <form action="" method="GET" class="search-form">
         <input type="text" name="search_text" placeholder="Search song or artist...">
         <input type="submit" value="Search">
     </form>
@@ -65,6 +67,9 @@
         <?php
             if (isset($songs)) {
                 foreach ($songs as $song) {
+                    if (Song::find($song->getId_song())) {
+                        continue;
+                    }
                     echo "<div class='song'>";
                     echo '<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/' . $song->getId_song() . '?utm_source=generator" width="60%" height="256" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>';
                     echo "<form action='add_songs.php' method='POST'>";
@@ -74,6 +79,7 @@
                     echo "<input type='hidden' name='artist' value='" . htmlspecialchars($song->getArtist(), ENT_QUOTES, 'UTF-8') . "'>";
                     echo "<input type='hidden' name='cover' value='" . htmlspecialchars($song->getCover(), ENT_QUOTES, 'UTF-8') . "'>";
                     echo "<input type='hidden' name='preview_url' value='" . htmlspecialchars($song->getPreview_url(), ENT_QUOTES, 'UTF-8') . "'>";
+                    echo "<input type='hidden' name='search_text' value='" . $_GET["search_text"] . "'>";
                     echo "<input type='submit' value='Add song to rateo'>";
                     echo "</form>";
                     echo "<br>";
