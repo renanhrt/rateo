@@ -41,16 +41,33 @@
     <div class="songs">
         <?php
             if (isset($songs)) {
-                foreach ($songs as $index => $song) {
+                foreach ($songs as $index => $song): 
                     $position = $index + 1; 
-                    $score = $song->getScore();
+                    $score = $song->getScore(); 
+                ?>
+                    <div class="song">
+                        <div class="stats">
+                            <div class="stat-box">
+                                <span class="stat-title">Average</span>
+                                <span class="stat-value"><?= $score['average']; ?></span>
+                            </div>
+                            <div class="stat-box">
+                                <span class="stat-title">Position</span>
+                                <span class="stat-value">#<?= $position; ?></span>
+                            </div>
+                            <div class="stat-box">
+                                <span class="stat-title">Votes</span>
+                                <span class="stat-value"><?= $score['total_votes']; ?></span>
+                            </div>
+                        </div>
                 
-                    echo "<div class='song'>";
-                    echo "<p>#{$position} - Average Score: {$score['average']}</p>";
-                    echo '<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/' . $song->getId_song() . '?utm_source=generator" width="100%" height="256" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>';
-                    echo "<p>{$song->getTitle()} - {$song->getArtist()} ({$song->getYear()})</p>";
-                    echo "</div>";
-                }
+                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/<?= $song->getId_song(); ?>?utm_source=generator" width="100%" height="256" frameborder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+                        </iframe>
+                
+                        <p><?= $song->getTitle(); ?> - <?= $song->getArtist(); ?> (<?= $song->getYear(); ?>)</p>
+                    </div>
+                <?php 
+                endforeach; 
             }
         ?>
 
