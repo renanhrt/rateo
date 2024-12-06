@@ -191,8 +191,47 @@ class Song implements ActiveRecord {
             }
             return $songs;
         }
-
         
     }
+
+    public static function ranking($filter): array {
+        $connection = new MySQL();
+        if ($filter == 'new') {
+            $sql = "SELECT song.id_song, title, year, artist, cover, preview_url, AVG(vote_number) as average, COUNT(vote.id_vote) as total_votes FROM song JOIN vote ON song.id_song = vote.id_song GROUP BY id_song ORDER BY year DESC LIMIT 30";
+        } else if ($filter == 'old') {
+            $sql = "SELECT song.id_song, title, year, artist, cover, preview_url, AVG(vote_number) as average, COUNT(vote.id_vote) as total_votes FROM song JOIN vote ON song.id_song = vote.id_song GROUP BY id_song ORDER BY year ASC LIMIT 30";
+        } else if ($filter == 'popular') {
+            $sql = "SELECT song.id_song, title, year, artist, cover, preview_url, AVG(vote_number) as average, COUNT(vote.id_vote) as total_votes FROM song JOIN vote ON song.id_song = vote.id_song GROUP BY id_song ORDER BY total_votes DESC LIMIT 30";
+        } else if ($filter == 'unpopular') {
+            $sql = "SELECT song.id_song, title, year, artist, cover, preview_url, AVG(vote_number) as average, COUNT(vote.id_vote) as total_votes FROM song JOIN vote ON song.id_song = vote.id_song GROUP BY id_song ORDER BY total_votes ASC LIMIT 30";
+        } else {
+            $sql = "SELECT song.id_song, title, year, artist, cover, preview_url, AVG(vote_number) as average, COUNT(vote.id_vote) as total_votes FROM song JOIN vote ON song.id_song = vote.id_song GROUP BY id_song ORDER BY average DESC LIMIT 30";
+        }
+        $results = $connection->query($sql);
+        $songs = array();
+        foreach ($results as $result) {
+            $s = new Song(
+                $result['title'],
+                $result['year'],
+                $result['artist'],
+                $result['cover'],
+                $result['preview_url']
+            );
+            $s->setId_song($result['id_song']);
+            $songs[] = $s;
+        }
+        return $songs;
+    }
+
+    public function getScore(): array {
+        $connection = new MySQL();
+        $sql = "SELECT AVG(vote_number) as average, COUNT(vote_number) as total_votes FROM vote WHERE id_song = '{$this->id_song}'";
+        $result = $connection->query($sql);
+        return [
+            'average' => (int)$result[0]['average'],
+            'total_votes' => (int)$result[0]['total_votes']
+        ];
+    }
+
 }
 ?>

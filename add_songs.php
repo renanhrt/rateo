@@ -10,14 +10,19 @@
     $user_id = $_SESSION["id"];
     $user = User::find($user_id);
 
-    //if ($user->getRole() != "admin") {
-    //    header("Location: index.php");
-    //}
+    $songs = [];
 
+    # Only admin can access this page
+    if ($user->getRole() != "admin") {
+        header("Location: index.php");
+    }
+
+    # Search song in Spotify
     if (isset($_GET["search_text"])) {
         $songs = Song::searchSongSpotify($_GET["search_text"]);
     }
 
+    # Add song to rateo
     if (isset($_POST["song_id"])) {
         $songs = Song::searchSongSpotify($_POST["search_text"]);
         $_GET["search_text"] = $_POST["search_text"];
@@ -58,20 +63,24 @@
         </div>
     </header>
 
-    <form action="" method="GET" class="search-form">
-        <input type="text" name="search_text" placeholder="Search song or artist...">
-        <input type="submit" value="Search">
-    </form>
+    
 
     <div class="songs">
+        <form action="" method="GET" class="search-form">
+            <input type="text" name="search_text" placeholder="Search song or artist...">
+            <input type="submit" value="Search" class="submit-input search-input">
+        </form>
         <?php
             if (isset($songs)) {
                 foreach ($songs as $song) {
                     if (Song::find($song->getId_song())) {
+                        $songs = array_filter($songs, function($s) use ($song) {
+                            return $s->getId_song() !== $song->getId_song();
+                        });
                         continue;
                     }
                     echo "<div class='song'>";
-                    echo '<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/' . $song->getId_song() . '?utm_source=generator" width="60%" height="256" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>';
+                    echo '<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/' . $song->getId_song() . '?utm_source=generator" width="100%" height="256" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>';
                     echo "<form action='add_songs.php' method='POST'>";
                     echo "<input type='hidden' name='song_id' value='" . $song->getId_song() . "'>";
                     echo "<input type='hidden' name='title' value='" . htmlspecialchars($song->getTitle(), ENT_QUOTES, 'UTF-8') . "'>";
@@ -80,14 +89,25 @@
                     echo "<input type='hidden' name='cover' value='" . htmlspecialchars($song->getCover(), ENT_QUOTES, 'UTF-8') . "'>";
                     echo "<input type='hidden' name='preview_url' value='" . htmlspecialchars($song->getPreview_url(), ENT_QUOTES, 'UTF-8') . "'>";
                     echo "<input type='hidden' name='search_text' value='" . $_GET["search_text"] . "'>";
-                    echo "<input type='submit' value='Add song to rateo'>";
+                    echo "<input type='submit' value='Add song to rateo' class='submit-input'>";
                     echo "</form>";
-                    echo "<br>";
                     echo "</div>";
                 }
             }
         ?>
-    </div>
 
+        <?php if (count($songs) == 0): ?>
+            <p>Search for a song to add...</p>
+        <?php endif; ?>
+    </div>
+    
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <p>&copy; 2024 Your Website. All Rights Reserved.</p>
+                <p>Crafted by Renan, Davi, Enzo and Joao.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
