@@ -7,11 +7,13 @@
         $password = $_POST["password"];
         $role = "user";
         
-        $user = new User($username, $email, $password, $role);
-
-        $user->save();
-
-        header("Location: login.php");
+        try {
+            $user = new User($username, $email, $password, $role);
+            $user->save();
+            header("Location: login.php");
+        } catch (Exception $e) {
+            $error = $e->getMessage();
+        }
     }
 ?>
 
@@ -42,6 +44,11 @@
         <div class="form-group">
         Already have an account? <a href="login.php">Login Here.</a>
         </div>
+        <?php if (isset($error)): ?>
+            <div class="error">
+                <p class="error"><?php echo $error; ?></p>
+            </div>
+        <?php endif; ?>
         <button type="submit" name="button">Register</button>
     </form>
   </div>

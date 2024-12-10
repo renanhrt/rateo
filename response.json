@@ -1,11 +1,11 @@
 {
     "tracks": {
-        "href": "https:\/\/api.spotify.com\/v1\/search?offset=0&limit=10&query=symphony%20of%20destruction&type=track&include_external=audio",
+        "href": "https:\/\/api.spotify.com\/v1\/search?offset=0&limit=10&query=creeedene&type=track&include_external=audio",
         "limit": 10,
-        "next": "https:\/\/api.spotify.com\/v1\/search?offset=10&limit=10&query=symphony%20of%20destruction&type=track&include_external=audio",
+        "next": "https:\/\/api.spotify.com\/v1\/search?offset=10&limit=10&query=creeedene&type=track&include_external=audio",
         "offset": 0,
         "previous": null,
-        "total": 894,
+        "total": 1000,
         "items": [
             {
                 "album": {
@@ -13,13 +13,13 @@
                     "artists": [
                         {
                             "external_urls": {
-                                "spotify": "https:\/\/open.spotify.com\/artist\/1Yox196W7bzVNZI7RBaPnf"
+                                "spotify": "https:\/\/open.spotify.com\/artist\/3IYUhFvPQItj6xySrBmZkd"
                             },
-                            "href": "https:\/\/api.spotify.com\/v1\/artists\/1Yox196W7bzVNZI7RBaPnf",
-                            "id": "1Yox196W7bzVNZI7RBaPnf",
-                            "name": "Megadeth",
+                            "href": "https:\/\/api.spotify.com\/v1\/artists\/3IYUhFvPQItj6xySrBmZkd",
+                            "id": "3IYUhFvPQItj6xySrBmZkd",
+                            "name": "Creedence Clearwater Revival",
                             "type": "artist",
-                            "uri": "spotify:artist:1Yox196W7bzVNZI7RBaPnf"
+                            "uri": "spotify:artist:3IYUhFvPQItj6xySrBmZkd"
                         }
                     ],
                     "available_markets": [
@@ -82,7 +82,6 @@
                         "LI",
                         "MC",
                         "ID",
-                        "JP",
                         "TH",
                         "VN",
                         "RO",
@@ -209,45 +208,45 @@
                         "XK"
                     ],
                     "external_urls": {
-                        "spotify": "https:\/\/open.spotify.com\/album\/1w9opfGdFtR3ulNHxnnO1e"
+                        "spotify": "https:\/\/open.spotify.com\/album\/372cMadhAGlNuDnc8TssqF"
                     },
-                    "href": "https:\/\/api.spotify.com\/v1\/albums\/1w9opfGdFtR3ulNHxnnO1e",
-                    "id": "1w9opfGdFtR3ulNHxnnO1e",
+                    "href": "https:\/\/api.spotify.com\/v1\/albums\/372cMadhAGlNuDnc8TssqF",
+                    "id": "372cMadhAGlNuDnc8TssqF",
                     "images": [
                         {
                             "height": 640,
                             "width": 640,
-                            "url": "https:\/\/i.scdn.co\/image\/ab67616d0000b2737b178f928742be1492c6fba2"
+                            "url": "https:\/\/i.scdn.co\/image\/ab67616d0000b27351f311c2fb06ad2789e3ff91"
                         },
                         {
                             "height": 300,
                             "width": 300,
-                            "url": "https:\/\/i.scdn.co\/image\/ab67616d00001e027b178f928742be1492c6fba2"
+                            "url": "https:\/\/i.scdn.co\/image\/ab67616d00001e0251f311c2fb06ad2789e3ff91"
                         },
                         {
                             "height": 64,
                             "width": 64,
-                            "url": "https:\/\/i.scdn.co\/image\/ab67616d000048517b178f928742be1492c6fba2"
+                            "url": "https:\/\/i.scdn.co\/image\/ab67616d0000485151f311c2fb06ad2789e3ff91"
                         }
                     ],
                     "is_playable": true,
-                    "name": "Countdown To Extinction (Expanded Edition - Remastered)",
-                    "release_date": "1992-07-14",
+                    "name": "Pendulum (Expanded Edition)",
+                    "release_date": "1970-12-07",
                     "release_date_precision": "day",
-                    "total_tracks": 15,
+                    "total_tracks": 13,
                     "type": "album",
-                    "uri": "spotify:album:1w9opfGdFtR3ulNHxnnO1e"
+                    "uri": "spotify:album:372cMadhAGlNuDnc8TssqF"
                 },
                 "artists": [
                     {
                         "external_urls": {
-                            "spotify": "https:\/\/open.spotify.com\/artist\/1Yox196W7bzVNZI7RBaPnf"
+                            "spotify": "https:\/\/open.spotify.com\/artist\/3IYUhFvPQItj6xySrBmZkd"
                         },
-                        "href": "https:\/\/api.spotify.com\/v1\/artists\/1Yox196W7bzVNZI7RBaPnf",
-                        "id": "1Yox196W7bzVNZI7RBaPnf",
-                        "name": "Megadeth",
+                        "href": "https:\/\/api.spotify.com\/v1\/artists\/3IYUhFvPQItj6xySrBmZkd",
+                        "id": "3IYUhFvPQItj6xySrBmZkd",
+                        "name": "Creedence Clearwater Revival",
                         "type": "artist",
-                        "uri": "spotify:artist:1Yox196W7bzVNZI7RBaPnf"
+                        "uri": "spotify:artist:3IYUhFvPQItj6xySrBmZkd"
                     }
                 ],
                 "available_markets": [
@@ -310,7 +309,6 @@
                     "LI",
                     "MC",
                     "ID",
-                    "JP",
                     "TH",
                     "VN",
                     "RO",
@@ -437,24 +435,24 @@
                     "XK"
                 ],
                 "disc_number": 1,
-                "duration_ms": 246733,
+                "duration_ms": 160133,
                 "explicit": false,
                 "external_ids": {
-                    "isrc": "USCA20400616"
+                    "isrc": "USC4R0817643"
                 },
                 "external_urls": {
-                    "spotify": "https:\/\/open.spotify.com\/track\/51TG9W3y9qyO8BY5RXKgnZ"
+                    "spotify": "https:\/\/open.spotify.com\/track\/2LawezPeJhN4AWuSB0GtAU"
                 },
-                "href": "https:\/\/api.spotify.com\/v1\/tracks\/51TG9W3y9qyO8BY5RXKgnZ",
-                "id": "51TG9W3y9qyO8BY5RXKgnZ",
+                "href": "https:\/\/api.spotify.com\/v1\/tracks\/2LawezPeJhN4AWuSB0GtAU",
+                "id": "2LawezPeJhN4AWuSB0GtAU",
                 "is_local": false,
                 "is_playable": true,
-                "name": "Symphony Of Destruction",
-                "popularity": 65,
+                "name": "Have You Ever Seen The Rain",
+                "popularity": 84,
                 "preview_url": null,
-                "track_number": 2,
+                "track_number": 4,
                 "type": "track",
-                "uri": "spotify:track:51TG9W3y9qyO8BY5RXKgnZ"
+                "uri": "spotify:track:2LawezPeJhN4AWuSB0GtAU"
             },
             {
                 "album": {
@@ -462,13 +460,13 @@
                     "artists": [
                         {
                             "external_urls": {
-                                "spotify": "https:\/\/open.spotify.com\/artist\/1Yox196W7bzVNZI7RBaPnf"
+                                "spotify": "https:\/\/open.spotify.com\/artist\/3IYUhFvPQItj6xySrBmZkd"
                             },
-                            "href": "https:\/\/api.spotify.com\/v1\/artists\/1Yox196W7bzVNZI7RBaPnf",
-                            "id": "1Yox196W7bzVNZI7RBaPnf",
-                            "name": "Megadeth",
+                            "href": "https:\/\/api.spotify.com\/v1\/artists\/3IYUhFvPQItj6xySrBmZkd",
+                            "id": "3IYUhFvPQItj6xySrBmZkd",
+                            "name": "Creedence Clearwater Revival",
                             "type": "artist",
-                            "uri": "spotify:artist:1Yox196W7bzVNZI7RBaPnf"
+                            "uri": "spotify:artist:3IYUhFvPQItj6xySrBmZkd"
                         }
                     ],
                     "available_markets": [
@@ -658,45 +656,45 @@
                         "XK"
                     ],
                     "external_urls": {
-                        "spotify": "https:\/\/open.spotify.com\/album\/0fWLW9j35eQTrOb8mHcnyX"
+                        "spotify": "https:\/\/open.spotify.com\/album\/0i9mOB6mPGqwVvtJEXiwPG"
                     },
-                    "href": "https:\/\/api.spotify.com\/v1\/albums\/0fWLW9j35eQTrOb8mHcnyX",
-                    "id": "0fWLW9j35eQTrOb8mHcnyX",
+                    "href": "https:\/\/api.spotify.com\/v1\/albums\/0i9mOB6mPGqwVvtJEXiwPG",
+                    "id": "0i9mOB6mPGqwVvtJEXiwPG",
                     "images": [
                         {
                             "height": 640,
                             "width": 640,
-                            "url": "https:\/\/i.scdn.co\/image\/ab67616d0000b2734be345f026469be09f12a92e"
+                            "url": "https:\/\/i.scdn.co\/image\/ab67616d0000b2733efcd243aaa5638f55318f91"
                         },
                         {
                             "height": 300,
                             "width": 300,
-                            "url": "https:\/\/i.scdn.co\/image\/ab67616d00001e024be345f026469be09f12a92e"
+                            "url": "https:\/\/i.scdn.co\/image\/ab67616d00001e023efcd243aaa5638f55318f91"
                         },
                         {
                             "height": 64,
                             "width": 64,
-                            "url": "https:\/\/i.scdn.co\/image\/ab67616d000048514be345f026469be09f12a92e"
+                            "url": "https:\/\/i.scdn.co\/image\/ab67616d000048513efcd243aaa5638f55318f91"
                         }
                     ],
                     "is_playable": true,
-                    "name": "Countdown To Extinction (Deluxe Edition - Remastered)",
-                    "release_date": "1992-06-14",
+                    "name": "Green River (Expanded Edition)",
+                    "release_date": "1969-08-03",
                     "release_date_precision": "day",
-                    "total_tracks": 28,
+                    "total_tracks": 14,
                     "type": "album",
-                    "uri": "spotify:album:0fWLW9j35eQTrOb8mHcnyX"
+                    "uri": "spotify:album:0i9mOB6mPGqwVvtJEXiwPG"
                 },
                 "artists": [
                     {
                         "external_urls": {
-                            "spotify": "https:\/\/open.spotify.com\/artist\/1Yox196W7bzVNZI7RBaPnf"
+                            "spotify": "https:\/\/open.spotify.com\/artist\/3IYUhFvPQItj6xySrBmZkd"
                         },
-                        "href": "https:\/\/api.spotify.com\/v1\/artists\/1Yox196W7bzVNZI7RBaPnf",
-                        "id": "1Yox196W7bzVNZI7RBaPnf",
-                        "name": "Megadeth",
+                        "href": "https:\/\/api.spotify.com\/v1\/artists\/3IYUhFvPQItj6xySrBmZkd",
+                        "id": "3IYUhFvPQItj6xySrBmZkd",
+                        "name": "Creedence Clearwater Revival",
                         "type": "artist",
-                        "uri": "spotify:artist:1Yox196W7bzVNZI7RBaPnf"
+                        "uri": "spotify:artist:3IYUhFvPQItj6xySrBmZkd"
                     }
                 ],
                 "available_markets": [
@@ -886,475 +884,24 @@
                     "XK"
                 ],
                 "disc_number": 1,
-                "duration_ms": 241906,
+                "duration_ms": 141600,
                 "explicit": false,
                 "external_ids": {
-                    "isrc": "USCA21202505"
+                    "isrc": "USC4R0817604"
                 },
                 "external_urls": {
-                    "spotify": "https:\/\/open.spotify.com\/track\/5mR858YsHYG761aUqZoGkD"
+                    "spotify": "https:\/\/open.spotify.com\/track\/20OFwXhEXf12DzwXmaV7fj"
                 },
-                "href": "https:\/\/api.spotify.com\/v1\/tracks\/5mR858YsHYG761aUqZoGkD",
-                "id": "5mR858YsHYG761aUqZoGkD",
+                "href": "https:\/\/api.spotify.com\/v1\/tracks\/20OFwXhEXf12DzwXmaV7fj",
+                "id": "20OFwXhEXf12DzwXmaV7fj",
                 "is_local": false,
                 "is_playable": true,
-                "name": "Symphony Of Destruction - Remastered 2012",
-                "popularity": 67,
+                "name": "Bad Moon Rising",
+                "popularity": 79,
                 "preview_url": null,
-                "track_number": 2,
+                "track_number": 5,
                 "type": "track",
-                "uri": "spotify:track:5mR858YsHYG761aUqZoGkD"
-            },
-            {
-                "album": {
-                    "album_type": "album",
-                    "artists": [
-                        {
-                            "external_urls": {
-                                "spotify": "https:\/\/open.spotify.com\/artist\/1Yox196W7bzVNZI7RBaPnf"
-                            },
-                            "href": "https:\/\/api.spotify.com\/v1\/artists\/1Yox196W7bzVNZI7RBaPnf",
-                            "id": "1Yox196W7bzVNZI7RBaPnf",
-                            "name": "Megadeth",
-                            "type": "artist",
-                            "uri": "spotify:artist:1Yox196W7bzVNZI7RBaPnf"
-                        }
-                    ],
-                    "available_markets": [
-                        "AR",
-                        "AU",
-                        "AT",
-                        "BE",
-                        "BO",
-                        "BR",
-                        "BG",
-                        "CA",
-                        "CL",
-                        "CO",
-                        "CR",
-                        "CY",
-                        "CZ",
-                        "DK",
-                        "DO",
-                        "DE",
-                        "EC",
-                        "EE",
-                        "SV",
-                        "FI",
-                        "FR",
-                        "GR",
-                        "GT",
-                        "HN",
-                        "HK",
-                        "HU",
-                        "IS",
-                        "IE",
-                        "IT",
-                        "LV",
-                        "LT",
-                        "LU",
-                        "MY",
-                        "MT",
-                        "MX",
-                        "NL",
-                        "NZ",
-                        "NI",
-                        "NO",
-                        "PA",
-                        "PY",
-                        "PE",
-                        "PH",
-                        "PL",
-                        "PT",
-                        "SG",
-                        "SK",
-                        "ES",
-                        "SE",
-                        "CH",
-                        "TW",
-                        "TR",
-                        "UY",
-                        "US",
-                        "GB",
-                        "AD",
-                        "LI",
-                        "MC",
-                        "ID",
-                        "JP",
-                        "TH",
-                        "VN",
-                        "RO",
-                        "IL",
-                        "ZA",
-                        "SA",
-                        "AE",
-                        "BH",
-                        "QA",
-                        "OM",
-                        "KW",
-                        "EG",
-                        "MA",
-                        "DZ",
-                        "TN",
-                        "LB",
-                        "JO",
-                        "PS",
-                        "IN",
-                        "BY",
-                        "KZ",
-                        "MD",
-                        "UA",
-                        "AL",
-                        "BA",
-                        "HR",
-                        "ME",
-                        "MK",
-                        "RS",
-                        "SI",
-                        "KR",
-                        "BD",
-                        "PK",
-                        "LK",
-                        "GH",
-                        "KE",
-                        "NG",
-                        "TZ",
-                        "UG",
-                        "AG",
-                        "AM",
-                        "BS",
-                        "BB",
-                        "BZ",
-                        "BT",
-                        "BW",
-                        "BF",
-                        "CV",
-                        "CW",
-                        "DM",
-                        "FJ",
-                        "GM",
-                        "GE",
-                        "GD",
-                        "GW",
-                        "GY",
-                        "HT",
-                        "JM",
-                        "KI",
-                        "LS",
-                        "LR",
-                        "MW",
-                        "MV",
-                        "ML",
-                        "MH",
-                        "FM",
-                        "NA",
-                        "NR",
-                        "NE",
-                        "PW",
-                        "PG",
-                        "PR",
-                        "WS",
-                        "SM",
-                        "ST",
-                        "SN",
-                        "SC",
-                        "SL",
-                        "SB",
-                        "KN",
-                        "LC",
-                        "VC",
-                        "SR",
-                        "TL",
-                        "TO",
-                        "TT",
-                        "TV",
-                        "VU",
-                        "AZ",
-                        "BN",
-                        "BI",
-                        "KH",
-                        "CM",
-                        "TD",
-                        "KM",
-                        "GQ",
-                        "SZ",
-                        "GA",
-                        "GN",
-                        "KG",
-                        "LA",
-                        "MO",
-                        "MR",
-                        "MN",
-                        "NP",
-                        "RW",
-                        "TG",
-                        "UZ",
-                        "ZW",
-                        "BJ",
-                        "MG",
-                        "MU",
-                        "MZ",
-                        "AO",
-                        "CI",
-                        "DJ",
-                        "ZM",
-                        "CD",
-                        "CG",
-                        "IQ",
-                        "LY",
-                        "TJ",
-                        "VE",
-                        "ET",
-                        "XK"
-                    ],
-                    "external_urls": {
-                        "spotify": "https:\/\/open.spotify.com\/album\/3ALthL9fEWggZRgRklZeEf"
-                    },
-                    "href": "https:\/\/api.spotify.com\/v1\/albums\/3ALthL9fEWggZRgRklZeEf",
-                    "id": "3ALthL9fEWggZRgRklZeEf",
-                    "images": [
-                        {
-                            "height": 640,
-                            "width": 640,
-                            "url": "https:\/\/i.scdn.co\/image\/ab67616d0000b2731d6ed55460b97eb18bcdd3e8"
-                        },
-                        {
-                            "height": 300,
-                            "width": 300,
-                            "url": "https:\/\/i.scdn.co\/image\/ab67616d00001e021d6ed55460b97eb18bcdd3e8"
-                        },
-                        {
-                            "height": 64,
-                            "width": 64,
-                            "url": "https:\/\/i.scdn.co\/image\/ab67616d000048511d6ed55460b97eb18bcdd3e8"
-                        }
-                    ],
-                    "is_playable": true,
-                    "name": "That One Night: Live In Buenos Aires",
-                    "release_date": "2021-11-26",
-                    "release_date_precision": "day",
-                    "total_tracks": 21,
-                    "type": "album",
-                    "uri": "spotify:album:3ALthL9fEWggZRgRklZeEf"
-                },
-                "artists": [
-                    {
-                        "external_urls": {
-                            "spotify": "https:\/\/open.spotify.com\/artist\/1Yox196W7bzVNZI7RBaPnf"
-                        },
-                        "href": "https:\/\/api.spotify.com\/v1\/artists\/1Yox196W7bzVNZI7RBaPnf",
-                        "id": "1Yox196W7bzVNZI7RBaPnf",
-                        "name": "Megadeth",
-                        "type": "artist",
-                        "uri": "spotify:artist:1Yox196W7bzVNZI7RBaPnf"
-                    }
-                ],
-                "available_markets": [
-                    "AR",
-                    "AU",
-                    "AT",
-                    "BE",
-                    "BO",
-                    "BR",
-                    "BG",
-                    "CA",
-                    "CL",
-                    "CO",
-                    "CR",
-                    "CY",
-                    "CZ",
-                    "DK",
-                    "DO",
-                    "DE",
-                    "EC",
-                    "EE",
-                    "SV",
-                    "FI",
-                    "FR",
-                    "GR",
-                    "GT",
-                    "HN",
-                    "HK",
-                    "HU",
-                    "IS",
-                    "IE",
-                    "IT",
-                    "LV",
-                    "LT",
-                    "LU",
-                    "MY",
-                    "MT",
-                    "MX",
-                    "NL",
-                    "NZ",
-                    "NI",
-                    "NO",
-                    "PA",
-                    "PY",
-                    "PE",
-                    "PH",
-                    "PL",
-                    "PT",
-                    "SG",
-                    "SK",
-                    "ES",
-                    "SE",
-                    "CH",
-                    "TW",
-                    "TR",
-                    "UY",
-                    "US",
-                    "GB",
-                    "AD",
-                    "LI",
-                    "MC",
-                    "ID",
-                    "JP",
-                    "TH",
-                    "VN",
-                    "RO",
-                    "IL",
-                    "ZA",
-                    "SA",
-                    "AE",
-                    "BH",
-                    "QA",
-                    "OM",
-                    "KW",
-                    "EG",
-                    "MA",
-                    "DZ",
-                    "TN",
-                    "LB",
-                    "JO",
-                    "PS",
-                    "IN",
-                    "BY",
-                    "KZ",
-                    "MD",
-                    "UA",
-                    "AL",
-                    "BA",
-                    "HR",
-                    "ME",
-                    "MK",
-                    "RS",
-                    "SI",
-                    "KR",
-                    "BD",
-                    "PK",
-                    "LK",
-                    "GH",
-                    "KE",
-                    "NG",
-                    "TZ",
-                    "UG",
-                    "AG",
-                    "AM",
-                    "BS",
-                    "BB",
-                    "BZ",
-                    "BT",
-                    "BW",
-                    "BF",
-                    "CV",
-                    "CW",
-                    "DM",
-                    "FJ",
-                    "GM",
-                    "GE",
-                    "GD",
-                    "GW",
-                    "GY",
-                    "HT",
-                    "JM",
-                    "KI",
-                    "LS",
-                    "LR",
-                    "MW",
-                    "MV",
-                    "ML",
-                    "MH",
-                    "FM",
-                    "NA",
-                    "NR",
-                    "NE",
-                    "PW",
-                    "PG",
-                    "PR",
-                    "WS",
-                    "SM",
-                    "ST",
-                    "SN",
-                    "SC",
-                    "SL",
-                    "SB",
-                    "KN",
-                    "LC",
-                    "VC",
-                    "SR",
-                    "TL",
-                    "TO",
-                    "TT",
-                    "TV",
-                    "VU",
-                    "AZ",
-                    "BN",
-                    "BI",
-                    "KH",
-                    "CM",
-                    "TD",
-                    "KM",
-                    "GQ",
-                    "SZ",
-                    "GA",
-                    "GN",
-                    "KG",
-                    "LA",
-                    "MO",
-                    "MR",
-                    "MN",
-                    "NP",
-                    "RW",
-                    "TG",
-                    "UZ",
-                    "ZW",
-                    "BJ",
-                    "MG",
-                    "MU",
-                    "MZ",
-                    "AO",
-                    "CI",
-                    "DJ",
-                    "ZM",
-                    "CD",
-                    "CG",
-                    "IQ",
-                    "LY",
-                    "TJ",
-                    "VE",
-                    "ET",
-                    "XK"
-                ],
-                "disc_number": 1,
-                "duration_ms": 263973,
-                "explicit": false,
-                "external_ids": {
-                    "isrc": "QM6XS2101338"
-                },
-                "external_urls": {
-                    "spotify": "https:\/\/open.spotify.com\/track\/2HBj7ObpsG0iPg7iqAYcZI"
-                },
-                "href": "https:\/\/api.spotify.com\/v1\/tracks\/2HBj7ObpsG0iPg7iqAYcZI",
-                "id": "2HBj7ObpsG0iPg7iqAYcZI",
-                "is_local": false,
-                "is_playable": true,
-                "name": "Symphony of Destruction - Live at Obras Sanitarias Stadium, Argentina, 2005",
-                "popularity": 33,
-                "preview_url": null,
-                "track_number": 19,
-                "type": "track",
-                "uri": "spotify:track:2HBj7ObpsG0iPg7iqAYcZI"
+                "uri": "spotify:track:20OFwXhEXf12DzwXmaV7fj"
             },
             {
                 "album": {
@@ -1362,13 +909,13 @@
                     "artists": [
                         {
                             "external_urls": {
-                                "spotify": "https:\/\/open.spotify.com\/artist\/1Yox196W7bzVNZI7RBaPnf"
+                                "spotify": "https:\/\/open.spotify.com\/artist\/3IYUhFvPQItj6xySrBmZkd"
                             },
-                            "href": "https:\/\/api.spotify.com\/v1\/artists\/1Yox196W7bzVNZI7RBaPnf",
-                            "id": "1Yox196W7bzVNZI7RBaPnf",
-                            "name": "Megadeth",
+                            "href": "https:\/\/api.spotify.com\/v1\/artists\/3IYUhFvPQItj6xySrBmZkd",
+                            "id": "3IYUhFvPQItj6xySrBmZkd",
+                            "name": "Creedence Clearwater Revival",
                             "type": "artist",
-                            "uri": "spotify:artist:1Yox196W7bzVNZI7RBaPnf"
+                            "uri": "spotify:artist:3IYUhFvPQItj6xySrBmZkd"
                         }
                     ],
                     "available_markets": [
@@ -1558,45 +1105,45 @@
                         "XK"
                     ],
                     "external_urls": {
-                        "spotify": "https:\/\/open.spotify.com\/album\/00sgBMhbJo1lEa1hHhYtw4"
+                        "spotify": "https:\/\/open.spotify.com\/album\/03GKkfyog7hnllilFS3jIV"
                     },
-                    "href": "https:\/\/api.spotify.com\/v1\/albums\/00sgBMhbJo1lEa1hHhYtw4",
-                    "id": "00sgBMhbJo1lEa1hHhYtw4",
+                    "href": "https:\/\/api.spotify.com\/v1\/albums\/03GKkfyog7hnllilFS3jIV",
+                    "id": "03GKkfyog7hnllilFS3jIV",
                     "images": [
                         {
                             "height": 640,
                             "width": 640,
-                            "url": "https:\/\/i.scdn.co\/image\/ab67616d0000b273cc6b07df8741aaf3b6779f20"
+                            "url": "https:\/\/i.scdn.co\/image\/ab67616d0000b2735b18abb5facf12c82192bda7"
                         },
                         {
                             "height": 300,
                             "width": 300,
-                            "url": "https:\/\/i.scdn.co\/image\/ab67616d00001e02cc6b07df8741aaf3b6779f20"
+                            "url": "https:\/\/i.scdn.co\/image\/ab67616d00001e025b18abb5facf12c82192bda7"
                         },
                         {
                             "height": 64,
                             "width": 64,
-                            "url": "https:\/\/i.scdn.co\/image\/ab67616d00004851cc6b07df8741aaf3b6779f20"
+                            "url": "https:\/\/i.scdn.co\/image\/ab67616d000048515b18abb5facf12c82192bda7"
                         }
                     ],
                     "is_playable": true,
-                    "name": "Greatest Hits: Back To The Start",
-                    "release_date": "2005-01-01",
+                    "name": "Chronicle: 20 Greatest Hits",
+                    "release_date": "1976-01-01",
                     "release_date_precision": "day",
-                    "total_tracks": 16,
+                    "total_tracks": 20,
                     "type": "album",
-                    "uri": "spotify:album:00sgBMhbJo1lEa1hHhYtw4"
+                    "uri": "spotify:album:03GKkfyog7hnllilFS3jIV"
                 },
                 "artists": [
                     {
                         "external_urls": {
-                            "spotify": "https:\/\/open.spotify.com\/artist\/1Yox196W7bzVNZI7RBaPnf"
+                            "spotify": "https:\/\/open.spotify.com\/artist\/3IYUhFvPQItj6xySrBmZkd"
                         },
-                        "href": "https:\/\/api.spotify.com\/v1\/artists\/1Yox196W7bzVNZI7RBaPnf",
-                        "id": "1Yox196W7bzVNZI7RBaPnf",
-                        "name": "Megadeth",
+                        "href": "https:\/\/api.spotify.com\/v1\/artists\/3IYUhFvPQItj6xySrBmZkd",
+                        "id": "3IYUhFvPQItj6xySrBmZkd",
+                        "name": "Creedence Clearwater Revival",
                         "type": "artist",
-                        "uri": "spotify:artist:1Yox196W7bzVNZI7RBaPnf"
+                        "uri": "spotify:artist:3IYUhFvPQItj6xySrBmZkd"
                     }
                 ],
                 "available_markets": [
@@ -1786,48 +1333,38 @@
                     "XK"
                 ],
                 "disc_number": 1,
-                "duration_ms": 246733,
+                "duration_ms": 664333,
                 "explicit": false,
                 "external_ids": {
-                    "isrc": "USCA20400616"
+                    "isrc": "USFI87000061"
                 },
                 "external_urls": {
-                    "spotify": "https:\/\/open.spotify.com\/track\/4YJZjINIhakR98fnz1Pvup"
+                    "spotify": "https:\/\/open.spotify.com\/track\/6Fu2DQzXvx28qYEPrXDikG"
                 },
-                "href": "https:\/\/api.spotify.com\/v1\/tracks\/4YJZjINIhakR98fnz1Pvup",
-                "id": "4YJZjINIhakR98fnz1Pvup",
+                "href": "https:\/\/api.spotify.com\/v1\/tracks\/6Fu2DQzXvx28qYEPrXDikG",
+                "id": "6Fu2DQzXvx28qYEPrXDikG",
                 "is_local": false,
                 "is_playable": true,
-                "name": "Symphony Of Destruction",
-                "popularity": 42,
+                "name": "I Heard It Through The Grapevine",
+                "popularity": 51,
                 "preview_url": null,
-                "track_number": 9,
+                "track_number": 16,
                 "type": "track",
-                "uri": "spotify:track:4YJZjINIhakR98fnz1Pvup"
+                "uri": "spotify:track:6Fu2DQzXvx28qYEPrXDikG"
             },
             {
                 "album": {
-                    "album_type": "single",
+                    "album_type": "album",
                     "artists": [
                         {
                             "external_urls": {
-                                "spotify": "https:\/\/open.spotify.com\/artist\/6MDME20pz9RveH9rEXvrOM"
+                                "spotify": "https:\/\/open.spotify.com\/artist\/3IYUhFvPQItj6xySrBmZkd"
                             },
-                            "href": "https:\/\/api.spotify.com\/v1\/artists\/6MDME20pz9RveH9rEXvrOM",
-                            "id": "6MDME20pz9RveH9rEXvrOM",
-                            "name": "Clean Bandit",
+                            "href": "https:\/\/api.spotify.com\/v1\/artists\/3IYUhFvPQItj6xySrBmZkd",
+                            "id": "3IYUhFvPQItj6xySrBmZkd",
+                            "name": "Creedence Clearwater Revival",
                             "type": "artist",
-                            "uri": "spotify:artist:6MDME20pz9RveH9rEXvrOM"
-                        },
-                        {
-                            "external_urls": {
-                                "spotify": "https:\/\/open.spotify.com\/artist\/1Xylc3o4UrD53lo9CvFvVg"
-                            },
-                            "href": "https:\/\/api.spotify.com\/v1\/artists\/1Xylc3o4UrD53lo9CvFvVg",
-                            "id": "1Xylc3o4UrD53lo9CvFvVg",
-                            "name": "Zara Larsson",
-                            "type": "artist",
-                            "uri": "spotify:artist:1Xylc3o4UrD53lo9CvFvVg"
+                            "uri": "spotify:artist:3IYUhFvPQItj6xySrBmZkd"
                         }
                     ],
                     "available_markets": [
@@ -2017,55 +1554,45 @@
                         "XK"
                     ],
                     "external_urls": {
-                        "spotify": "https:\/\/open.spotify.com\/album\/4b13SJlne61y53KSEwuQtD"
+                        "spotify": "https:\/\/open.spotify.com\/album\/31q47gQszFt0CddSyMksgO"
                     },
-                    "href": "https:\/\/api.spotify.com\/v1\/albums\/4b13SJlne61y53KSEwuQtD",
-                    "id": "4b13SJlne61y53KSEwuQtD",
+                    "href": "https:\/\/api.spotify.com\/v1\/albums\/31q47gQszFt0CddSyMksgO",
+                    "id": "31q47gQszFt0CddSyMksgO",
                     "images": [
                         {
                             "height": 640,
                             "width": 640,
-                            "url": "https:\/\/i.scdn.co\/image\/ab67616d0000b2735b1130d050c4cd2295999d85"
+                            "url": "https:\/\/i.scdn.co\/image\/ab67616d0000b2739f39192f9f8ca1c90847b3e5"
                         },
                         {
                             "height": 300,
                             "width": 300,
-                            "url": "https:\/\/i.scdn.co\/image\/ab67616d00001e025b1130d050c4cd2295999d85"
+                            "url": "https:\/\/i.scdn.co\/image\/ab67616d00001e029f39192f9f8ca1c90847b3e5"
                         },
                         {
                             "height": 64,
                             "width": 64,
-                            "url": "https:\/\/i.scdn.co\/image\/ab67616d000048515b1130d050c4cd2295999d85"
+                            "url": "https:\/\/i.scdn.co\/image\/ab67616d000048519f39192f9f8ca1c90847b3e5"
                         }
                     ],
                     "is_playable": true,
-                    "name": "Symphony (feat. Zara Larsson)",
-                    "release_date": "2017-03-16",
+                    "name": "Willy And The Poor Boys (Expanded Edition)",
+                    "release_date": "1969-11-02",
                     "release_date_precision": "day",
-                    "total_tracks": 1,
+                    "total_tracks": 13,
                     "type": "album",
-                    "uri": "spotify:album:4b13SJlne61y53KSEwuQtD"
+                    "uri": "spotify:album:31q47gQszFt0CddSyMksgO"
                 },
                 "artists": [
                     {
                         "external_urls": {
-                            "spotify": "https:\/\/open.spotify.com\/artist\/6MDME20pz9RveH9rEXvrOM"
+                            "spotify": "https:\/\/open.spotify.com\/artist\/3IYUhFvPQItj6xySrBmZkd"
                         },
-                        "href": "https:\/\/api.spotify.com\/v1\/artists\/6MDME20pz9RveH9rEXvrOM",
-                        "id": "6MDME20pz9RveH9rEXvrOM",
-                        "name": "Clean Bandit",
+                        "href": "https:\/\/api.spotify.com\/v1\/artists\/3IYUhFvPQItj6xySrBmZkd",
+                        "id": "3IYUhFvPQItj6xySrBmZkd",
+                        "name": "Creedence Clearwater Revival",
                         "type": "artist",
-                        "uri": "spotify:artist:6MDME20pz9RveH9rEXvrOM"
-                    },
-                    {
-                        "external_urls": {
-                            "spotify": "https:\/\/open.spotify.com\/artist\/1Xylc3o4UrD53lo9CvFvVg"
-                        },
-                        "href": "https:\/\/api.spotify.com\/v1\/artists\/1Xylc3o4UrD53lo9CvFvVg",
-                        "id": "1Xylc3o4UrD53lo9CvFvVg",
-                        "name": "Zara Larsson",
-                        "type": "artist",
-                        "uri": "spotify:artist:1Xylc3o4UrD53lo9CvFvVg"
+                        "uri": "spotify:artist:3IYUhFvPQItj6xySrBmZkd"
                     }
                 ],
                 "available_markets": [
@@ -2255,24 +1782,473 @@
                     "XK"
                 ],
                 "disc_number": 1,
-                "duration_ms": 212459,
+                "duration_ms": 140773,
                 "explicit": false,
                 "external_ids": {
-                    "isrc": "GBAHS1700199"
+                    "isrc": "USC4R0817618"
                 },
                 "external_urls": {
-                    "spotify": "https:\/\/open.spotify.com\/track\/1x5sYLZiu9r5E43kMlt9f8"
+                    "spotify": "https:\/\/open.spotify.com\/track\/4BP3uh0hFLFRb5cjsgLqDh"
                 },
-                "href": "https:\/\/api.spotify.com\/v1\/tracks\/1x5sYLZiu9r5E43kMlt9f8",
-                "id": "1x5sYLZiu9r5E43kMlt9f8",
+                "href": "https:\/\/api.spotify.com\/v1\/tracks\/4BP3uh0hFLFRb5cjsgLqDh",
+                "id": "4BP3uh0hFLFRb5cjsgLqDh",
                 "is_local": false,
                 "is_playable": true,
-                "name": "Symphony (feat. Zara Larsson)",
-                "popularity": 74,
+                "name": "Fortunate Son",
+                "popularity": 83,
+                "preview_url": null,
+                "track_number": 6,
+                "type": "track",
+                "uri": "spotify:track:4BP3uh0hFLFRb5cjsgLqDh"
+            },
+            {
+                "album": {
+                    "album_type": "album",
+                    "artists": [
+                        {
+                            "external_urls": {
+                                "spotify": "https:\/\/open.spotify.com\/artist\/3IYUhFvPQItj6xySrBmZkd"
+                            },
+                            "href": "https:\/\/api.spotify.com\/v1\/artists\/3IYUhFvPQItj6xySrBmZkd",
+                            "id": "3IYUhFvPQItj6xySrBmZkd",
+                            "name": "Creedence Clearwater Revival",
+                            "type": "artist",
+                            "uri": "spotify:artist:3IYUhFvPQItj6xySrBmZkd"
+                        }
+                    ],
+                    "available_markets": [
+                        "AR",
+                        "AU",
+                        "AT",
+                        "BE",
+                        "BO",
+                        "BR",
+                        "BG",
+                        "CA",
+                        "CL",
+                        "CO",
+                        "CR",
+                        "CY",
+                        "CZ",
+                        "DK",
+                        "DO",
+                        "DE",
+                        "EC",
+                        "EE",
+                        "SV",
+                        "FI",
+                        "FR",
+                        "GR",
+                        "GT",
+                        "HN",
+                        "HK",
+                        "HU",
+                        "IS",
+                        "IE",
+                        "IT",
+                        "LV",
+                        "LT",
+                        "LU",
+                        "MY",
+                        "MT",
+                        "MX",
+                        "NL",
+                        "NZ",
+                        "NI",
+                        "NO",
+                        "PA",
+                        "PY",
+                        "PE",
+                        "PH",
+                        "PL",
+                        "PT",
+                        "SG",
+                        "SK",
+                        "ES",
+                        "SE",
+                        "CH",
+                        "TW",
+                        "TR",
+                        "UY",
+                        "US",
+                        "GB",
+                        "AD",
+                        "LI",
+                        "MC",
+                        "ID",
+                        "JP",
+                        "TH",
+                        "VN",
+                        "RO",
+                        "IL",
+                        "ZA",
+                        "SA",
+                        "AE",
+                        "BH",
+                        "QA",
+                        "OM",
+                        "KW",
+                        "EG",
+                        "MA",
+                        "DZ",
+                        "TN",
+                        "LB",
+                        "JO",
+                        "PS",
+                        "IN",
+                        "BY",
+                        "KZ",
+                        "MD",
+                        "UA",
+                        "AL",
+                        "BA",
+                        "HR",
+                        "ME",
+                        "MK",
+                        "RS",
+                        "SI",
+                        "KR",
+                        "BD",
+                        "PK",
+                        "LK",
+                        "GH",
+                        "KE",
+                        "NG",
+                        "TZ",
+                        "UG",
+                        "AG",
+                        "AM",
+                        "BS",
+                        "BB",
+                        "BZ",
+                        "BT",
+                        "BW",
+                        "BF",
+                        "CV",
+                        "CW",
+                        "DM",
+                        "FJ",
+                        "GM",
+                        "GE",
+                        "GD",
+                        "GW",
+                        "GY",
+                        "HT",
+                        "JM",
+                        "KI",
+                        "LS",
+                        "LR",
+                        "MW",
+                        "MV",
+                        "ML",
+                        "MH",
+                        "FM",
+                        "NA",
+                        "NR",
+                        "NE",
+                        "PW",
+                        "PG",
+                        "WS",
+                        "SM",
+                        "ST",
+                        "SN",
+                        "SC",
+                        "SL",
+                        "SB",
+                        "KN",
+                        "LC",
+                        "VC",
+                        "SR",
+                        "TL",
+                        "TO",
+                        "TT",
+                        "TV",
+                        "VU",
+                        "AZ",
+                        "BN",
+                        "BI",
+                        "KH",
+                        "CM",
+                        "TD",
+                        "KM",
+                        "GQ",
+                        "SZ",
+                        "GA",
+                        "GN",
+                        "KG",
+                        "LA",
+                        "MO",
+                        "MR",
+                        "MN",
+                        "NP",
+                        "RW",
+                        "TG",
+                        "UZ",
+                        "ZW",
+                        "BJ",
+                        "MG",
+                        "MU",
+                        "MZ",
+                        "AO",
+                        "CI",
+                        "DJ",
+                        "ZM",
+                        "CD",
+                        "CG",
+                        "IQ",
+                        "LY",
+                        "TJ",
+                        "VE",
+                        "ET",
+                        "XK"
+                    ],
+                    "external_urls": {
+                        "spotify": "https:\/\/open.spotify.com\/album\/0i9mOB6mPGqwVvtJEXiwPG"
+                    },
+                    "href": "https:\/\/api.spotify.com\/v1\/albums\/0i9mOB6mPGqwVvtJEXiwPG",
+                    "id": "0i9mOB6mPGqwVvtJEXiwPG",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https:\/\/i.scdn.co\/image\/ab67616d0000b2733efcd243aaa5638f55318f91"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https:\/\/i.scdn.co\/image\/ab67616d00001e023efcd243aaa5638f55318f91"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https:\/\/i.scdn.co\/image\/ab67616d000048513efcd243aaa5638f55318f91"
+                        }
+                    ],
+                    "is_playable": true,
+                    "name": "Green River (Expanded Edition)",
+                    "release_date": "1969-08-03",
+                    "release_date_precision": "day",
+                    "total_tracks": 14,
+                    "type": "album",
+                    "uri": "spotify:album:0i9mOB6mPGqwVvtJEXiwPG"
+                },
+                "artists": [
+                    {
+                        "external_urls": {
+                            "spotify": "https:\/\/open.spotify.com\/artist\/3IYUhFvPQItj6xySrBmZkd"
+                        },
+                        "href": "https:\/\/api.spotify.com\/v1\/artists\/3IYUhFvPQItj6xySrBmZkd",
+                        "id": "3IYUhFvPQItj6xySrBmZkd",
+                        "name": "Creedence Clearwater Revival",
+                        "type": "artist",
+                        "uri": "spotify:artist:3IYUhFvPQItj6xySrBmZkd"
+                    }
+                ],
+                "available_markets": [
+                    "AR",
+                    "AU",
+                    "AT",
+                    "BE",
+                    "BO",
+                    "BR",
+                    "BG",
+                    "CA",
+                    "CL",
+                    "CO",
+                    "CR",
+                    "CY",
+                    "CZ",
+                    "DK",
+                    "DO",
+                    "DE",
+                    "EC",
+                    "EE",
+                    "SV",
+                    "FI",
+                    "FR",
+                    "GR",
+                    "GT",
+                    "HN",
+                    "HK",
+                    "HU",
+                    "IS",
+                    "IE",
+                    "IT",
+                    "LV",
+                    "LT",
+                    "LU",
+                    "MY",
+                    "MT",
+                    "MX",
+                    "NL",
+                    "NZ",
+                    "NI",
+                    "NO",
+                    "PA",
+                    "PY",
+                    "PE",
+                    "PH",
+                    "PL",
+                    "PT",
+                    "SG",
+                    "SK",
+                    "ES",
+                    "SE",
+                    "CH",
+                    "TW",
+                    "TR",
+                    "UY",
+                    "US",
+                    "GB",
+                    "AD",
+                    "LI",
+                    "MC",
+                    "ID",
+                    "JP",
+                    "TH",
+                    "VN",
+                    "RO",
+                    "IL",
+                    "ZA",
+                    "SA",
+                    "AE",
+                    "BH",
+                    "QA",
+                    "OM",
+                    "KW",
+                    "EG",
+                    "MA",
+                    "DZ",
+                    "TN",
+                    "LB",
+                    "JO",
+                    "PS",
+                    "IN",
+                    "BY",
+                    "KZ",
+                    "MD",
+                    "UA",
+                    "AL",
+                    "BA",
+                    "HR",
+                    "ME",
+                    "MK",
+                    "RS",
+                    "SI",
+                    "KR",
+                    "BD",
+                    "PK",
+                    "LK",
+                    "GH",
+                    "KE",
+                    "NG",
+                    "TZ",
+                    "UG",
+                    "AG",
+                    "AM",
+                    "BS",
+                    "BB",
+                    "BZ",
+                    "BT",
+                    "BW",
+                    "BF",
+                    "CV",
+                    "CW",
+                    "DM",
+                    "FJ",
+                    "GM",
+                    "GE",
+                    "GD",
+                    "GW",
+                    "GY",
+                    "HT",
+                    "JM",
+                    "KI",
+                    "LS",
+                    "LR",
+                    "MW",
+                    "MV",
+                    "ML",
+                    "MH",
+                    "FM",
+                    "NA",
+                    "NR",
+                    "NE",
+                    "PW",
+                    "PG",
+                    "WS",
+                    "SM",
+                    "ST",
+                    "SN",
+                    "SC",
+                    "SL",
+                    "SB",
+                    "KN",
+                    "LC",
+                    "VC",
+                    "SR",
+                    "TL",
+                    "TO",
+                    "TT",
+                    "TV",
+                    "VU",
+                    "AZ",
+                    "BN",
+                    "BI",
+                    "KH",
+                    "CM",
+                    "TD",
+                    "KM",
+                    "GQ",
+                    "SZ",
+                    "GA",
+                    "GN",
+                    "KG",
+                    "LA",
+                    "MO",
+                    "MR",
+                    "MN",
+                    "NP",
+                    "RW",
+                    "TG",
+                    "UZ",
+                    "ZW",
+                    "BJ",
+                    "MG",
+                    "MU",
+                    "MZ",
+                    "AO",
+                    "CI",
+                    "DJ",
+                    "ZM",
+                    "CD",
+                    "CG",
+                    "IQ",
+                    "LY",
+                    "TJ",
+                    "VE",
+                    "ET",
+                    "XK"
+                ],
+                "disc_number": 1,
+                "duration_ms": 154120,
+                "explicit": false,
+                "external_ids": {
+                    "isrc": "USC4R0817600"
+                },
+                "external_urls": {
+                    "spotify": "https:\/\/open.spotify.com\/track\/11DjZQEZ69EXLo77HVj6yW"
+                },
+                "href": "https:\/\/api.spotify.com\/v1\/tracks\/11DjZQEZ69EXLo77HVj6yW",
+                "id": "11DjZQEZ69EXLo77HVj6yW",
+                "is_local": false,
+                "is_playable": true,
+                "name": "Green River",
+                "popularity": 73,
                 "preview_url": null,
                 "track_number": 1,
                 "type": "track",
-                "uri": "spotify:track:1x5sYLZiu9r5E43kMlt9f8"
+                "uri": "spotify:track:11DjZQEZ69EXLo77HVj6yW"
             },
             {
                 "album": {
@@ -2280,13 +2256,13 @@
                     "artists": [
                         {
                             "external_urls": {
-                                "spotify": "https:\/\/open.spotify.com\/artist\/53XhwfbYqKCa1cC15pYq2q"
+                                "spotify": "https:\/\/open.spotify.com\/artist\/3IYUhFvPQItj6xySrBmZkd"
                             },
-                            "href": "https:\/\/api.spotify.com\/v1\/artists\/53XhwfbYqKCa1cC15pYq2q",
-                            "id": "53XhwfbYqKCa1cC15pYq2q",
-                            "name": "Imagine Dragons",
+                            "href": "https:\/\/api.spotify.com\/v1\/artists\/3IYUhFvPQItj6xySrBmZkd",
+                            "id": "3IYUhFvPQItj6xySrBmZkd",
+                            "name": "Creedence Clearwater Revival",
                             "type": "artist",
-                            "uri": "spotify:artist:53XhwfbYqKCa1cC15pYq2q"
+                            "uri": "spotify:artist:3IYUhFvPQItj6xySrBmZkd"
                         }
                     ],
                     "available_markets": [
@@ -2475,45 +2451,45 @@
                         "XK"
                     ],
                     "external_urls": {
-                        "spotify": "https:\/\/open.spotify.com\/album\/6yiXkzHvC0OTmhfDQOEWtS"
+                        "spotify": "https:\/\/open.spotify.com\/album\/5w2X5ZmdE4u0XGkOU7BiLG"
                     },
-                    "href": "https:\/\/api.spotify.com\/v1\/albums\/6yiXkzHvC0OTmhfDQOEWtS",
-                    "id": "6yiXkzHvC0OTmhfDQOEWtS",
+                    "href": "https:\/\/api.spotify.com\/v1\/albums\/5w2X5ZmdE4u0XGkOU7BiLG",
+                    "id": "5w2X5ZmdE4u0XGkOU7BiLG",
                     "images": [
                         {
                             "height": 640,
                             "width": 640,
-                            "url": "https:\/\/i.scdn.co\/image\/ab67616d0000b273fc915b69600dce2991a61f13"
+                            "url": "https:\/\/i.scdn.co\/image\/ab67616d0000b2736e186edfb8fe3710fdc1f7c2"
                         },
                         {
                             "height": 300,
                             "width": 300,
-                            "url": "https:\/\/i.scdn.co\/image\/ab67616d00001e02fc915b69600dce2991a61f13"
+                            "url": "https:\/\/i.scdn.co\/image\/ab67616d00001e026e186edfb8fe3710fdc1f7c2"
                         },
                         {
                             "height": 64,
                             "width": 64,
-                            "url": "https:\/\/i.scdn.co\/image\/ab67616d00004851fc915b69600dce2991a61f13"
+                            "url": "https:\/\/i.scdn.co\/image\/ab67616d000048516e186edfb8fe3710fdc1f7c2"
                         }
                     ],
                     "is_playable": true,
-                    "name": "Mercury - Acts 1 & 2",
-                    "release_date": "2022-07-01",
+                    "name": "Cosmo's Factory",
+                    "release_date": "1970-07-24",
                     "release_date_precision": "day",
-                    "total_tracks": 32,
+                    "total_tracks": 11,
                     "type": "album",
-                    "uri": "spotify:album:6yiXkzHvC0OTmhfDQOEWtS"
+                    "uri": "spotify:album:5w2X5ZmdE4u0XGkOU7BiLG"
                 },
                 "artists": [
                     {
                         "external_urls": {
-                            "spotify": "https:\/\/open.spotify.com\/artist\/53XhwfbYqKCa1cC15pYq2q"
+                            "spotify": "https:\/\/open.spotify.com\/artist\/3IYUhFvPQItj6xySrBmZkd"
                         },
-                        "href": "https:\/\/api.spotify.com\/v1\/artists\/53XhwfbYqKCa1cC15pYq2q",
-                        "id": "53XhwfbYqKCa1cC15pYq2q",
-                        "name": "Imagine Dragons",
+                        "href": "https:\/\/api.spotify.com\/v1\/artists\/3IYUhFvPQItj6xySrBmZkd",
+                        "id": "3IYUhFvPQItj6xySrBmZkd",
+                        "name": "Creedence Clearwater Revival",
                         "type": "artist",
-                        "uri": "spotify:artist:53XhwfbYqKCa1cC15pYq2q"
+                        "uri": "spotify:artist:3IYUhFvPQItj6xySrBmZkd"
                     }
                 ],
                 "available_markets": [
@@ -2701,39 +2677,39 @@
                     "ET",
                     "XK"
                 ],
-                "disc_number": 2,
-                "duration_ms": 175833,
+                "disc_number": 1,
+                "duration_ms": 147279,
                 "explicit": false,
                 "external_ids": {
-                    "isrc": "USUM72205463"
+                    "isrc": "USFI87000060"
                 },
                 "external_urls": {
-                    "spotify": "https:\/\/open.spotify.com\/track\/2ThaHV10xrAcL2WfqXyLnp"
+                    "spotify": "https:\/\/open.spotify.com\/track\/2ciMJGCDW70hqq18Vgui68"
                 },
-                "href": "https:\/\/api.spotify.com\/v1\/tracks\/2ThaHV10xrAcL2WfqXyLnp",
-                "id": "2ThaHV10xrAcL2WfqXyLnp",
+                "href": "https:\/\/api.spotify.com\/v1\/tracks\/2ciMJGCDW70hqq18Vgui68",
+                "id": "2ciMJGCDW70hqq18Vgui68",
                 "is_local": false,
                 "is_playable": true,
-                "name": "Symphony",
-                "popularity": 62,
+                "name": "Who'll Stop The Rain",
+                "popularity": 70,
                 "preview_url": null,
-                "track_number": 2,
+                "track_number": 9,
                 "type": "track",
-                "uri": "spotify:track:2ThaHV10xrAcL2WfqXyLnp"
+                "uri": "spotify:track:2ciMJGCDW70hqq18Vgui68"
             },
             {
                 "album": {
-                    "album_type": "single",
+                    "album_type": "album",
                     "artists": [
                         {
                             "external_urls": {
-                                "spotify": "https:\/\/open.spotify.com\/artist\/2NPduAUeLVsfIauhRwuft1"
+                                "spotify": "https:\/\/open.spotify.com\/artist\/3IYUhFvPQItj6xySrBmZkd"
                             },
-                            "href": "https:\/\/api.spotify.com\/v1\/artists\/2NPduAUeLVsfIauhRwuft1",
-                            "id": "2NPduAUeLVsfIauhRwuft1",
-                            "name": "Nightwish",
+                            "href": "https:\/\/api.spotify.com\/v1\/artists\/3IYUhFvPQItj6xySrBmZkd",
+                            "id": "3IYUhFvPQItj6xySrBmZkd",
+                            "name": "Creedence Clearwater Revival",
                             "type": "artist",
-                            "uri": "spotify:artist:2NPduAUeLVsfIauhRwuft1"
+                            "uri": "spotify:artist:3IYUhFvPQItj6xySrBmZkd"
                         }
                     ],
                     "available_markets": [
@@ -2796,7 +2772,6 @@
                         "LI",
                         "MC",
                         "ID",
-                        "JP",
                         "TH",
                         "VN",
                         "RO",
@@ -2812,6 +2787,7 @@
                         "MA",
                         "DZ",
                         "TN",
+                        "LB",
                         "JO",
                         "PS",
                         "IN",
@@ -2867,7 +2843,6 @@
                         "NE",
                         "PW",
                         "PG",
-                        "PR",
                         "WS",
                         "SM",
                         "ST",
@@ -2915,6 +2890,7 @@
                         "ZM",
                         "CD",
                         "CG",
+                        "IQ",
                         "LY",
                         "TJ",
                         "VE",
@@ -2922,45 +2898,45 @@
                         "XK"
                     ],
                     "external_urls": {
-                        "spotify": "https:\/\/open.spotify.com\/album\/0Jo9fvkZq42g851vbSBl5b"
+                        "spotify": "https:\/\/open.spotify.com\/album\/5pCRW9AT4BgoMOS52pRoJq"
                     },
-                    "href": "https:\/\/api.spotify.com\/v1\/albums\/0Jo9fvkZq42g851vbSBl5b",
-                    "id": "0Jo9fvkZq42g851vbSBl5b",
+                    "href": "https:\/\/api.spotify.com\/v1\/albums\/5pCRW9AT4BgoMOS52pRoJq",
+                    "id": "5pCRW9AT4BgoMOS52pRoJq",
                     "images": [
                         {
                             "height": 640,
                             "width": 640,
-                            "url": "https:\/\/i.scdn.co\/image\/ab67616d0000b273a4f1ec23eef06906a6770485"
+                            "url": "https:\/\/i.scdn.co\/image\/ab67616d0000b2731afccd261170f1d8f3cadb3d"
                         },
                         {
                             "height": 300,
                             "width": 300,
-                            "url": "https:\/\/i.scdn.co\/image\/ab67616d00001e02a4f1ec23eef06906a6770485"
+                            "url": "https:\/\/i.scdn.co\/image\/ab67616d00001e021afccd261170f1d8f3cadb3d"
                         },
                         {
                             "height": 64,
                             "width": 64,
-                            "url": "https:\/\/i.scdn.co\/image\/ab67616d00004851a4f1ec23eef06906a6770485"
+                            "url": "https:\/\/i.scdn.co\/image\/ab67616d000048511afccd261170f1d8f3cadb3d"
                         }
                     ],
                     "is_playable": true,
-                    "name": "The Siren",
-                    "release_date": "2005-07-25",
+                    "name": "Bayou Country (Expanded Edition)",
+                    "release_date": "1969-01-05",
                     "release_date_precision": "day",
-                    "total_tracks": 5,
+                    "total_tracks": 11,
                     "type": "album",
-                    "uri": "spotify:album:0Jo9fvkZq42g851vbSBl5b"
+                    "uri": "spotify:album:5pCRW9AT4BgoMOS52pRoJq"
                 },
                 "artists": [
                     {
                         "external_urls": {
-                            "spotify": "https:\/\/open.spotify.com\/artist\/2NPduAUeLVsfIauhRwuft1"
+                            "spotify": "https:\/\/open.spotify.com\/artist\/3IYUhFvPQItj6xySrBmZkd"
                         },
-                        "href": "https:\/\/api.spotify.com\/v1\/artists\/2NPduAUeLVsfIauhRwuft1",
-                        "id": "2NPduAUeLVsfIauhRwuft1",
-                        "name": "Nightwish",
+                        "href": "https:\/\/api.spotify.com\/v1\/artists\/3IYUhFvPQItj6xySrBmZkd",
+                        "id": "3IYUhFvPQItj6xySrBmZkd",
+                        "name": "Creedence Clearwater Revival",
                         "type": "artist",
-                        "uri": "spotify:artist:2NPduAUeLVsfIauhRwuft1"
+                        "uri": "spotify:artist:3IYUhFvPQItj6xySrBmZkd"
                     }
                 ],
                 "available_markets": [
@@ -3023,7 +2999,6 @@
                     "LI",
                     "MC",
                     "ID",
-                    "JP",
                     "TH",
                     "VN",
                     "RO",
@@ -3039,6 +3014,7 @@
                     "MA",
                     "DZ",
                     "TN",
+                    "LB",
                     "JO",
                     "PS",
                     "IN",
@@ -3094,7 +3070,6 @@
                     "NE",
                     "PW",
                     "PG",
-                    "PR",
                     "WS",
                     "SM",
                     "ST",
@@ -3142,6 +3117,7 @@
                     "ZM",
                     "CD",
                     "CG",
+                    "IQ",
                     "LY",
                     "TJ",
                     "VE",
@@ -3149,38 +3125,38 @@
                     "XK"
                 ],
                 "disc_number": 1,
-                "duration_ms": 260120,
+                "duration_ms": 187213,
                 "explicit": false,
                 "external_ids": {
-                    "isrc": "DED830502334"
+                    "isrc": "USC4R0817594"
                 },
                 "external_urls": {
-                    "spotify": "https:\/\/open.spotify.com\/track\/7rc5AzCOFRrKXZt6iM2mPI"
+                    "spotify": "https:\/\/open.spotify.com\/track\/6pxWv6GV35VGmcPf5dh6CH"
                 },
-                "href": "https:\/\/api.spotify.com\/v1\/tracks\/7rc5AzCOFRrKXZt6iM2mPI",
-                "id": "7rc5AzCOFRrKXZt6iM2mPI",
+                "href": "https:\/\/api.spotify.com\/v1\/tracks\/6pxWv6GV35VGmcPf5dh6CH",
+                "id": "6pxWv6GV35VGmcPf5dh6CH",
                 "is_local": false,
                 "is_playable": true,
-                "name": "Symphony of Destruction",
-                "popularity": 18,
+                "name": "Proud Mary",
+                "popularity": 74,
                 "preview_url": null,
-                "track_number": 4,
+                "track_number": 6,
                 "type": "track",
-                "uri": "spotify:track:7rc5AzCOFRrKXZt6iM2mPI"
+                "uri": "spotify:track:6pxWv6GV35VGmcPf5dh6CH"
             },
             {
                 "album": {
-                    "album_type": "album",
+                    "album_type": "compilation",
                     "artists": [
                         {
                             "external_urls": {
-                                "spotify": "https:\/\/open.spotify.com\/artist\/1Yox196W7bzVNZI7RBaPnf"
+                                "spotify": "https:\/\/open.spotify.com\/artist\/3IYUhFvPQItj6xySrBmZkd"
                             },
-                            "href": "https:\/\/api.spotify.com\/v1\/artists\/1Yox196W7bzVNZI7RBaPnf",
-                            "id": "1Yox196W7bzVNZI7RBaPnf",
-                            "name": "Megadeth",
+                            "href": "https:\/\/api.spotify.com\/v1\/artists\/3IYUhFvPQItj6xySrBmZkd",
+                            "id": "3IYUhFvPQItj6xySrBmZkd",
+                            "name": "Creedence Clearwater Revival",
                             "type": "artist",
-                            "uri": "spotify:artist:1Yox196W7bzVNZI7RBaPnf"
+                            "uri": "spotify:artist:3IYUhFvPQItj6xySrBmZkd"
                         }
                     ],
                     "available_markets": [
@@ -3370,45 +3346,45 @@
                         "XK"
                     ],
                     "external_urls": {
-                        "spotify": "https:\/\/open.spotify.com\/album\/0vf3fKamMi3yfjApyZaAE1"
+                        "spotify": "https:\/\/open.spotify.com\/album\/03GKkfyog7hnllilFS3jIV"
                     },
-                    "href": "https:\/\/api.spotify.com\/v1\/albums\/0vf3fKamMi3yfjApyZaAE1",
-                    "id": "0vf3fKamMi3yfjApyZaAE1",
+                    "href": "https:\/\/api.spotify.com\/v1\/albums\/03GKkfyog7hnllilFS3jIV",
+                    "id": "03GKkfyog7hnllilFS3jIV",
                     "images": [
                         {
                             "height": 640,
                             "width": 640,
-                            "url": "https:\/\/i.scdn.co\/image\/ab67616d0000b273540abdecd854415dc18961b2"
+                            "url": "https:\/\/i.scdn.co\/image\/ab67616d0000b2735b18abb5facf12c82192bda7"
                         },
                         {
                             "height": 300,
                             "width": 300,
-                            "url": "https:\/\/i.scdn.co\/image\/ab67616d00001e02540abdecd854415dc18961b2"
+                            "url": "https:\/\/i.scdn.co\/image\/ab67616d00001e025b18abb5facf12c82192bda7"
                         },
                         {
                             "height": 64,
                             "width": 64,
-                            "url": "https:\/\/i.scdn.co\/image\/ab67616d00004851540abdecd854415dc18961b2"
+                            "url": "https:\/\/i.scdn.co\/image\/ab67616d000048515b18abb5facf12c82192bda7"
                         }
                     ],
                     "is_playable": true,
-                    "name": "Countdown To Extinction: Live",
-                    "release_date": "2013-01-01",
+                    "name": "Chronicle: 20 Greatest Hits",
+                    "release_date": "1976-01-01",
                     "release_date_precision": "day",
-                    "total_tracks": 17,
+                    "total_tracks": 20,
                     "type": "album",
-                    "uri": "spotify:album:0vf3fKamMi3yfjApyZaAE1"
+                    "uri": "spotify:album:03GKkfyog7hnllilFS3jIV"
                 },
                 "artists": [
                     {
                         "external_urls": {
-                            "spotify": "https:\/\/open.spotify.com\/artist\/1Yox196W7bzVNZI7RBaPnf"
+                            "spotify": "https:\/\/open.spotify.com\/artist\/3IYUhFvPQItj6xySrBmZkd"
                         },
-                        "href": "https:\/\/api.spotify.com\/v1\/artists\/1Yox196W7bzVNZI7RBaPnf",
-                        "id": "1Yox196W7bzVNZI7RBaPnf",
-                        "name": "Megadeth",
+                        "href": "https:\/\/api.spotify.com\/v1\/artists\/3IYUhFvPQItj6xySrBmZkd",
+                        "id": "3IYUhFvPQItj6xySrBmZkd",
+                        "name": "Creedence Clearwater Revival",
                         "type": "artist",
-                        "uri": "spotify:artist:1Yox196W7bzVNZI7RBaPnf"
+                        "uri": "spotify:artist:3IYUhFvPQItj6xySrBmZkd"
                     }
                 ],
                 "available_markets": [
@@ -3598,24 +3574,24 @@
                     "XK"
                 ],
                 "disc_number": 1,
-                "duration_ms": 236880,
+                "duration_ms": 160000,
                 "explicit": false,
                 "external_ids": {
-                    "isrc": "USUM71309341"
+                    "isrc": "USFI87000066"
                 },
                 "external_urls": {
-                    "spotify": "https:\/\/open.spotify.com\/track\/5GE2XyBfoAD9tUggCqCGiQ"
+                    "spotify": "https:\/\/open.spotify.com\/track\/5XE8c07vbpQBUriwybOHtd"
                 },
-                "href": "https:\/\/api.spotify.com\/v1\/tracks\/5GE2XyBfoAD9tUggCqCGiQ",
-                "id": "5GE2XyBfoAD9tUggCqCGiQ",
+                "href": "https:\/\/api.spotify.com\/v1\/tracks\/5XE8c07vbpQBUriwybOHtd",
+                "id": "5XE8c07vbpQBUriwybOHtd",
                 "is_local": false,
                 "is_playable": true,
-                "name": "Symphony Of Destruction - Live At The Fox Theater\/2012",
-                "popularity": 25,
+                "name": "Have You Ever Seen The Rain",
+                "popularity": 58,
                 "preview_url": null,
-                "track_number": 5,
+                "track_number": 17,
                 "type": "track",
-                "uri": "spotify:track:5GE2XyBfoAD9tUggCqCGiQ"
+                "uri": "spotify:track:5XE8c07vbpQBUriwybOHtd"
             },
             {
                 "album": {
@@ -3623,408 +3599,13 @@
                     "artists": [
                         {
                             "external_urls": {
-                                "spotify": "https:\/\/open.spotify.com\/artist\/4MnZkh4dpNmTMPxkl4Ev5L"
+                                "spotify": "https:\/\/open.spotify.com\/artist\/3IYUhFvPQItj6xySrBmZkd"
                             },
-                            "href": "https:\/\/api.spotify.com\/v1\/artists\/4MnZkh4dpNmTMPxkl4Ev5L",
-                            "id": "4MnZkh4dpNmTMPxkl4Ev5L",
-                            "name": "Symphony X",
+                            "href": "https:\/\/api.spotify.com\/v1\/artists\/3IYUhFvPQItj6xySrBmZkd",
+                            "id": "3IYUhFvPQItj6xySrBmZkd",
+                            "name": "Creedence Clearwater Revival",
                             "type": "artist",
-                            "uri": "spotify:artist:4MnZkh4dpNmTMPxkl4Ev5L"
-                        }
-                    ],
-                    "available_markets": [
-                        "AR",
-                        "AU",
-                        "AT",
-                        "BE",
-                        "BO",
-                        "BR",
-                        "BG",
-                        "CA",
-                        "CL",
-                        "CO",
-                        "CR",
-                        "CY",
-                        "CZ",
-                        "DK",
-                        "DO",
-                        "DE",
-                        "EC",
-                        "EE",
-                        "SV",
-                        "FI",
-                        "FR",
-                        "GR",
-                        "GT",
-                        "HN",
-                        "HU",
-                        "IS",
-                        "IE",
-                        "IT",
-                        "LV",
-                        "LT",
-                        "LU",
-                        "MT",
-                        "MX",
-                        "NL",
-                        "NZ",
-                        "NI",
-                        "NO",
-                        "PA",
-                        "PY",
-                        "PE",
-                        "PL",
-                        "PT",
-                        "SK",
-                        "ES",
-                        "SE",
-                        "CH",
-                        "TR",
-                        "UY",
-                        "US",
-                        "GB",
-                        "AD",
-                        "LI",
-                        "MC",
-                        "RO",
-                        "IL",
-                        "ZA",
-                        "SA",
-                        "AE",
-                        "BH",
-                        "QA",
-                        "OM",
-                        "KW",
-                        "EG",
-                        "MA",
-                        "DZ",
-                        "TN",
-                        "LB",
-                        "JO",
-                        "PS",
-                        "KZ",
-                        "MD",
-                        "UA",
-                        "AL",
-                        "BA",
-                        "HR",
-                        "ME",
-                        "MK",
-                        "SI",
-                        "GH",
-                        "KE",
-                        "NG",
-                        "TZ",
-                        "UG",
-                        "AG",
-                        "AM",
-                        "BS",
-                        "BB",
-                        "BZ",
-                        "BW",
-                        "BF",
-                        "CV",
-                        "CW",
-                        "DM",
-                        "FJ",
-                        "GM",
-                        "GE",
-                        "GD",
-                        "GW",
-                        "GY",
-                        "HT",
-                        "JM",
-                        "KI",
-                        "LS",
-                        "LR",
-                        "MW",
-                        "MV",
-                        "ML",
-                        "MH",
-                        "FM",
-                        "NA",
-                        "NR",
-                        "NE",
-                        "PW",
-                        "PG",
-                        "PR",
-                        "WS",
-                        "SM",
-                        "ST",
-                        "SN",
-                        "SC",
-                        "SL",
-                        "SB",
-                        "KN",
-                        "LC",
-                        "VC",
-                        "SR",
-                        "TL",
-                        "TO",
-                        "TT",
-                        "TV",
-                        "VU",
-                        "AZ",
-                        "CM",
-                        "TD",
-                        "KM",
-                        "GQ",
-                        "SZ",
-                        "GA",
-                        "GN",
-                        "KG",
-                        "MO",
-                        "MR",
-                        "RW",
-                        "TG",
-                        "UZ",
-                        "BJ",
-                        "MG",
-                        "MU",
-                        "MZ",
-                        "AO",
-                        "CI",
-                        "DJ",
-                        "ZM",
-                        "CG",
-                        "TJ",
-                        "VE",
-                        "ET"
-                    ],
-                    "external_urls": {
-                        "spotify": "https:\/\/open.spotify.com\/album\/6K8z6kKyWtEbOVdQqQ6Drb"
-                    },
-                    "href": "https:\/\/api.spotify.com\/v1\/albums\/6K8z6kKyWtEbOVdQqQ6Drb",
-                    "id": "6K8z6kKyWtEbOVdQqQ6Drb",
-                    "images": [
-                        {
-                            "height": 640,
-                            "width": 640,
-                            "url": "https:\/\/i.scdn.co\/image\/ab67616d0000b273530bdd51ffd7dbd424e48ce9"
-                        },
-                        {
-                            "height": 300,
-                            "width": 300,
-                            "url": "https:\/\/i.scdn.co\/image\/ab67616d00001e02530bdd51ffd7dbd424e48ce9"
-                        },
-                        {
-                            "height": 64,
-                            "width": 64,
-                            "url": "https:\/\/i.scdn.co\/image\/ab67616d00004851530bdd51ffd7dbd424e48ce9"
-                        }
-                    ],
-                    "is_playable": true,
-                    "name": "Paradise Lost",
-                    "release_date": "2007-06-26",
-                    "release_date_precision": "day",
-                    "total_tracks": 10,
-                    "type": "album",
-                    "uri": "spotify:album:6K8z6kKyWtEbOVdQqQ6Drb"
-                },
-                "artists": [
-                    {
-                        "external_urls": {
-                            "spotify": "https:\/\/open.spotify.com\/artist\/4MnZkh4dpNmTMPxkl4Ev5L"
-                        },
-                        "href": "https:\/\/api.spotify.com\/v1\/artists\/4MnZkh4dpNmTMPxkl4Ev5L",
-                        "id": "4MnZkh4dpNmTMPxkl4Ev5L",
-                        "name": "Symphony X",
-                        "type": "artist",
-                        "uri": "spotify:artist:4MnZkh4dpNmTMPxkl4Ev5L"
-                    }
-                ],
-                "available_markets": [
-                    "AR",
-                    "AU",
-                    "AT",
-                    "BE",
-                    "BO",
-                    "BR",
-                    "BG",
-                    "CA",
-                    "CL",
-                    "CO",
-                    "CR",
-                    "CY",
-                    "CZ",
-                    "DK",
-                    "DO",
-                    "DE",
-                    "EC",
-                    "EE",
-                    "SV",
-                    "FI",
-                    "FR",
-                    "GR",
-                    "GT",
-                    "HN",
-                    "HU",
-                    "IS",
-                    "IE",
-                    "IT",
-                    "LV",
-                    "LT",
-                    "LU",
-                    "MT",
-                    "MX",
-                    "NL",
-                    "NZ",
-                    "NI",
-                    "NO",
-                    "PA",
-                    "PY",
-                    "PE",
-                    "PL",
-                    "PT",
-                    "SK",
-                    "ES",
-                    "SE",
-                    "CH",
-                    "TR",
-                    "UY",
-                    "US",
-                    "GB",
-                    "AD",
-                    "LI",
-                    "MC",
-                    "RO",
-                    "IL",
-                    "ZA",
-                    "SA",
-                    "AE",
-                    "BH",
-                    "QA",
-                    "OM",
-                    "KW",
-                    "EG",
-                    "MA",
-                    "DZ",
-                    "TN",
-                    "LB",
-                    "JO",
-                    "PS",
-                    "KZ",
-                    "MD",
-                    "UA",
-                    "AL",
-                    "BA",
-                    "HR",
-                    "ME",
-                    "MK",
-                    "SI",
-                    "GH",
-                    "KE",
-                    "NG",
-                    "TZ",
-                    "UG",
-                    "AG",
-                    "AM",
-                    "BS",
-                    "BB",
-                    "BZ",
-                    "BW",
-                    "BF",
-                    "CV",
-                    "CW",
-                    "DM",
-                    "FJ",
-                    "GM",
-                    "GE",
-                    "GD",
-                    "GW",
-                    "GY",
-                    "HT",
-                    "JM",
-                    "KI",
-                    "LS",
-                    "LR",
-                    "MW",
-                    "MV",
-                    "ML",
-                    "MH",
-                    "FM",
-                    "NA",
-                    "NR",
-                    "NE",
-                    "PW",
-                    "PG",
-                    "PR",
-                    "WS",
-                    "SM",
-                    "ST",
-                    "SN",
-                    "SC",
-                    "SL",
-                    "SB",
-                    "KN",
-                    "LC",
-                    "VC",
-                    "SR",
-                    "TL",
-                    "TO",
-                    "TT",
-                    "TV",
-                    "VU",
-                    "AZ",
-                    "CM",
-                    "TD",
-                    "KM",
-                    "GQ",
-                    "SZ",
-                    "GA",
-                    "GN",
-                    "KG",
-                    "MO",
-                    "MR",
-                    "RW",
-                    "TG",
-                    "UZ",
-                    "BJ",
-                    "MG",
-                    "MU",
-                    "MZ",
-                    "AO",
-                    "CI",
-                    "DJ",
-                    "ZM",
-                    "CG",
-                    "TJ",
-                    "VE",
-                    "ET"
-                ],
-                "disc_number": 1,
-                "duration_ms": 392466,
-                "explicit": false,
-                "external_ids": {
-                    "isrc": "QM3MF1900105"
-                },
-                "external_urls": {
-                    "spotify": "https:\/\/open.spotify.com\/track\/22sEfJxatkWlGVsqWKhtvY"
-                },
-                "href": "https:\/\/api.spotify.com\/v1\/tracks\/22sEfJxatkWlGVsqWKhtvY",
-                "id": "22sEfJxatkWlGVsqWKhtvY",
-                "is_local": false,
-                "is_playable": true,
-                "name": "Paradise Lost",
-                "popularity": 38,
-                "preview_url": null,
-                "track_number": 5,
-                "type": "track",
-                "uri": "spotify:track:22sEfJxatkWlGVsqWKhtvY"
-            },
-            {
-                "album": {
-                    "album_type": "album",
-                    "artists": [
-                        {
-                            "external_urls": {
-                                "spotify": "https:\/\/open.spotify.com\/artist\/0DCw6lHkzh9t7f8Hb4Z0Sx"
-                            },
-                            "href": "https:\/\/api.spotify.com\/v1\/artists\/0DCw6lHkzh9t7f8Hb4Z0Sx",
-                            "id": "0DCw6lHkzh9t7f8Hb4Z0Sx",
-                            "name": "Arch Enemy",
-                            "type": "artist",
-                            "uri": "spotify:artist:0DCw6lHkzh9t7f8Hb4Z0Sx"
+                            "uri": "spotify:artist:3IYUhFvPQItj6xySrBmZkd"
                         }
                     ],
                     "available_markets": [
@@ -4087,6 +3668,7 @@
                         "LI",
                         "MC",
                         "ID",
+                        "JP",
                         "TH",
                         "VN",
                         "RO",
@@ -4158,7 +3740,6 @@
                         "NE",
                         "PW",
                         "PG",
-                        "PR",
                         "WS",
                         "SM",
                         "ST",
@@ -4214,45 +3795,45 @@
                         "XK"
                     ],
                     "external_urls": {
-                        "spotify": "https:\/\/open.spotify.com\/album\/7LfAQgQQISJJRTfgcDxVQS"
+                        "spotify": "https:\/\/open.spotify.com\/album\/0i9mOB6mPGqwVvtJEXiwPG"
                     },
-                    "href": "https:\/\/api.spotify.com\/v1\/albums\/7LfAQgQQISJJRTfgcDxVQS",
-                    "id": "7LfAQgQQISJJRTfgcDxVQS",
+                    "href": "https:\/\/api.spotify.com\/v1\/albums\/0i9mOB6mPGqwVvtJEXiwPG",
+                    "id": "0i9mOB6mPGqwVvtJEXiwPG",
                     "images": [
                         {
                             "height": 640,
                             "width": 640,
-                            "url": "https:\/\/i.scdn.co\/image\/ab67616d0000b273f536ee878ea940579d2e83ae"
+                            "url": "https:\/\/i.scdn.co\/image\/ab67616d0000b2733efcd243aaa5638f55318f91"
                         },
                         {
                             "height": 300,
                             "width": 300,
-                            "url": "https:\/\/i.scdn.co\/image\/ab67616d00001e02f536ee878ea940579d2e83ae"
+                            "url": "https:\/\/i.scdn.co\/image\/ab67616d00001e023efcd243aaa5638f55318f91"
                         },
                         {
                             "height": 64,
                             "width": 64,
-                            "url": "https:\/\/i.scdn.co\/image\/ab67616d00004851f536ee878ea940579d2e83ae"
+                            "url": "https:\/\/i.scdn.co\/image\/ab67616d000048513efcd243aaa5638f55318f91"
                         }
                     ],
                     "is_playable": true,
-                    "name": "Covered In Blood",
-                    "release_date": "2019-01-18",
+                    "name": "Green River (Expanded Edition)",
+                    "release_date": "1969-08-03",
                     "release_date_precision": "day",
-                    "total_tracks": 24,
+                    "total_tracks": 14,
                     "type": "album",
-                    "uri": "spotify:album:7LfAQgQQISJJRTfgcDxVQS"
+                    "uri": "spotify:album:0i9mOB6mPGqwVvtJEXiwPG"
                 },
                 "artists": [
                     {
                         "external_urls": {
-                            "spotify": "https:\/\/open.spotify.com\/artist\/0DCw6lHkzh9t7f8Hb4Z0Sx"
+                            "spotify": "https:\/\/open.spotify.com\/artist\/3IYUhFvPQItj6xySrBmZkd"
                         },
-                        "href": "https:\/\/api.spotify.com\/v1\/artists\/0DCw6lHkzh9t7f8Hb4Z0Sx",
-                        "id": "0DCw6lHkzh9t7f8Hb4Z0Sx",
-                        "name": "Arch Enemy",
+                        "href": "https:\/\/api.spotify.com\/v1\/artists\/3IYUhFvPQItj6xySrBmZkd",
+                        "id": "3IYUhFvPQItj6xySrBmZkd",
+                        "name": "Creedence Clearwater Revival",
                         "type": "artist",
-                        "uri": "spotify:artist:0DCw6lHkzh9t7f8Hb4Z0Sx"
+                        "uri": "spotify:artist:3IYUhFvPQItj6xySrBmZkd"
                     }
                 ],
                 "available_markets": [
@@ -4315,6 +3896,7 @@
                     "LI",
                     "MC",
                     "ID",
+                    "JP",
                     "TH",
                     "VN",
                     "RO",
@@ -4386,7 +3968,6 @@
                     "NE",
                     "PW",
                     "PG",
-                    "PR",
                     "WS",
                     "SM",
                     "ST",
@@ -4442,434 +4023,859 @@
                     "XK"
                 ],
                 "disc_number": 1,
-                "duration_ms": 242813,
+                "duration_ms": 193293,
                 "explicit": false,
                 "external_ids": {
-                    "isrc": "US4E40427601"
+                    "isrc": "USC4R0817605"
                 },
                 "external_urls": {
-                    "spotify": "https:\/\/open.spotify.com\/track\/0WxklKp98Lt2Gr3dqHBjDa"
+                    "spotify": "https:\/\/open.spotify.com\/track\/1Ay5MiilZj2ZGQLeTWVJ6o"
                 },
-                "href": "https:\/\/api.spotify.com\/v1\/tracks\/0WxklKp98Lt2Gr3dqHBjDa",
-                "id": "0WxklKp98Lt2Gr3dqHBjDa",
+                "href": "https:\/\/api.spotify.com\/v1\/tracks\/1Ay5MiilZj2ZGQLeTWVJ6o",
+                "id": "1Ay5MiilZj2ZGQLeTWVJ6o",
                 "is_local": false,
                 "is_playable": true,
-                "name": "Symphony of Destruction - cover version",
-                "popularity": 30,
+                "name": "Lodi",
+                "popularity": 65,
                 "preview_url": null,
-                "track_number": 20,
+                "track_number": 6,
                 "type": "track",
-                "uri": "spotify:track:0WxklKp98Lt2Gr3dqHBjDa"
+                "uri": "spotify:track:1Ay5MiilZj2ZGQLeTWVJ6o"
+            },
+            {
+                "album": {
+                    "album_type": "album",
+                    "artists": [
+                        {
+                            "external_urls": {
+                                "spotify": "https:\/\/open.spotify.com\/artist\/3IYUhFvPQItj6xySrBmZkd"
+                            },
+                            "href": "https:\/\/api.spotify.com\/v1\/artists\/3IYUhFvPQItj6xySrBmZkd",
+                            "id": "3IYUhFvPQItj6xySrBmZkd",
+                            "name": "Creedence Clearwater Revival",
+                            "type": "artist",
+                            "uri": "spotify:artist:3IYUhFvPQItj6xySrBmZkd"
+                        }
+                    ],
+                    "available_markets": [
+                        "AR",
+                        "AU",
+                        "AT",
+                        "BE",
+                        "BO",
+                        "BR",
+                        "BG",
+                        "CA",
+                        "CL",
+                        "CO",
+                        "CR",
+                        "CY",
+                        "CZ",
+                        "DK",
+                        "DO",
+                        "DE",
+                        "EC",
+                        "EE",
+                        "SV",
+                        "FI",
+                        "FR",
+                        "GR",
+                        "GT",
+                        "HN",
+                        "HK",
+                        "HU",
+                        "IS",
+                        "IE",
+                        "IT",
+                        "LV",
+                        "LT",
+                        "LU",
+                        "MY",
+                        "MT",
+                        "MX",
+                        "NL",
+                        "NZ",
+                        "NI",
+                        "NO",
+                        "PA",
+                        "PY",
+                        "PE",
+                        "PH",
+                        "PL",
+                        "PT",
+                        "SG",
+                        "SK",
+                        "ES",
+                        "SE",
+                        "CH",
+                        "TW",
+                        "TR",
+                        "UY",
+                        "US",
+                        "GB",
+                        "AD",
+                        "LI",
+                        "MC",
+                        "ID",
+                        "JP",
+                        "TH",
+                        "VN",
+                        "RO",
+                        "IL",
+                        "ZA",
+                        "SA",
+                        "AE",
+                        "BH",
+                        "QA",
+                        "OM",
+                        "KW",
+                        "EG",
+                        "MA",
+                        "DZ",
+                        "TN",
+                        "LB",
+                        "JO",
+                        "PS",
+                        "IN",
+                        "BY",
+                        "KZ",
+                        "MD",
+                        "UA",
+                        "AL",
+                        "BA",
+                        "HR",
+                        "ME",
+                        "MK",
+                        "RS",
+                        "SI",
+                        "KR",
+                        "BD",
+                        "PK",
+                        "LK",
+                        "GH",
+                        "KE",
+                        "NG",
+                        "TZ",
+                        "UG",
+                        "AG",
+                        "AM",
+                        "BS",
+                        "BB",
+                        "BZ",
+                        "BT",
+                        "BW",
+                        "BF",
+                        "CV",
+                        "CW",
+                        "DM",
+                        "FJ",
+                        "GM",
+                        "GE",
+                        "GD",
+                        "GW",
+                        "GY",
+                        "HT",
+                        "JM",
+                        "KI",
+                        "LS",
+                        "LR",
+                        "MW",
+                        "MV",
+                        "ML",
+                        "MH",
+                        "FM",
+                        "NA",
+                        "NR",
+                        "NE",
+                        "PW",
+                        "PG",
+                        "WS",
+                        "SM",
+                        "ST",
+                        "SN",
+                        "SC",
+                        "SL",
+                        "SB",
+                        "KN",
+                        "LC",
+                        "VC",
+                        "SR",
+                        "TL",
+                        "TO",
+                        "TT",
+                        "TV",
+                        "VU",
+                        "AZ",
+                        "BN",
+                        "BI",
+                        "KH",
+                        "CM",
+                        "TD",
+                        "KM",
+                        "GQ",
+                        "SZ",
+                        "GA",
+                        "GN",
+                        "KG",
+                        "LA",
+                        "MO",
+                        "MR",
+                        "MN",
+                        "NP",
+                        "RW",
+                        "TG",
+                        "UZ",
+                        "ZW",
+                        "BJ",
+                        "MG",
+                        "MU",
+                        "MZ",
+                        "AO",
+                        "CI",
+                        "DJ",
+                        "ZM",
+                        "CD",
+                        "CG",
+                        "IQ",
+                        "LY",
+                        "TJ",
+                        "VE",
+                        "ET",
+                        "XK"
+                    ],
+                    "external_urls": {
+                        "spotify": "https:\/\/open.spotify.com\/album\/4GLxEXWI3JiRKp6H7bfTIK"
+                    },
+                    "href": "https:\/\/api.spotify.com\/v1\/albums\/4GLxEXWI3JiRKp6H7bfTIK",
+                    "id": "4GLxEXWI3JiRKp6H7bfTIK",
+                    "images": [
+                        {
+                            "height": 640,
+                            "width": 640,
+                            "url": "https:\/\/i.scdn.co\/image\/ab67616d0000b27361834aa14b97a7d9c693134f"
+                        },
+                        {
+                            "height": 300,
+                            "width": 300,
+                            "url": "https:\/\/i.scdn.co\/image\/ab67616d00001e0261834aa14b97a7d9c693134f"
+                        },
+                        {
+                            "height": 64,
+                            "width": 64,
+                            "url": "https:\/\/i.scdn.co\/image\/ab67616d0000485161834aa14b97a7d9c693134f"
+                        }
+                    ],
+                    "is_playable": true,
+                    "name": "Cosmo's Factory (Expanded Edition)",
+                    "release_date": "1970-07-25",
+                    "release_date_precision": "day",
+                    "total_tracks": 14,
+                    "type": "album",
+                    "uri": "spotify:album:4GLxEXWI3JiRKp6H7bfTIK"
+                },
+                "artists": [
+                    {
+                        "external_urls": {
+                            "spotify": "https:\/\/open.spotify.com\/artist\/3IYUhFvPQItj6xySrBmZkd"
+                        },
+                        "href": "https:\/\/api.spotify.com\/v1\/artists\/3IYUhFvPQItj6xySrBmZkd",
+                        "id": "3IYUhFvPQItj6xySrBmZkd",
+                        "name": "Creedence Clearwater Revival",
+                        "type": "artist",
+                        "uri": "spotify:artist:3IYUhFvPQItj6xySrBmZkd"
+                    }
+                ],
+                "available_markets": [
+                    "AR",
+                    "AU",
+                    "AT",
+                    "BE",
+                    "BO",
+                    "BR",
+                    "BG",
+                    "CA",
+                    "CL",
+                    "CO",
+                    "CR",
+                    "CY",
+                    "CZ",
+                    "DK",
+                    "DO",
+                    "DE",
+                    "EC",
+                    "EE",
+                    "SV",
+                    "FI",
+                    "FR",
+                    "GR",
+                    "GT",
+                    "HN",
+                    "HK",
+                    "HU",
+                    "IS",
+                    "IE",
+                    "IT",
+                    "LV",
+                    "LT",
+                    "LU",
+                    "MY",
+                    "MT",
+                    "MX",
+                    "NL",
+                    "NZ",
+                    "NI",
+                    "NO",
+                    "PA",
+                    "PY",
+                    "PE",
+                    "PH",
+                    "PL",
+                    "PT",
+                    "SG",
+                    "SK",
+                    "ES",
+                    "SE",
+                    "CH",
+                    "TW",
+                    "TR",
+                    "UY",
+                    "US",
+                    "GB",
+                    "AD",
+                    "LI",
+                    "MC",
+                    "ID",
+                    "JP",
+                    "TH",
+                    "VN",
+                    "RO",
+                    "IL",
+                    "ZA",
+                    "SA",
+                    "AE",
+                    "BH",
+                    "QA",
+                    "OM",
+                    "KW",
+                    "EG",
+                    "MA",
+                    "DZ",
+                    "TN",
+                    "LB",
+                    "JO",
+                    "PS",
+                    "IN",
+                    "BY",
+                    "KZ",
+                    "MD",
+                    "UA",
+                    "AL",
+                    "BA",
+                    "HR",
+                    "ME",
+                    "MK",
+                    "RS",
+                    "SI",
+                    "KR",
+                    "BD",
+                    "PK",
+                    "LK",
+                    "GH",
+                    "KE",
+                    "NG",
+                    "TZ",
+                    "UG",
+                    "AG",
+                    "AM",
+                    "BS",
+                    "BB",
+                    "BZ",
+                    "BT",
+                    "BW",
+                    "BF",
+                    "CV",
+                    "CW",
+                    "DM",
+                    "FJ",
+                    "GM",
+                    "GE",
+                    "GD",
+                    "GW",
+                    "GY",
+                    "HT",
+                    "JM",
+                    "KI",
+                    "LS",
+                    "LR",
+                    "MW",
+                    "MV",
+                    "ML",
+                    "MH",
+                    "FM",
+                    "NA",
+                    "NR",
+                    "NE",
+                    "PW",
+                    "PG",
+                    "WS",
+                    "SM",
+                    "ST",
+                    "SN",
+                    "SC",
+                    "SL",
+                    "SB",
+                    "KN",
+                    "LC",
+                    "VC",
+                    "SR",
+                    "TL",
+                    "TO",
+                    "TT",
+                    "TV",
+                    "VU",
+                    "AZ",
+                    "BN",
+                    "BI",
+                    "KH",
+                    "CM",
+                    "TD",
+                    "KM",
+                    "GQ",
+                    "SZ",
+                    "GA",
+                    "GN",
+                    "KG",
+                    "LA",
+                    "MO",
+                    "MR",
+                    "MN",
+                    "NP",
+                    "RW",
+                    "TG",
+                    "UZ",
+                    "ZW",
+                    "BJ",
+                    "MG",
+                    "MU",
+                    "MZ",
+                    "AO",
+                    "CI",
+                    "DJ",
+                    "ZM",
+                    "CD",
+                    "CG",
+                    "IQ",
+                    "LY",
+                    "TJ",
+                    "VE",
+                    "ET",
+                    "XK"
+                ],
+                "disc_number": 1,
+                "duration_ms": 210866,
+                "explicit": false,
+                "external_ids": {
+                    "isrc": "USC4R0817636"
+                },
+                "external_urls": {
+                    "spotify": "https:\/\/open.spotify.com\/track\/4Sk6QA0RoRqZ3Hg9TlAX4X"
+                },
+                "href": "https:\/\/api.spotify.com\/v1\/tracks\/4Sk6QA0RoRqZ3Hg9TlAX4X",
+                "id": "4Sk6QA0RoRqZ3Hg9TlAX4X",
+                "is_local": false,
+                "is_playable": true,
+                "name": "Long As I Can See The Light",
+                "popularity": 53,
+                "preview_url": null,
+                "track_number": 11,
+                "type": "track",
+                "uri": "spotify:track:4Sk6QA0RoRqZ3Hg9TlAX4X"
             }
         ]
     },
     "artists": {
-        "href": "https:\/\/api.spotify.com\/v1\/search?offset=0&limit=10&query=symphony%20of%20destruction&type=artist&include_external=audio",
+        "href": "https:\/\/api.spotify.com\/v1\/search?offset=0&limit=10&query=creeedene&type=artist&include_external=audio",
         "limit": 10,
-        "next": "https:\/\/api.spotify.com\/v1\/search?offset=10&limit=10&query=symphony%20of%20destruction&type=artist&include_external=audio",
+        "next": "https:\/\/api.spotify.com\/v1\/search?offset=10&limit=10&query=creeedene&type=artist&include_external=audio",
         "offset": 0,
         "previous": null,
-        "total": 803,
+        "total": 1000,
         "items": [
             {
                 "external_urls": {
-                    "spotify": "https:\/\/open.spotify.com\/artist\/1Yox196W7bzVNZI7RBaPnf"
+                    "spotify": "https:\/\/open.spotify.com\/artist\/3IYUhFvPQItj6xySrBmZkd"
                 },
                 "followers": {
                     "href": null,
-                    "total": 5607529
+                    "total": 7162905
                 },
                 "genres": [
-                    "alternative metal",
-                    "hard rock",
-                    "melodic thrash",
-                    "metal",
-                    "old school thrash",
+                    "album rock",
+                    "classic rock",
+                    "country rock",
+                    "mellow gold",
                     "rock",
-                    "speed metal",
-                    "thrash metal"
+                    "southern rock",
+                    "swamp rock"
                 ],
-                "href": "https:\/\/api.spotify.com\/v1\/artists\/1Yox196W7bzVNZI7RBaPnf",
-                "id": "1Yox196W7bzVNZI7RBaPnf",
+                "href": "https:\/\/api.spotify.com\/v1\/artists\/3IYUhFvPQItj6xySrBmZkd",
+                "id": "3IYUhFvPQItj6xySrBmZkd",
                 "images": [
                     {
-                        "url": "https:\/\/i.scdn.co\/image\/ab6761610000e5eb3f19bad1d41dceb90d8b4cf5",
+                        "url": "https:\/\/i.scdn.co\/image\/ab6761610000e5ebd2e2b04b7ba5d60b72f54506",
                         "height": 640,
                         "width": 640
                     },
                     {
-                        "url": "https:\/\/i.scdn.co\/image\/ab676161000051743f19bad1d41dceb90d8b4cf5",
+                        "url": "https:\/\/i.scdn.co\/image\/ab67616100005174d2e2b04b7ba5d60b72f54506",
                         "height": 320,
                         "width": 320
                     },
                     {
-                        "url": "https:\/\/i.scdn.co\/image\/ab6761610000f1783f19bad1d41dceb90d8b4cf5",
+                        "url": "https:\/\/i.scdn.co\/image\/ab6761610000f178d2e2b04b7ba5d60b72f54506",
                         "height": 160,
                         "width": 160
                     }
                 ],
-                "name": "Megadeth",
-                "popularity": 71,
+                "name": "Creedence Clearwater Revival",
+                "popularity": 82,
                 "type": "artist",
-                "uri": "spotify:artist:1Yox196W7bzVNZI7RBaPnf"
+                "uri": "spotify:artist:3IYUhFvPQItj6xySrBmZkd"
             },
             {
                 "external_urls": {
-                    "spotify": "https:\/\/open.spotify.com\/artist\/6nlzO77khB5Ss8TKh9QuVS"
+                    "spotify": "https:\/\/open.spotify.com\/artist\/13FXidDF8dRp2MYQfpw58b"
                 },
                 "followers": {
                     "href": null,
-                    "total": 29
+                    "total": 2084
                 },
                 "genres": [],
-                "href": "https:\/\/api.spotify.com\/v1\/artists\/6nlzO77khB5Ss8TKh9QuVS",
-                "id": "6nlzO77khB5Ss8TKh9QuVS",
+                "href": "https:\/\/api.spotify.com\/v1\/artists\/13FXidDF8dRp2MYQfpw58b",
+                "id": "13FXidDF8dRp2MYQfpw58b",
                 "images": [
                     {
-                        "url": "https:\/\/i.scdn.co\/image\/ab67616d0000b273218fc8fc8f0f8324b311454d",
+                        "url": "https:\/\/i.scdn.co\/image\/ab67616d0000b2735f57092b48a16d160f2eb872",
                         "height": 640,
                         "width": 640
                     },
                     {
-                        "url": "https:\/\/i.scdn.co\/image\/ab67616d00001e02218fc8fc8f0f8324b311454d",
+                        "url": "https:\/\/i.scdn.co\/image\/ab67616d00001e025f57092b48a16d160f2eb872",
                         "height": 300,
                         "width": 300
                     },
                     {
-                        "url": "https:\/\/i.scdn.co\/image\/ab67616d00004851218fc8fc8f0f8324b311454d",
+                        "url": "https:\/\/i.scdn.co\/image\/ab67616d000048515f57092b48a16d160f2eb872",
                         "height": 64,
                         "width": 64
                     }
                 ],
-                "name": "SYMPHONY OF DESTRUCTION",
-                "popularity": 0,
+                "name": "Creedence",
+                "popularity": 24,
                 "type": "artist",
-                "uri": "spotify:artist:6nlzO77khB5Ss8TKh9QuVS"
+                "uri": "spotify:artist:13FXidDF8dRp2MYQfpw58b"
             },
             {
                 "external_urls": {
-                    "spotify": "https:\/\/open.spotify.com\/artist\/7IAXZaLTb6nkJr8RmVPn5y"
+                    "spotify": "https:\/\/open.spotify.com\/artist\/43sZBwHjahUvgbx1WNIkIz"
                 },
                 "followers": {
                     "href": null,
-                    "total": 467932
+                    "total": 3645194
                 },
                 "genres": [
-                    "brazilian metal",
-                    "brazilian power metal",
-                    "brazilian progressive metal",
-                    "latin metal",
-                    "metal",
-                    "neo classical metal",
-                    "power metal",
-                    "progressive metal",
-                    "progressive power metal",
-                    "speed metal",
-                    "symphonic metal"
+                    "alternative metal",
+                    "nu metal",
+                    "post-grunge",
+                    "rock"
                 ],
-                "href": "https:\/\/api.spotify.com\/v1\/artists\/7IAXZaLTb6nkJr8RmVPn5y",
-                "id": "7IAXZaLTb6nkJr8RmVPn5y",
+                "href": "https:\/\/api.spotify.com\/v1\/artists\/43sZBwHjahUvgbx1WNIkIz",
+                "id": "43sZBwHjahUvgbx1WNIkIz",
                 "images": [
                     {
-                        "url": "https:\/\/i.scdn.co\/image\/ab6761610000e5eb66ed9eef4c4f85369167a555",
+                        "url": "https:\/\/i.scdn.co\/image\/ab6761610000e5eb0d86c8971cc4d6fa63d58bae",
                         "height": 640,
                         "width": 640
                     },
                     {
-                        "url": "https:\/\/i.scdn.co\/image\/ab6761610000517466ed9eef4c4f85369167a555",
+                        "url": "https:\/\/i.scdn.co\/image\/ab676161000051740d86c8971cc4d6fa63d58bae",
                         "height": 320,
                         "width": 320
                     },
                     {
-                        "url": "https:\/\/i.scdn.co\/image\/ab6761610000f17866ed9eef4c4f85369167a555",
+                        "url": "https:\/\/i.scdn.co\/image\/ab6761610000f1780d86c8971cc4d6fa63d58bae",
                         "height": 160,
                         "width": 160
                     }
                 ],
-                "name": "ANGRA",
-                "popularity": 54,
+                "name": "Creed",
+                "popularity": 75,
                 "type": "artist",
-                "uri": "spotify:artist:7IAXZaLTb6nkJr8RmVPn5y"
+                "uri": "spotify:artist:43sZBwHjahUvgbx1WNIkIz"
             },
             {
                 "external_urls": {
-                    "spotify": "https:\/\/open.spotify.com\/artist\/2ye2Wgw4gimLv2eAKyk1NB"
+                    "spotify": "https:\/\/open.spotify.com\/artist\/0pzoKe8wQxg2KSEnq0q2or"
                 },
                 "followers": {
                     "href": null,
-                    "total": 29154819
+                    "total": 3803
+                },
+                "genres": [],
+                "href": "https:\/\/api.spotify.com\/v1\/artists\/0pzoKe8wQxg2KSEnq0q2or",
+                "id": "0pzoKe8wQxg2KSEnq0q2or",
+                "images": [
+                    {
+                        "url": "https:\/\/i.scdn.co\/image\/ab67616d0000b27366141e1461507aeab26cc842",
+                        "height": 640,
+                        "width": 640
+                    },
+                    {
+                        "url": "https:\/\/i.scdn.co\/image\/ab67616d00001e0266141e1461507aeab26cc842",
+                        "height": 300,
+                        "width": 300
+                    },
+                    {
+                        "url": "https:\/\/i.scdn.co\/image\/ab67616d0000485166141e1461507aeab26cc842",
+                        "height": 64,
+                        "width": 64
+                    }
+                ],
+                "name": "Creedence Clearwater Revived",
+                "popularity": 14,
+                "type": "artist",
+                "uri": "spotify:artist:0pzoKe8wQxg2KSEnq0q2or"
+            },
+            {
+                "external_urls": {
+                    "spotify": "https:\/\/open.spotify.com\/artist\/1on7ZQ2pvgeQF4vmIA09x5"
+                },
+                "followers": {
+                    "href": null,
+                    "total": 7718099
                 },
                 "genres": [
+                    "brazilian rock",
+                    "hard rock brasileiro",
+                    "rock alternativo brasileiro",
+                    "rock nacional brasileiro"
+                ],
+                "href": "https:\/\/api.spotify.com\/v1\/artists\/1on7ZQ2pvgeQF4vmIA09x5",
+                "id": "1on7ZQ2pvgeQF4vmIA09x5",
+                "images": [
+                    {
+                        "url": "https:\/\/i.scdn.co\/image\/ab6761610000e5eb67bc48f32d1cc16497865361",
+                        "height": 640,
+                        "width": 640
+                    },
+                    {
+                        "url": "https:\/\/i.scdn.co\/image\/ab6761610000517467bc48f32d1cc16497865361",
+                        "height": 320,
+                        "width": 320
+                    },
+                    {
+                        "url": "https:\/\/i.scdn.co\/image\/ab6761610000f17867bc48f32d1cc16497865361",
+                        "height": 160,
+                        "width": 160
+                    }
+                ],
+                "name": "Charlie Brown Jr.",
+                "popularity": 76,
+                "type": "artist",
+                "uri": "spotify:artist:1on7ZQ2pvgeQF4vmIA09x5"
+            },
+            {
+                "external_urls": {
+                    "spotify": "https:\/\/open.spotify.com\/artist\/711MCceyCBcFnzjGY4Q7Un"
+                },
+                "followers": {
+                    "href": null,
+                    "total": 30006512
+                },
+                "genres": [
+                    "australian rock",
                     "hard rock",
-                    "metal",
-                    "old school thrash",
-                    "rock",
-                    "thrash metal"
+                    "rock"
                 ],
-                "href": "https:\/\/api.spotify.com\/v1\/artists\/2ye2Wgw4gimLv2eAKyk1NB",
-                "id": "2ye2Wgw4gimLv2eAKyk1NB",
+                "href": "https:\/\/api.spotify.com\/v1\/artists\/711MCceyCBcFnzjGY4Q7Un",
+                "id": "711MCceyCBcFnzjGY4Q7Un",
                 "images": [
                     {
-                        "url": "https:\/\/i.scdn.co\/image\/ab6761610000e5eb69ca98dd3083f1082d740e44",
+                        "url": "https:\/\/i.scdn.co\/image\/ab6761610000e5ebc4c77549095c86acb4e77b37",
                         "height": 640,
                         "width": 640
                     },
                     {
-                        "url": "https:\/\/i.scdn.co\/image\/ab6761610000517469ca98dd3083f1082d740e44",
+                        "url": "https:\/\/i.scdn.co\/image\/ab67616100005174c4c77549095c86acb4e77b37",
                         "height": 320,
                         "width": 320
                     },
                     {
-                        "url": "https:\/\/i.scdn.co\/image\/ab6761610000f17869ca98dd3083f1082d740e44",
+                        "url": "https:\/\/i.scdn.co\/image\/ab6761610000f178c4c77549095c86acb4e77b37",
                         "height": 160,
                         "width": 160
                     }
                 ],
-                "name": "Metallica",
-                "popularity": 84,
+                "name": "AC\/DC",
+                "popularity": 83,
                 "type": "artist",
-                "uri": "spotify:artist:2ye2Wgw4gimLv2eAKyk1NB"
+                "uri": "spotify:artist:711MCceyCBcFnzjGY4Q7Un"
             },
             {
                 "external_urls": {
-                    "spotify": "https:\/\/open.spotify.com\/artist\/5HA5aLY3jJV7eimXWkRBBp"
+                    "spotify": "https:\/\/open.spotify.com\/artist\/5nqr3PugZYyBcQrnKtFkAu"
                 },
                 "followers": {
                     "href": null,
-                    "total": 913416
+                    "total": 5248
                 },
                 "genres": [
-                    "dutch metal",
-                    "gothic metal",
-                    "gothic symphonic metal",
-                    "opera metal",
-                    "power metal",
-                    "symphonic metal"
+                    "swamp rock"
                 ],
-                "href": "https:\/\/api.spotify.com\/v1\/artists\/5HA5aLY3jJV7eimXWkRBBp",
-                "id": "5HA5aLY3jJV7eimXWkRBBp",
+                "href": "https:\/\/api.spotify.com\/v1\/artists\/5nqr3PugZYyBcQrnKtFkAu",
+                "id": "5nqr3PugZYyBcQrnKtFkAu",
                 "images": [
                     {
-                        "url": "https:\/\/i.scdn.co\/image\/ab6761610000e5eb4aa6b631a5f042656f7e12ef",
-                        "height": 640,
+                        "url": "https:\/\/i.scdn.co\/image\/af4047091256c30abad87e5b1989391602d3b1c6",
+                        "height": 667,
+                        "width": 1000
+                    },
+                    {
+                        "url": "https:\/\/i.scdn.co\/image\/caacf441ecc38273053b01c4bb0d094644a5b0a1",
+                        "height": 427,
                         "width": 640
                     },
                     {
-                        "url": "https:\/\/i.scdn.co\/image\/ab676161000051744aa6b631a5f042656f7e12ef",
-                        "height": 320,
-                        "width": 320
+                        "url": "https:\/\/i.scdn.co\/image\/4f70d8786d9c28b5d8d25593da120f29b78d70ab",
+                        "height": 133,
+                        "width": 200
                     },
                     {
-                        "url": "https:\/\/i.scdn.co\/image\/ab6761610000f1784aa6b631a5f042656f7e12ef",
-                        "height": 160,
-                        "width": 160
+                        "url": "https:\/\/i.scdn.co\/image\/5ab508afcd74a99edb55ad86327a6888c235cad5",
+                        "height": 43,
+                        "width": 64
                     }
                 ],
-                "name": "Epica",
-                "popularity": 58,
+                "name": "Creedence Clearwater Revisited",
+                "popularity": 12,
                 "type": "artist",
-                "uri": "spotify:artist:5HA5aLY3jJV7eimXWkRBBp"
+                "uri": "spotify:artist:5nqr3PugZYyBcQrnKtFkAu"
             },
             {
                 "external_urls": {
-                    "spotify": "https:\/\/open.spotify.com\/artist\/4MnZkh4dpNmTMPxkl4Ev5L"
+                    "spotify": "https:\/\/open.spotify.com\/artist\/6ziJTSPiXQmTs8AdEFLsPC"
                 },
                 "followers": {
                     "href": null,
-                    "total": 278340
+                    "total": 2566
                 },
-                "genres": [
-                    "neo classical metal",
-                    "power metal",
-                    "progressive metal",
-                    "progressive power metal"
-                ],
-                "href": "https:\/\/api.spotify.com\/v1\/artists\/4MnZkh4dpNmTMPxkl4Ev5L",
-                "id": "4MnZkh4dpNmTMPxkl4Ev5L",
+                "genres": [],
+                "href": "https:\/\/api.spotify.com\/v1\/artists\/6ziJTSPiXQmTs8AdEFLsPC",
+                "id": "6ziJTSPiXQmTs8AdEFLsPC",
                 "images": [
                     {
-                        "url": "https:\/\/i.scdn.co\/image\/ab6761610000e5eb54935264e9cf5607a3e98686",
+                        "url": "https:\/\/i.scdn.co\/image\/ab67616d0000b273b27a0c89df9ddbc02cb4f01b",
                         "height": 640,
                         "width": 640
                     },
                     {
-                        "url": "https:\/\/i.scdn.co\/image\/ab6761610000517454935264e9cf5607a3e98686",
-                        "height": 320,
-                        "width": 320
+                        "url": "https:\/\/i.scdn.co\/image\/ab67616d00001e02b27a0c89df9ddbc02cb4f01b",
+                        "height": 300,
+                        "width": 300
                     },
                     {
-                        "url": "https:\/\/i.scdn.co\/image\/ab6761610000f17854935264e9cf5607a3e98686",
-                        "height": 160,
-                        "width": 160
+                        "url": "https:\/\/i.scdn.co\/image\/ab67616d00004851b27a0c89df9ddbc02cb4f01b",
+                        "height": 64,
+                        "width": 64
                     }
                 ],
-                "name": "Symphony X",
-                "popularity": 46,
+                "name": "Creedence Clearwater Revival Experience",
+                "popularity": 17,
                 "type": "artist",
-                "uri": "spotify:artist:4MnZkh4dpNmTMPxkl4Ev5L"
+                "uri": "spotify:artist:6ziJTSPiXQmTs8AdEFLsPC"
             },
             {
                 "external_urls": {
-                    "spotify": "https:\/\/open.spotify.com\/artist\/2NPduAUeLVsfIauhRwuft1"
+                    "spotify": "https:\/\/open.spotify.com\/artist\/4C4kpaAdp6aKSkguw40SsU"
                 },
                 "followers": {
                     "href": null,
-                    "total": 2278280
+                    "total": 3091344
                 },
                 "genres": [
-                    "fantasy metal",
-                    "finnish metal",
-                    "finnish power metal",
-                    "gothic metal",
-                    "gothic symphonic metal",
-                    "opera metal",
-                    "power metal",
-                    "symphonic metal"
+                    "brazilian rock",
+                    "latin alternative",
+                    "manguebeat",
+                    "mpb",
+                    "pop rock brasileiro",
+                    "rock mineiro",
+                    "rock nacional brasileiro"
                 ],
-                "href": "https:\/\/api.spotify.com\/v1\/artists\/2NPduAUeLVsfIauhRwuft1",
-                "id": "2NPduAUeLVsfIauhRwuft1",
+                "href": "https:\/\/api.spotify.com\/v1\/artists\/4C4kpaAdp6aKSkguw40SsU",
+                "id": "4C4kpaAdp6aKSkguw40SsU",
                 "images": [
                     {
-                        "url": "https:\/\/i.scdn.co\/image\/ab6761610000e5ebf3284e60d4e43c9a7b52c08d",
+                        "url": "https:\/\/i.scdn.co\/image\/ab6761610000e5eb2b61503716c9cbb86f6a0658",
                         "height": 640,
                         "width": 640
                     },
                     {
-                        "url": "https:\/\/i.scdn.co\/image\/ab67616100005174f3284e60d4e43c9a7b52c08d",
+                        "url": "https:\/\/i.scdn.co\/image\/ab676161000051742b61503716c9cbb86f6a0658",
                         "height": 320,
                         "width": 320
                     },
                     {
-                        "url": "https:\/\/i.scdn.co\/image\/ab6761610000f178f3284e60d4e43c9a7b52c08d",
+                        "url": "https:\/\/i.scdn.co\/image\/ab6761610000f1782b61503716c9cbb86f6a0658",
                         "height": 160,
                         "width": 160
                     }
                 ],
-                "name": "Nightwish",
+                "name": "Skank",
                 "popularity": 68,
                 "type": "artist",
-                "uri": "spotify:artist:2NPduAUeLVsfIauhRwuft1"
+                "uri": "spotify:artist:4C4kpaAdp6aKSkguw40SsU"
             },
             {
                 "external_urls": {
-                    "spotify": "https:\/\/open.spotify.com\/artist\/4pQN0GB0fNEEOfQCaWotsY"
+                    "spotify": "https:\/\/open.spotify.com\/artist\/6tw6EpC9RgmSRZiZg0n22t"
                 },
                 "followers": {
                     "href": null,
-                    "total": 1288340
+                    "total": 6613265
                 },
                 "genres": [
-                    "german metal",
-                    "german power metal",
-                    "hard rock",
-                    "metal",
-                    "old school thrash",
-                    "power metal",
-                    "speed metal",
-                    "symphonic metal",
-                    "thrash metal"
+                    "mpb",
+                    "rock brasiliense",
+                    "rock nacional brasileiro"
                 ],
-                "href": "https:\/\/api.spotify.com\/v1\/artists\/4pQN0GB0fNEEOfQCaWotsY",
-                "id": "4pQN0GB0fNEEOfQCaWotsY",
+                "href": "https:\/\/api.spotify.com\/v1\/artists\/6tw6EpC9RgmSRZiZg0n22t",
+                "id": "6tw6EpC9RgmSRZiZg0n22t",
                 "images": [
                     {
-                        "url": "https:\/\/i.scdn.co\/image\/ab6761610000e5ebcab673050b3f161eb7688c32",
+                        "url": "https:\/\/i.scdn.co\/image\/cd410bc7c6e3591f65d9c9ee9516d2e96acfed42",
+                        "height": 1000,
+                        "width": 1000
+                    },
+                    {
+                        "url": "https:\/\/i.scdn.co\/image\/d0a544a5f9e0a548536b9bc0449e50137e0dd08c",
                         "height": 640,
                         "width": 640
                     },
                     {
-                        "url": "https:\/\/i.scdn.co\/image\/ab67616100005174cab673050b3f161eb7688c32",
-                        "height": 320,
-                        "width": 320
+                        "url": "https:\/\/i.scdn.co\/image\/3ec7aa085b47711065443477cbd83aa39a056f13",
+                        "height": 200,
+                        "width": 200
                     },
                     {
-                        "url": "https:\/\/i.scdn.co\/image\/ab6761610000f178cab673050b3f161eb7688c32",
-                        "height": 160,
-                        "width": 160
+                        "url": "https:\/\/i.scdn.co\/image\/183df4c68c2028e4a59abc49c8e659429086f254",
+                        "height": 64,
+                        "width": 64
                     }
                 ],
-                "name": "Helloween",
-                "popularity": 60,
+                "name": "Legi\u00e3o Urbana",
+                "popularity": 70,
                 "type": "artist",
-                "uri": "spotify:artist:4pQN0GB0fNEEOfQCaWotsY"
-            },
-            {
-                "external_urls": {
-                    "spotify": "https:\/\/open.spotify.com\/artist\/3YrMuDBgkI3zUJUAyKfxFm"
-                },
-                "followers": {
-                    "href": null,
-                    "total": 51063
-                },
-                "genres": [
-                    "german trance",
-                    "progressive psytrance",
-                    "psychedelic trance"
-                ],
-                "href": "https:\/\/api.spotify.com\/v1\/artists\/3YrMuDBgkI3zUJUAyKfxFm",
-                "id": "3YrMuDBgkI3zUJUAyKfxFm",
-                "images": [
-                    {
-                        "url": "https:\/\/i.scdn.co\/image\/ab6761610000e5ebde1abc9ce3bba03472c9aca4",
-                        "height": 640,
-                        "width": 640
-                    },
-                    {
-                        "url": "https:\/\/i.scdn.co\/image\/ab67616100005174de1abc9ce3bba03472c9aca4",
-                        "height": 320,
-                        "width": 320
-                    },
-                    {
-                        "url": "https:\/\/i.scdn.co\/image\/ab6761610000f178de1abc9ce3bba03472c9aca4",
-                        "height": 160,
-                        "width": 160
-                    }
-                ],
-                "name": "Symphonix",
-                "popularity": 43,
-                "type": "artist",
-                "uri": "spotify:artist:3YrMuDBgkI3zUJUAyKfxFm"
-            },
-            {
-                "external_urls": {
-                    "spotify": "https:\/\/open.spotify.com\/artist\/1O8CSXsPwEqxcoBE360PPO"
-                },
-                "followers": {
-                    "href": null,
-                    "total": 683831
-                },
-                "genres": [
-                    "finnish power metal",
-                    "metal",
-                    "neo classical metal",
-                    "power metal",
-                    "progressive metal",
-                    "speed metal",
-                    "symphonic metal"
-                ],
-                "href": "https:\/\/api.spotify.com\/v1\/artists\/1O8CSXsPwEqxcoBE360PPO",
-                "id": "1O8CSXsPwEqxcoBE360PPO",
-                "images": [
-                    {
-                        "url": "https:\/\/i.scdn.co\/image\/ab6761610000e5eb4733f393ad04f47b31edaadb",
-                        "height": 640,
-                        "width": 640
-                    },
-                    {
-                        "url": "https:\/\/i.scdn.co\/image\/ab676161000051744733f393ad04f47b31edaadb",
-                        "height": 320,
-                        "width": 320
-                    },
-                    {
-                        "url": "https:\/\/i.scdn.co\/image\/ab6761610000f1784733f393ad04f47b31edaadb",
-                        "height": 160,
-                        "width": 160
-                    }
-                ],
-                "name": "Stratovarius",
-                "popularity": 56,
-                "type": "artist",
-                "uri": "spotify:artist:1O8CSXsPwEqxcoBE360PPO"
+                "uri": "spotify:artist:6tw6EpC9RgmSRZiZg0n22t"
             }
         ]
     }

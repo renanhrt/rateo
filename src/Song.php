@@ -189,24 +189,25 @@ class Song implements ActiveRecord {
                 $song->setId_song($track['id']);
                 $songs[] = $song;
             }
-            return $songs;
+            if (count($songs) > 0) {
+                return $songs;
+            } else {
+                return [];
+            }
         }
-        
+     
+        return [];
     }
 
-    public static function ranking($filter): array {
+    public static function ranking($filter, $order): array {
         $connection = new MySQL();
-        if ($filter == 'new') {
-            $sql = "SELECT song.id_song, title, year, artist, cover, preview_url, AVG(vote_number) as average, COUNT(vote.id_vote) as total_votes FROM song JOIN vote ON song.id_song = vote.id_song GROUP BY id_song ORDER BY year DESC LIMIT 30";
-        } else if ($filter == 'old') {
-            $sql = "SELECT song.id_song, title, year, artist, cover, preview_url, AVG(vote_number) as average, COUNT(vote.id_vote) as total_votes FROM song JOIN vote ON song.id_song = vote.id_song GROUP BY id_song ORDER BY year ASC LIMIT 30";
-        } else if ($filter == 'popular') {
-            $sql = "SELECT song.id_song, title, year, artist, cover, preview_url, AVG(vote_number) as average, COUNT(vote.id_vote) as total_votes FROM song JOIN vote ON song.id_song = vote.id_song GROUP BY id_song ORDER BY total_votes DESC LIMIT 30";
-        } else if ($filter == 'unpopular') {
-            $sql = "SELECT song.id_song, title, year, artist, cover, preview_url, AVG(vote_number) as average, COUNT(vote.id_vote) as total_votes FROM song JOIN vote ON song.id_song = vote.id_song GROUP BY id_song ORDER BY total_votes ASC LIMIT 30";
+        if ($filter == 'votes') {
+            $sql = "SELECT song.*, AVG(vote_number) AS average, COUNT(vote_number) AS total_votes FROM song LEFT JOIN vote ON song.id_song = vote.id_song GROUP BY song.id_song HAVING total_votes > 0 ORDER BY total_votes " . strtoupper($order);
+        } else if ($filter == 'rating') {
+            $sql = "SELECT song.*, AVG(vote_number) AS average, COUNT(vote_number) AS total_votes FROM song LEFT JOIN vote ON song.id_song = vote.id_song GROUP BY song.id_song HAVING total_votes > 0 ORDER BY average " . strtoupper($order);
         } else {
-            $sql = "SELECT song.id_song, title, year, artist, cover, preview_url, AVG(vote_number) as average, COUNT(vote.id_vote) as total_votes FROM song JOIN vote ON song.id_song = vote.id_song GROUP BY id_song ORDER BY average DESC LIMIT 30";
-        }
+            $sql = "SELECT song.*, AVG(vote_number) AS average, COUNT(vote_number) AS total_votes FROM song LEFT JOIN vote ON song.id_song = vote.id_song GROUP BY song.id_song HAVING total_votes > 0 ORDER BY year " . strtoupper($order);
+        }        
         $results = $connection->query($sql);
         $songs = array();
         foreach ($results as $result) {
@@ -228,7 +229,7 @@ class Song implements ActiveRecord {
         $sql = "SELECT AVG(vote_number) as average, COUNT(vote_number) as total_votes FROM vote WHERE id_song = '{$this->id_song}'";
         $result = $connection->query($sql);
         return [
-            'average' => (int)$result[0]['average'],
+            'average' => round((float)$result[0]['average'], 1),
             'total_votes' => (int)$result[0]['total_votes']
         ];
     }

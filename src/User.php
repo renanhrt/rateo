@@ -51,8 +51,16 @@ class User implements ActiveRecord{
         $connection = new MySQL();
         $hash_password = password_hash($this->password, PASSWORD_BCRYPT);
         
-        if (!str_ends_with($this->email, 'feliz.ifrs.edu.br')) {
-            throw new Exception("Invalid email domain. Must be @feliz.ifrs.edu.br");
+        #if (!str_ends_with($this->email, 'feliz.ifrs.edu.br')) {
+        #    throw new Exception("Invalid email domain. Must be @aluno.feliz.ifrs.edu.br");
+        #}
+
+        if (strlen($this->password) < 8) {
+            throw new Exception("Password must have at least 8 characters!");
+        }
+
+        if (strlen($this->username) < 3 || strlen($this->username) > 20) {
+            throw new Exception("Username must have between 3 and 20 characters!");
         }
 
         if (isset($this->id_user)) {
@@ -66,7 +74,7 @@ class User implements ActiveRecord{
             $sql = "SELECT * FROM user WHERE email = '{$this->email}'";
             $result = $connection->query($sql);
             if (count($result) > 0) {
-                throw new Exception("Email already exists");
+                throw new Exception("Email already exists!");
             }
 
             $sql = "INSERT INTO user (username, email, password, role) 
@@ -106,22 +114,29 @@ class User implements ActiveRecord{
     public static function login(string $email, string $password): ?User {
         $connection = new MySQL();
         $sql = "SELECT * FROM user WHERE email = '{$email}'";
+    
         $result = $connection->query($sql);
-
-        if (count($result) > 0) {
-            $user_data = $result[0];
-            if (password_verify($password, $user_data['password'])) {
-                $user = new User(
-                    $user_data['username'],
-                    $user_data['email'],
-                    $user_data['password'],
-                    $user_data['role']
-                );
-                $user->setId_user($user_data['id_user']);
-                return $user;
-            }
+    
+        if (count($result) === 0) {
+            throw new InvalidArgumentException("Email does not exist.");
         }
-        return null;
+    
+        $user_data = $result[0];
+    
+        if (!password_verify($password, $user_data['password'])) {
+            throw new InvalidArgumentException("Invalid password.");
+        }
+    
+        $user = new User(
+            $user_data['username'],
+            $user_data['email'],
+            $user_data['password'],
+            $user_data['role']
+        );
+        $user->setId_user($user_data['id_user']);
+    
+        return $user;
     }
+    
     
 }

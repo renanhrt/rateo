@@ -5,14 +5,17 @@
         $email = $_POST["email"];
         $password = $_POST["password"];
 
-        $user = User::login($email, $password);
+
+        try {
+            $user = User::login($email, $password);
+        } catch (Exception $e) {
+            $error = $e->getMessage();
+        }
         
-        if ($user) {
+        if (isset($user)) {
             session_start();
             $_SESSION["id"] = $user->getId_user();
             header("Location: index.php");
-        } else {
-            echo "Invalid email or password";
         }
     }
 ?>
@@ -40,6 +43,11 @@
         <div class="form-group">
             Don't have an account?<a href="register.php"> Register Here.</a>
         </div>
+        <?php if (isset($error)): ?>
+            <div class="error">
+                <p class="error"><?php echo $error; ?></p>
+            </div>
+        <?php endif; ?>
         <button type="submit">Login</button>
         </form>
     </div>
