@@ -31,20 +31,18 @@
             $_POST["year"],
             $_POST["artist"],
             $_POST["cover"],
-            0
+            1
         );
         $song->setId_song($_POST["song_id"]);
         $song->save();
     }
 
-    # Remove song from rateo
+    # Remove request from rateo
     if (isset($_POST["remove_song_id"])) {
         $songs = Song::searchSongSpotify($_POST["search_text"]);
         $_GET["search_text"] = $_POST["search_text"];
         $song = Song::find($_POST["remove_song_id"]);
-        if ($song) {
-            $song->delete();
-        }
+        $song->delete();
     }
 
 ?>
@@ -90,11 +88,13 @@
                 
                         echo '<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/' . $song->getId_song() . '?utm_source=generator" width="100%" height="256" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>';
                 
-                        if ($exists) {
+                        if ($exists && $exists->getIs_request() == 0) {
+                            echo "<p>Song is already on rateo.</p>";
+                        } else if ($exists && $exists->getIs_request() == 1) {
                             echo "<form action='add_songs.php' method='POST'>";
                             echo "<input type='hidden' name='remove_song_id' value='" . $song->getId_song() . "'>";
                             echo "<input type='hidden' name='search_text' value='" . $_GET["search_text"] . "'>";
-                            echo "<input type='submit' value='Remove song from rateo' class='submit-input remove'>";
+                            echo "<input type='submit' value='Remove request' class='submit-input remove'>";
                             echo "</form>";
                         } else {
                             echo "<form action='add_songs.php' method='POST'>";
@@ -105,7 +105,7 @@
                             echo "<input type='hidden' name='cover' value='" . htmlspecialchars($song->getCover(), ENT_QUOTES, 'UTF-8') . "'>";
                             echo "<input type='hidden' name='is_request' value='" . htmlspecialchars($song->getIs_request(), ENT_QUOTES, 'UTF-8') . "'>";
                             echo "<input type='hidden' name='search_text' value='" . $_GET["search_text"] . "'>";
-                            echo "<input type='submit' value='Add song to rateo' class='submit-input add'>";
+                            echo "<input type='submit' value='Create song request' class='submit-input add'>";
                             echo "</form>";
                         }
                 
@@ -115,7 +115,7 @@
             ?>
 
             <?php if (count($songs) == 0): ?>
-                <p>Search for a song to add...</p>
+                <p>Search for a song to request...</p>
             <?php endif; ?>
         </div>
     </div>

@@ -31,11 +31,14 @@
     <header class="header">
         <div class="logo">Rateo</div>
         <nav>
-            <a href="index.php">Home</a>
-            <a href="ranking.php">Ranking</a>
-            <?php if ($user->getRole() === 'admin'): ?>
+        <a href="index.php">Home</a>
+        <a href="ranking.php">Ranking</a>
+        <?php if ($user->getRole() === 'admin'): ?>
             <a href="add_songs.php">Add songs</a>
-            <?php endif; ?>
+        <?php endif; ?>
+        <?php if ($user->getRole() === 'admin'): ?>
+            <a href="requests.php">Requests</a>
+        <?php endif; ?>
         </nav>
         <div class="user">
             <span><?php echo $user->getUsername(); ?></span>

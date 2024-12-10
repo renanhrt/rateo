@@ -4,7 +4,7 @@ class Song implements ActiveRecord {
 
     private String $id_song;
 
-    public function __construct(private string $title, private int $year, private string $artist, private string $cover, private string $preview_url) {
+    public function __construct(private string $title, private int $year, private string $artist, private string $cover, private int $is_request=0) {
     }
 
     public function setId_song(String $id_song): void {
@@ -47,17 +47,17 @@ class Song implements ActiveRecord {
         return $this->cover;
     }
 
-    public function setPreview_url(string $preview_url): void {
-        $this->preview_url = $preview_url;
+    public function setIs_request(int $is_request): void {
+        $this->is_request = $is_request;
     }
 
-    public function getPreview_url(): string {
-        return $this->preview_url;
+    public function getIs_request(): int {
+        return $this->is_request;
     }
 
     public function save(): bool {
         $connection = new MySQL();
-        $sql = "INSERT INTO song (id_song, title, year, artist, cover, preview_url) VALUES ('{$this->id_song}', '{$this->title}', {$this->year}, '{$this->artist}', '{$this->cover}', '{$this->preview_url}')";
+        $sql = "INSERT INTO song (id_song, title, year, artist, cover, is_request) VALUES ('{$this->id_song}', '{$this->title}', {$this->year}, '{$this->artist}', '{$this->cover}', {$this->is_request})";
         return $connection->execute($sql);
     }
 
@@ -79,7 +79,7 @@ class Song implements ActiveRecord {
             $result[0]['year'],
             $result[0]['artist'],
             $result[0]['cover'],
-            $result[0]['preview_url']
+            $result[0]['is_request']
         );
         $s->setId_song($result[0]['id_song']);
         return $s;
@@ -96,7 +96,7 @@ class Song implements ActiveRecord {
                 $result['year'],
                 $result['artist'],
                 $result['cover'],
-                $result['preview_url']
+                $result['is_request']
             );
             $s->setId_song($result['id_song']);
             $songs[] = $s;
@@ -106,7 +106,7 @@ class Song implements ActiveRecord {
 
     public static function random_song($id_user){
         $connection = new MySQL();
-        $sql = "SELECT * FROM song WHERE id_song NOT IN (SELECT id_song FROM vote WHERE id_user = {$id_user})";
+        $sql = "SELECT * FROM song WHERE id_song NOT IN (SELECT id_song FROM vote WHERE id_user = {$id_user}) AND is_request = 0";
         $result = $connection->query($sql);
         if(count($result) > 0){
             $totalcount = count($result);
@@ -116,7 +116,7 @@ class Song implements ActiveRecord {
                 $song_data['year'],
                 $song_data['artist'],
                 $song_data['cover'],
-                $song_data['preview_url']
+                $song_data['is_request']
             );
             $song->setId_song($song_data['id_song']);
             return $song;   
@@ -124,7 +124,7 @@ class Song implements ActiveRecord {
         return NULL;
     }
 
-    public static function searchSongSpotify($search_string): array {
+    public static function searchSongSpotify($search_string, $is_request=0): array {
         // GET ACCESS TOKEN
         $params = [
             'grant_type' => 'client_credentials',
@@ -176,15 +176,12 @@ class Song implements ActiveRecord {
         if (isset($searchData['tracks']['items'])) {
             $songs = array();
             foreach ($searchData['tracks']['items'] as $track) {
-                if (!isset($track['preview_url'])) {
-                    $track['preview_url'] = '';
-                }
                 $song = new Song(
                     $track['name'],
                     (int)substr($track['album']['release_date'], 0, 4),
                     $track['artists'][0]['name'],
                     $track['album']['images'][0]['url'],
-                    $track['preview_url']
+                    $is_request
                 );
                 $song->setId_song($track['id']);
                 $songs[] = $song;
@@ -202,11 +199,11 @@ class Song implements ActiveRecord {
     public static function ranking($filter, $order): array {
         $connection = new MySQL();
         if ($filter == 'votes') {
-            $sql = "SELECT song.*, AVG(vote_number) AS average, COUNT(vote_number) AS total_votes FROM song LEFT JOIN vote ON song.id_song = vote.id_song GROUP BY song.id_song HAVING total_votes > 0 ORDER BY total_votes " . strtoupper($order);
+            $sql = "SELECT song.*, AVG(vote_number) AS average, COUNT(vote_number) AS total_votes FROM song LEFT JOIN vote ON song.id_song = vote.id_song WHERE is_request = 0 GROUP BY song.id_song HAVING total_votes > 0 ORDER BY total_votes " . strtoupper($order);
         } else if ($filter == 'rating') {
-            $sql = "SELECT song.*, AVG(vote_number) AS average, COUNT(vote_number) AS total_votes FROM song LEFT JOIN vote ON song.id_song = vote.id_song GROUP BY song.id_song HAVING total_votes > 0 ORDER BY average " . strtoupper($order);
+            $sql = "SELECT song.*, AVG(vote_number) AS average, COUNT(vote_number) AS total_votes FROM song LEFT JOIN vote ON song.id_song = vote.id_song WHERE is_request = 0 GROUP BY song.id_song HAVING total_votes > 0 ORDER BY average " . strtoupper($order);
         } else {
-            $sql = "SELECT song.*, AVG(vote_number) AS average, COUNT(vote_number) AS total_votes FROM song LEFT JOIN vote ON song.id_song = vote.id_song GROUP BY song.id_song HAVING total_votes > 0 ORDER BY year " . strtoupper($order);
+            $sql = "SELECT song.*, AVG(vote_number) AS average, COUNT(vote_number) AS total_votes FROM song LEFT JOIN vote ON song.id_song = vote.id_song WHERE is_request = 0 GROUP BY song.id_song HAVING total_votes > 0 ORDER BY year " . strtoupper($order);
         }        
         $results = $connection->query($sql);
         $songs = array();
@@ -216,7 +213,7 @@ class Song implements ActiveRecord {
                 $result['year'],
                 $result['artist'],
                 $result['cover'],
-                $result['preview_url']
+                $result['is_request']
             );
             $s->setId_song($result['id_song']);
             $songs[] = $s;
