@@ -48,13 +48,13 @@ class Request implements ActiveRecord {
                 id_song = '{$this->id_song}',
                 WHERE id_request = {$this->id_request}";
         } else {
-            $sql = "SELECT * FROM requests WHERE id_user = '{$this->id_user}' AND id_song = '{$this->id_song}'";
+            $sql = "SELECT * FROM requests WHERE id_user = {$this->id_user} AND id_song = '{$this->id_song}'";
             $result = $connection->query($sql);
             if (count($result) > 0) {
                 throw new Exception("User has already Requestd for this song");
             }
             
-            $sql = "INSERT INTO Request (id_user, id_song) 
+            $sql = "INSERT INTO requests (id_user, id_song) 
                 VALUES ('{$this->id_user}', '{$this->id_song}')";
         }
         return $connection->execute($sql);
@@ -62,32 +62,48 @@ class Request implements ActiveRecord {
 
     public function delete(): bool {
         $connection = new MySQL();
+        $id_song = $this->id_song;
+
         $sql = "DELETE FROM requests WHERE id_request = {$this->id_request}";
-        return $connection->execute($sql);
+        $deletion = $connection->execute($sql);
+
+        $sql = "SELECT * FROM requests WHERE id_song = '{$id_song}'";
+        $result = $connection->query($sql);
+        if (count($result) == 0) {
+            $song = Song::find($id_song);
+            $song->delete();
+        }
+
+        return $deletion;
     }
 
     public static function find($id_request): Request {
         $connection = new MySQL();
         $sql = "SELECT * FROM requests WHERE id_request = {$id_request}";
-        $resultado = $connection->query($sql);
+        $result = $connection->query($sql);
         
-        $request = new Request($resultado[0]['id_user'], $resultado[0]['id_song']);
-        $request->setid_request($resultado[0]['id_request']);
+        $request = new Request($result[0]['id_user'], $result[0]['id_song']);
+        $request->setid_request($result[0]['id_request']);
         return $request;
     }
 
     public static function findAll(): array {
         $connection = new MySQL();
-        $sql = "SELECT * FROM requests";
-        $resultados = $connection->query($sql);
+        $sql = "SELECT r.id_request, r.id_song, GROUP_CONCAT(r.id_user) AS user_ids FROM requests r GROUP BY r.id_song ORDER BY LENGTH(GROUP_CONCAT(r.id_user)) DESC;";
+        $results = $connection->query($sql);
         $requests = array();
         
-        foreach ($resultados as $resultado) {
-            $request = new Request($resultado['id_user'], $resultado['id_song']);
-            $request->setid_request($resultado['id_request']);
-            $requests[] = $request;
+        $results = $connection->query($sql);
+        $songRequests = array();
+
+        foreach ($results as $result) {
+            $songRequests[] = [
+                'id_request' => $result['id_request'],
+                'id_song' => $result['id_song'],
+                'user_ids' => explode(',', $result['user_ids']) // Convert the string to an array
+            ];
         }
-        return $requests;
+        return $songRequests;
     }
 
     public static function findByUserAndSong(int $id_user, string $id_song): ?Request {
@@ -103,6 +119,12 @@ class Request implements ActiveRecord {
         }
         
         return null;
+    }
+
+    public static function deleteBySong(string $id_song): bool {
+        $connection = new MySQL();
+        $sql = "DELETE FROM requests WHERE id_song = '{$id_song}'";
+        return $connection->execute($sql);
     }
 }
 

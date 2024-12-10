@@ -55,6 +55,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="logo.webp" type="image/x-icon">
     <title>Add songs</title>
 </head>
 <body>
@@ -65,8 +66,9 @@
         <a href="ranking.php">Ranking</a>
         <?php if ($user->getRole() === 'admin'): ?>
             <a href="add_songs.php">Add songs</a>
+            <a href="manage_requests.php">Manage Requests</a>
         <?php endif; ?>
-        <?php if ($user->getRole() === 'admin'): ?>
+        <?php if ($user->getRole() === 'user'): ?>
             <a href="requests.php">Requests</a>
         <?php endif; ?>
         </nav>

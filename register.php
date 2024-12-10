@@ -24,6 +24,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register Rateo</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="logo.webp" type="image/x-icon">
 </head>
 <body class="login-body">
     <div class="login-container">

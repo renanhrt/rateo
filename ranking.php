@@ -26,6 +26,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rateo Ranking</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="logo.webp" type="image/x-icon">
 </head>
 <body>
     <header class="header">
@@ -35,8 +36,9 @@
         <a href="ranking.php">Ranking</a>
         <?php if ($user->getRole() === 'admin'): ?>
             <a href="add_songs.php">Add songs</a>
+            <a href="manage_requests.php">Manage Requests</a>
         <?php endif; ?>
-        <?php if ($user->getRole() === 'admin'): ?>
+        <?php if ($user->getRole() === 'user'): ?>
             <a href="requests.php">Requests</a>
         <?php endif; ?>
         </nav>
@@ -106,8 +108,7 @@
                                 </div>
                             </div>
                     
-                            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/<?= $song->getId_song(); ?>?utm_source=generator" width="100%" height="256" frameborder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
-                            </iframe>
+                            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/<?= $song->getId_song(); ?>?utm_source=generator" width="100%" height="256" frameborder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                     
                             <p><?= $song->getTitle(); ?> - <?= $song->getArtist(); ?> (<?= $song->getYear(); ?>)</p>
                         </div>
@@ -116,7 +117,16 @@
                 }
             ?>
             <?php if (count($songs) == 0): ?>
-                <p>Search for a song to add...</p>
+                <p>No songs were added</p>
+                <a href="requests.php"></a>
+                <?php if ($user->getRole() === 'admin'): ?>
+                    <a href="add_songs.php" class="alink">Add songs</a>
+                    <br>
+                    <a href="manage_requests.php" class="alink">Manage Requests</a>
+                <?php endif; ?>
+                <?php if ($user->getRole() === 'user'): ?>
+                    <a href="requests.php" class="alink">Request songs to add</a>
+                <?php endif; ?>
             <?php endif; ?>
         </div>
     </div>

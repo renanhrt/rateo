@@ -57,7 +57,13 @@ class Song implements ActiveRecord {
 
     public function save(): bool {
         $connection = new MySQL();
-        $sql = "INSERT INTO song (id_song, title, year, artist, cover, is_request) VALUES ('{$this->id_song}', '{$this->title}', {$this->year}, '{$this->artist}', '{$this->cover}', {$this->is_request})";
+        $sql = "SELECT * FROM song WHERE id_song = '{$this->id_song}'";
+        $result = $connection->query($sql);
+        if (count($result) > 0) {
+            $sql = "UPDATE song SET title = '{$this->title}', year = {$this->year}, artist = '{$this->artist}', cover = '{$this->cover}', is_request = {$this->is_request} WHERE id_song = '{$this->id_song}'";
+        } else {
+            $sql = "INSERT INTO song (id_song, title, year, artist, cover, is_request) VALUES ('{$this->id_song}', '{$this->title}', {$this->year}, '{$this->artist}', '{$this->cover}', {$this->is_request})";
+        }
         return $connection->execute($sql);
     }
 

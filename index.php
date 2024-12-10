@@ -23,6 +23,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="logo.webp" type="image/x-icon">
     <title>Rateo</title>
 </head>
 <body>
@@ -33,8 +34,9 @@
         <a href="ranking.php">Ranking</a>
         <?php if ($user->getRole() === 'admin'): ?>
             <a href="add_songs.php">Add songs</a>
+            <a href="manage_requests.php">Manage Requests</a>
         <?php endif; ?>
-        <?php if ($user->getRole() === 'admin'): ?>
+        <?php if ($user->getRole() === 'user'): ?>
             <a href="requests.php">Requests</a>
         <?php endif; ?>
         </nav>
@@ -88,7 +90,14 @@
                 <a href="ranking.php">Go to Ranking</a>
                 <?php if ($user->getRole() === 'admin'): ?>
                 <br>
+                <a href="manage_requests.php">Manage Requests</a>
+                <br>
                 <a href="add_songs.php">Add new songs</a>
+                <?php endif; ?>
+
+                <?php if ($user->getRole() === 'user'): ?>
+                <br>
+                <a href="requests.php" class="alink">Request new songs</a>
                 <?php endif; ?>
             <?php endif; ?>
         </div>
