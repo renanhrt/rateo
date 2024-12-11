@@ -237,5 +237,23 @@ class Song implements ActiveRecord {
         ];
     }
 
+    public static function searchSongs($search_string): array {
+        $connection = new MySQL();
+        $sql = "SELECT * FROM song WHERE title LIKE '%{$search_string}%' OR artist LIKE '%{$search_string}%'";
+        $results = $connection->query($sql);
+        $songs = array();
+        foreach ($results as $result) {
+            $s = new Song(
+                $result['title'],
+                $result['year'],
+                $result['artist'],
+                $result['cover'],
+                $result['is_request']
+            );
+            $s->setId_song($result['id_song']);
+            $songs[] = $s;
+        }
+        return $songs;
+    }
 }
 ?>

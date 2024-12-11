@@ -34,6 +34,7 @@
         <a href="ranking.php">Ranking</a>
         <?php if ($user->getRole() === 'admin'): ?>
             <a href="add_songs.php">Add songs</a>
+            <a href="remove_songs.php">Remove songs</a>
             <a href="manage_requests.php">Manage Requests</a>
         <?php endif; ?>
         <?php if ($user->getRole() === 'user'): ?>

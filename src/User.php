@@ -51,9 +51,9 @@ class User implements ActiveRecord{
         $connection = new MySQL();
         $hash_password = password_hash($this->password, PASSWORD_BCRYPT);
         
-        #if (!str_ends_with($this->email, 'feliz.ifrs.edu.br')) {
-        #    throw new Exception("Invalid email domain. Must be @aluno.feliz.ifrs.edu.br");
-        #}
+        if (!str_ends_with($this->email, '@aluno.feliz.ifrs.edu.br')) {
+            throw new Exception("Invalid email domain. Must be @aluno.feliz.ifrs.edu.br");
+        }
 
         if (strlen($this->password) < 8) {
             throw new Exception("Password must have at least 8 characters!");
